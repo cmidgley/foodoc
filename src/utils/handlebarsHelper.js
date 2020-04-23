@@ -15,8 +15,10 @@ exports.render = function(doclet, resolveLinks){
 		doclet: doclet,
 		config: template.config,
 		options: template.options,
-		navbar: template.navbar
+		navbar: template.navbar,
+		altKind: (doclet.kind == 'tutorial') ? 'article' : doclet.kind
 	});
+
 	if (resolveLinks){
 		html = helper.resolveLinks(html);
 	}
