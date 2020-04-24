@@ -9,8 +9,10 @@ var glob = require('glob');
 var extend = require('extend');
 
 exports.process = function(){
-	if (template.options.sort)
+	if (template.options.sort) {
+		console.error("Doing sort for", template.options.sort);
 		template.raw.data.sort(template.options.sort);
+	}
 
 	template.raw.data().each(function(doclet){
 		doclet.ancestors = helper.getAncestorLinks(template.raw.data, doclet);

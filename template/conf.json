@@ -21,6 +21,7 @@
     "methodHeadingReturns": true,
     "showTableOfContents": true,
     "showAccessFilter": false,
+    "sort": "linenum, longname, version, since",
     "search": true,
     "analytics": {"ua": null, "domain": null},
     "favicon": null,

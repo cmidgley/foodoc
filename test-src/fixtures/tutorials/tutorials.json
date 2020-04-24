@@ -1,13 +1,4 @@
 {
-  "cars": {
-    "title": "Cars",
-    "children": {
-      "drive-car": {
-        "title": "Drive Car",
-        "summary": "How to drive a car!"
-      }
-    }
-  },
   "teeth": {
     "title": "Teeth",
     "children": {
@@ -29,6 +20,15 @@
       "github": {
         "title": "GitHub",
         "url": "https://github.com/cmidgley/foodoc"
+      }
+    }
+  },
+  "cars": {
+    "title": "Cars",
+    "children": {
+      "drive-car": {
+        "title": "Drive Car",
+        "summary": "How to drive a car!"
       }
     }
   }
