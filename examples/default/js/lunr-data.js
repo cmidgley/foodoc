@@ -54,7 +54,8 @@ window.lunrData = {
           "global"
         ],
         "undefined": [
-          "github",
+          "car",
+          "drive",
           "tutori"
         ],
         "list_class.html": [
@@ -1723,6 +1724,9 @@ window.lunrData = {
       "root": {
         "1": {
           "docs": {
+            "undefined": {
+              "tf": 900
+            },
             "base_chains.html#close": {
               "ref": "base_chains.html#close",
               "tf": 1.0869565217391304
@@ -1739,6 +1743,9 @@ window.lunrData = {
         },
         "2": {
           "docs": {
+            "undefined": {
+              "tf": 900
+            },
             "base_chains.html#close": {
               "ref": "base_chains.html#close",
               "tf": 1.0869565217391304
@@ -5917,642 +5924,6 @@ window.lunrData = {
             }
           }
         },
-        "c": {
-          "docs": {},
-          "a": {
-            "docs": {},
-            "r": {
-              "docs": {
-                "undefined": {
-                  "tf": 985
-                }
-              }
-            },
-            "l": {
-              "docs": {},
-              "l": {
-                "docs": {
-                  "base_chains.html#close": {
-                    "ref": "base_chains.html#close",
-                    "tf": 1.0869565217391304
-                  },
-                  "base_chains.html#end": {
-                    "ref": "base_chains.html#end",
-                    "tf": 1.6129032258064515
-                  },
-                  "base_chains.html#destroy": {
-                    "ref": "base_chains.html#destroy",
-                    "tf": 2.564102564102564
-                  },
-                  "utils_logger.Logger.html#trace": {
-                    "ref": "utils_logger.Logger.html#trace",
-                    "tf": 16.666666666666664
-                  },
-                  "utils_logger.Logger.html#debug": {
-                    "ref": "utils_logger.Logger.html#debug",
-                    "tf": 16.666666666666664
-                  },
-                  "utils_logger.Logger.html#info": {
-                    "ref": "utils_logger.Logger.html#info",
-                    "tf": 16.666666666666664
-                  },
-                  "utils_logger.Logger.html#warn": {
-                    "ref": "utils_logger.Logger.html#warn",
-                    "tf": 16.666666666666664
-                  },
-                  "utils_logger.Logger.html#error": {
-                    "ref": "utils_logger.Logger.html#error",
-                    "tf": 16.666666666666664
-                  },
-                  "base.html#close": {
-                    "ref": "base.html#close",
-                    "tf": 1.0869565217391304
-                  },
-                  "base.html#end": {
-                    "ref": "base.html#end",
-                    "tf": 6.8181818181818175
-                  },
-                  "base.html#destroy": {
-                    "ref": "base.html#destroy",
-                    "tf": 7.894736842105263
-                  }
-                }
-              }
-            },
-            "p": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "b": {
-                  "docs": {},
-                  "l": {
-                    "docs": {
-                      "mixins_signalable.html": {
-                        "ref": "mixins_signalable.html",
-                        "tf": 7.142857142857142
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "l": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "s": {
-                "docs": {},
-                "s": {
-                  "docs": {
-                    "list_class.html": {
-                      "ref": "list_class.html",
-                      "tf": 635
-                    },
-                    "base_chains.html": {
-                      "ref": "base_chains.html",
-                      "tf": 110
-                    },
-                    "module-ink_collector-CollectorBase.html": {
-                      "ref": "module-ink_collector-CollectorBase.html",
-                      "tf": 110
-                    },
-                    "utils_logger.Logger.html": {
-                      "ref": "utils_logger.Logger.html",
-                      "tf": 120.71428571428571
-                    },
-                    "base.html": {
-                      "ref": "base.html",
-                      "tf": 114.16666666666667
-                    },
-                    "base.html#addOptions": {
-                      "ref": "base.html#addOptions",
-                      "tf": 5.555555555555555
-                    },
-                    "base.html#addDefaultOptions": {
-                      "ref": "base.html#addDefaultOptions",
-                      "tf": 5
-                    },
-                    "base.html#end": {
-                      "ref": "base.html#end",
-                      "tf": 2.272727272727273
-                    },
-                    "base.html#destroy": {
-                      "ref": "base.html#destroy",
-                      "tf": 2.631578947368421
-                    },
-                    "module-mixins_signalable-Signal.html": {
-                      "ref": "module-mixins_signalable-Signal.html",
-                      "tf": 110
-                    },
-                    "documents_model.html": {
-                      "ref": "documents_model.html",
-                      "tf": 110
-                    },
-                    "module-ink_collector-OCollector.html": {
-                      "ref": "module-ink_collector-OCollector.html",
-                      "tf": 110
-                    },
-                    "module-ink_collector-ACollector.html": {
-                      "ref": "module-ink_collector-ACollector.html",
-                      "tf": 110
-                    },
-                    "module-documents_probe.queryOperators.html": {
-                      "ref": "module-documents_probe.queryOperators.html",
-                      "tf": 120
-                    },
-                    "module-documents_probe.updateOperators.html": {
-                      "ref": "module-documents_probe.updateOperators.html",
-                      "tf": 120
-                    },
-                    "module-base.html": {
-                      "ref": "module-base.html",
-                      "tf": 8.333333333333332
-                    }
-                  }
-                }
-              }
-            },
-            "o": {
-              "docs": {},
-              "s": {
-                "docs": {},
-                "e": {
-                  "docs": {
-                    "base_chains.html#close": {
-                      "ref": "base_chains.html#close",
-                      "tf": 752.1739130434783
-                    },
-                    "base_chains.html#end": {
-                      "ref": "base_chains.html#end",
-                      "tf": 1.6129032258064515
-                    },
-                    "base.html#close": {
-                      "ref": "base.html#close",
-                      "tf": 752.1739130434783
-                    },
-                    "base.html#end": {
-                      "ref": "base.html#end",
-                      "tf": 2.272727272727273
-                    }
-                  }
-                }
-              }
-            },
-            "e": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "n": {
-                  "docs": {
-                    "base_chains.html#destroy": {
-                      "ref": "base_chains.html#destroy",
-                      "tf": 2.564102564102564
-                    },
-                    "base.html": {
-                      "ref": "base.html",
-                      "tf": 1.3888888888888888
-                    },
-                    "module-mixins_signalable-Signal.html#destroy": {
-                      "ref": "module-mixins_signalable-Signal.html#destroy",
-                      "tf": 25
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "h": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "i": {
-                "docs": {},
-                "n": {
-                  "docs": {
-                    "base_chains.html": {
-                      "ref": "base_chains.html",
-                      "tf": 5.555555555555555
-                    },
-                    "base_chains.html#close": {
-                      "ref": "base_chains.html#close",
-                      "tf": 1.0869565217391304
-                    },
-                    "base_chains.html#end": {
-                      "ref": "base_chains.html#end",
-                      "tf": 1.6129032258064515
-                    },
-                    "base_chains.html#destroy": {
-                      "ref": "base_chains.html#destroy",
-                      "tf": 1.282051282051282
-                    },
-                    "base_chains.html#open": {
-                      "ref": "base_chains.html#open",
-                      "tf": 2.083333333333333
-                    },
-                    "base.html": {
-                      "ref": "base.html",
-                      "tf": 1.3888888888888888
-                    },
-                    "base.html#close": {
-                      "ref": "base.html#close",
-                      "tf": 1.0869565217391304
-                    },
-                    "base.html#open": {
-                      "ref": "base.html#open",
-                      "tf": 2.083333333333333
-                    },
-                    "module-base_chains.html": {
-                      "ref": "module-base_chains.html",
-                      "tf": 5.555555555555555
-                    }
-                  }
-                }
-              },
-              "n": {
-                "docs": {},
-                "g": {
-                  "docs": {
-                    "module-documents_binder.html": {
-                      "ref": "module-documents_binder.html",
-                      "tf": 5.555555555555555
-                    }
-                  }
-                }
-              }
-            },
-            "e": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "k": {
-                  "docs": {
-                    "module-mixins_signalable-Signal.html#has": {
-                      "ref": "module-mixins_signalable-Signal.html#has",
-                      "tf": 12.5
-                    },
-                    "module-documents_probe.queryOperators.html#.$eq": {
-                      "ref": "module-documents_probe.queryOperators.html#.$eq",
-                      "tf": 2
-                    },
-                    "module-documents_probe.queryOperators.html#.$all": {
-                      "ref": "module-documents_probe.queryOperators.html#.$all",
-                      "tf": 5
-                    },
-                    "module-documents_probe.queryOperators.html#.$mod": {
-                      "ref": "module-documents_probe.queryOperators.html#.$mod",
-                      "tf": 5.555555555555555
-                    },
-                    "module-documents_probe.queryOperators.html#.$elemMatch": {
-                      "ref": "module-documents_probe.queryOperators.html#.$elemMatch",
-                      "tf": 2.7777777777777777
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "o": {
-            "docs": {},
-            "m": {
-              "docs": {},
-              "p": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "s": {
-                    "docs": {
-                      "module-base.html": {
-                        "ref": "module-base.html",
-                        "tf": 8.333333333333332
-                      }
-                    },
-                    "i": {
-                      "docs": {},
-                      "t": {
-                        "docs": {
-                          "base_chains.html": {
-                            "ref": "base_chains.html",
-                            "tf": 5.555555555555555
-                          },
-                          "base.html": {
-                            "ref": "base.html",
-                            "tf": 1.3888888888888888
-                          },
-                          "module-base_chains.html": {
-                            "ref": "module-base_chains.html",
-                            "tf": 5.555555555555555
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                "e": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "base.html": {
-                        "ref": "base.html",
-                        "tf": 1.3888888888888888
-                      }
-                    }
-                  }
-                },
-                "a": {
-                  "docs": {},
-                  "r": {
-                    "docs": {
-                      "module-documents_probe.queryOperators.html#.$eq": {
-                        "ref": "module-documents_probe.queryOperators.html#.$eq",
-                        "tf": 2
-                      },
-                      "module-documents_probe.queryOperators.html#.$ne": {
-                        "ref": "module-documents_probe.queryOperators.html#.$ne",
-                        "tf": 2.7777777777777777
-                      },
-                      "module-documents_probe.queryOperators.html#.$size": {
-                        "ref": "module-documents_probe.queryOperators.html#.$size",
-                        "tf": 3.8461538461538463
-                      }
-                    },
-                    "i": {
-                      "docs": {},
-                      "s": {
-                        "docs": {},
-                        "o": {
-                          "docs": {},
-                          "n": {
-                            "docs": {
-                              "module-documents_probe.queryOperators.html#.$eq": {
-                                "ref": "module-documents_probe.queryOperators.html#.$eq",
-                                "tf": 2
-                              },
-                              "module-documents_probe.queryOperators.html#.$ne": {
-                                "ref": "module-documents_probe.queryOperators.html#.$ne",
-                                "tf": 2.7777777777777777
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "n": {
-              "docs": {},
-              "s": {
-                "docs": {},
-                "t": {
-                  "docs": {},
-                  "r": {
-                    "docs": {},
-                    "u": {
-                      "docs": {},
-                      "c": {
-                        "docs": {},
-                        "t": {
-                          "docs": {},
-                          "o": {
-                            "docs": {},
-                            "r": {
-                              "docs": {
-                                "base_chains.html#destroy": {
-                                  "ref": "base_chains.html#destroy",
-                                  "tf": 1.282051282051282
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "t": {
-                "docs": {},
-                "a": {
-                  "docs": {},
-                  "i": {
-                    "docs": {},
-                    "n": {
-                      "docs": {
-                        "documents_model.html": {
-                          "ref": "documents_model.html",
-                          "tf": 3.125
-                        },
-                        "module-documents_model.html": {
-                          "ref": "module-documents_model.html",
-                          "tf": 3.125
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "d": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "module-documents_probe.queryOperators.html#.$elemMatch": {
-                        "ref": "module-documents_probe.queryOperators.html#.$elemMatch",
-                        "tf": 2.7777777777777777
-                      },
-                      "module-documents_probe.queryOperators.html#.$and": {
-                        "ref": "module-documents_probe.queryOperators.html#.$and",
-                        "tf": 6.25
-                      },
-                      "module-documents_probe.queryOperators.html#.$or": {
-                        "ref": "module-documents_probe.queryOperators.html#.$or",
-                        "tf": 6.25
-                      },
-                      "module-documents_probe.queryOperators.html#.$nor": {
-                        "ref": "module-documents_probe.queryOperators.html#.$nor",
-                        "tf": 5.555555555555555
-                      },
-                      "module-documents_probe.queryOperators.html#.$not": {
-                        "ref": "module-documents_probe.queryOperators.html#.$not",
-                        "tf": 8.333333333333332
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "u": {
-              "docs": {},
-              "n": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "module-documents_probe.queryOperators.html#.$size": {
-                      "ref": "module-documents_probe.queryOperators.html#.$size",
-                      "tf": 3.8461538461538463
-                    }
-                  },
-                  "e": {
-                    "docs": {},
-                    "r": {
-                      "docs": {},
-                      "p": {
-                        "docs": {},
-                        "a": {
-                          "docs": {},
-                          "r": {
-                            "docs": {},
-                            "t": {
-                              "docs": {
-                                "base_chains.html#destroy": {
-                                  "ref": "base_chains.html#destroy",
-                                  "tf": 1.282051282051282
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "d": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "base_chains.html#open": {
-                    "ref": "base_chains.html#open",
-                    "tf": 2.083333333333333
-                  },
-                  "base.html#open": {
-                    "ref": "base.html#open",
-                    "tf": 2.083333333333333
-                  },
-                  "base.html#end": {
-                    "ref": "base.html#end",
-                    "tf": 2.272727272727273
-                  },
-                  "module-mixins_signalable.html": {
-                    "ref": "module-mixins_signalable.html",
-                    "tf": 3.3333333333333335
-                  }
-                }
-              }
-            },
-            "l": {
-              "docs": {},
-              "l": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "c": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "module-ink_collector-OCollector.html#length": {
-                          "ref": "module-ink_collector-OCollector.html#length",
-                          "tf": 25
-                        },
-                        "module-ink_collector-ACollector.html#length": {
-                          "ref": "module-ink_collector-ACollector.html#length",
-                          "tf": 25
-                        }
-                      },
-                      "o": {
-                        "docs": {},
-                        "r": {
-                          "docs": {
-                            "module-ink_collector-CollectorBase.html": {
-                              "ref": "module-ink_collector-CollectorBase.html",
-                              "tf": 50
-                            },
-                            "module-ink_collector-OCollector.html": {
-                              "ref": "module-ink_collector-OCollector.html",
-                              "tf": 16.666666666666664
-                            },
-                            "module-ink_collector-ACollector.html": {
-                              "ref": "module-ink_collector-ACollector.html",
-                              "tf": 16.666666666666664
-                            },
-                            "module-ink_collector.html": {
-                              "ref": "module-ink_collector.html",
-                              "tf": 16.666666666666664
-                            }
-                          },
-                          "b": {
-                            "docs": {},
-                            "a": {
-                              "docs": {},
-                              "s": {
-                                "docs": {
-                                  "module-ink_collector-CollectorBase.html": {
-                                    "ref": "module-ink_collector-CollectorBase.html",
-                                    "tf": 500
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "r": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "base.html": {
-                    "ref": "base.html",
-                    "tf": 1.3888888888888888
-                  }
-                }
-              }
-            }
-          },
-          "y": {
-            "docs": {},
-            "c": {
-              "docs": {},
-              "l": {
-                "docs": {
-                  "utils_logger.Logger.html#silent": {
-                    "ref": "utils_logger.Logger.html#silent",
-                    "tf": 6.25
-                  }
-                }
-              }
-            }
-          },
-          "r": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "module-mixins_signalable-Signal.html": {
-                      "ref": "module-mixins_signalable-Signal.html",
-                      "tf": 6.25
-                    },
-                    "documents_model.html#.set": {
-                      "ref": "documents_model.html#.set",
-                      "tf": 2.272727272727273
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "s": {
           "docs": {},
           "y": {
@@ -7313,6 +6684,642 @@ window.lunrData = {
                           }
                         }
                       }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "c": {
+          "docs": {},
+          "a": {
+            "docs": {},
+            "r": {
+              "docs": {
+                "undefined": {
+                  "tf": 985
+                }
+              }
+            },
+            "l": {
+              "docs": {},
+              "l": {
+                "docs": {
+                  "base_chains.html#close": {
+                    "ref": "base_chains.html#close",
+                    "tf": 1.0869565217391304
+                  },
+                  "base_chains.html#end": {
+                    "ref": "base_chains.html#end",
+                    "tf": 1.6129032258064515
+                  },
+                  "base_chains.html#destroy": {
+                    "ref": "base_chains.html#destroy",
+                    "tf": 2.564102564102564
+                  },
+                  "utils_logger.Logger.html#trace": {
+                    "ref": "utils_logger.Logger.html#trace",
+                    "tf": 16.666666666666664
+                  },
+                  "utils_logger.Logger.html#debug": {
+                    "ref": "utils_logger.Logger.html#debug",
+                    "tf": 16.666666666666664
+                  },
+                  "utils_logger.Logger.html#info": {
+                    "ref": "utils_logger.Logger.html#info",
+                    "tf": 16.666666666666664
+                  },
+                  "utils_logger.Logger.html#warn": {
+                    "ref": "utils_logger.Logger.html#warn",
+                    "tf": 16.666666666666664
+                  },
+                  "utils_logger.Logger.html#error": {
+                    "ref": "utils_logger.Logger.html#error",
+                    "tf": 16.666666666666664
+                  },
+                  "base.html#close": {
+                    "ref": "base.html#close",
+                    "tf": 1.0869565217391304
+                  },
+                  "base.html#end": {
+                    "ref": "base.html#end",
+                    "tf": 6.8181818181818175
+                  },
+                  "base.html#destroy": {
+                    "ref": "base.html#destroy",
+                    "tf": 7.894736842105263
+                  }
+                }
+              }
+            },
+            "p": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "b": {
+                  "docs": {},
+                  "l": {
+                    "docs": {
+                      "mixins_signalable.html": {
+                        "ref": "mixins_signalable.html",
+                        "tf": 7.142857142857142
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "l": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "s": {
+                  "docs": {
+                    "list_class.html": {
+                      "ref": "list_class.html",
+                      "tf": 635
+                    },
+                    "base_chains.html": {
+                      "ref": "base_chains.html",
+                      "tf": 110
+                    },
+                    "module-ink_collector-CollectorBase.html": {
+                      "ref": "module-ink_collector-CollectorBase.html",
+                      "tf": 110
+                    },
+                    "utils_logger.Logger.html": {
+                      "ref": "utils_logger.Logger.html",
+                      "tf": 120.71428571428571
+                    },
+                    "base.html": {
+                      "ref": "base.html",
+                      "tf": 114.16666666666667
+                    },
+                    "base.html#addOptions": {
+                      "ref": "base.html#addOptions",
+                      "tf": 5.555555555555555
+                    },
+                    "base.html#addDefaultOptions": {
+                      "ref": "base.html#addDefaultOptions",
+                      "tf": 5
+                    },
+                    "base.html#end": {
+                      "ref": "base.html#end",
+                      "tf": 2.272727272727273
+                    },
+                    "base.html#destroy": {
+                      "ref": "base.html#destroy",
+                      "tf": 2.631578947368421
+                    },
+                    "module-mixins_signalable-Signal.html": {
+                      "ref": "module-mixins_signalable-Signal.html",
+                      "tf": 110
+                    },
+                    "documents_model.html": {
+                      "ref": "documents_model.html",
+                      "tf": 110
+                    },
+                    "module-ink_collector-OCollector.html": {
+                      "ref": "module-ink_collector-OCollector.html",
+                      "tf": 110
+                    },
+                    "module-ink_collector-ACollector.html": {
+                      "ref": "module-ink_collector-ACollector.html",
+                      "tf": 110
+                    },
+                    "module-documents_probe.queryOperators.html": {
+                      "ref": "module-documents_probe.queryOperators.html",
+                      "tf": 120
+                    },
+                    "module-documents_probe.updateOperators.html": {
+                      "ref": "module-documents_probe.updateOperators.html",
+                      "tf": 120
+                    },
+                    "module-base.html": {
+                      "ref": "module-base.html",
+                      "tf": 8.333333333333332
+                    }
+                  }
+                }
+              }
+            },
+            "o": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "e": {
+                  "docs": {
+                    "base_chains.html#close": {
+                      "ref": "base_chains.html#close",
+                      "tf": 752.1739130434783
+                    },
+                    "base_chains.html#end": {
+                      "ref": "base_chains.html#end",
+                      "tf": 1.6129032258064515
+                    },
+                    "base.html#close": {
+                      "ref": "base.html#close",
+                      "tf": 752.1739130434783
+                    },
+                    "base.html#end": {
+                      "ref": "base.html#end",
+                      "tf": 2.272727272727273
+                    }
+                  }
+                }
+              }
+            },
+            "e": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "n": {
+                  "docs": {
+                    "base_chains.html#destroy": {
+                      "ref": "base_chains.html#destroy",
+                      "tf": 2.564102564102564
+                    },
+                    "base.html": {
+                      "ref": "base.html",
+                      "tf": 1.3888888888888888
+                    },
+                    "module-mixins_signalable-Signal.html#destroy": {
+                      "ref": "module-mixins_signalable-Signal.html#destroy",
+                      "tf": 25
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "h": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "n": {
+                  "docs": {
+                    "base_chains.html": {
+                      "ref": "base_chains.html",
+                      "tf": 5.555555555555555
+                    },
+                    "base_chains.html#close": {
+                      "ref": "base_chains.html#close",
+                      "tf": 1.0869565217391304
+                    },
+                    "base_chains.html#end": {
+                      "ref": "base_chains.html#end",
+                      "tf": 1.6129032258064515
+                    },
+                    "base_chains.html#destroy": {
+                      "ref": "base_chains.html#destroy",
+                      "tf": 1.282051282051282
+                    },
+                    "base_chains.html#open": {
+                      "ref": "base_chains.html#open",
+                      "tf": 2.083333333333333
+                    },
+                    "base.html": {
+                      "ref": "base.html",
+                      "tf": 1.3888888888888888
+                    },
+                    "base.html#close": {
+                      "ref": "base.html#close",
+                      "tf": 1.0869565217391304
+                    },
+                    "base.html#open": {
+                      "ref": "base.html#open",
+                      "tf": 2.083333333333333
+                    },
+                    "module-base_chains.html": {
+                      "ref": "module-base_chains.html",
+                      "tf": 5.555555555555555
+                    }
+                  }
+                }
+              },
+              "n": {
+                "docs": {},
+                "g": {
+                  "docs": {
+                    "module-documents_binder.html": {
+                      "ref": "module-documents_binder.html",
+                      "tf": 5.555555555555555
+                    }
+                  }
+                }
+              }
+            },
+            "e": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "k": {
+                  "docs": {
+                    "module-mixins_signalable-Signal.html#has": {
+                      "ref": "module-mixins_signalable-Signal.html#has",
+                      "tf": 12.5
+                    },
+                    "module-documents_probe.queryOperators.html#.$eq": {
+                      "ref": "module-documents_probe.queryOperators.html#.$eq",
+                      "tf": 2
+                    },
+                    "module-documents_probe.queryOperators.html#.$all": {
+                      "ref": "module-documents_probe.queryOperators.html#.$all",
+                      "tf": 5
+                    },
+                    "module-documents_probe.queryOperators.html#.$mod": {
+                      "ref": "module-documents_probe.queryOperators.html#.$mod",
+                      "tf": 5.555555555555555
+                    },
+                    "module-documents_probe.queryOperators.html#.$elemMatch": {
+                      "ref": "module-documents_probe.queryOperators.html#.$elemMatch",
+                      "tf": 2.7777777777777777
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "s": {
+                    "docs": {
+                      "module-base.html": {
+                        "ref": "module-base.html",
+                        "tf": 8.333333333333332
+                      }
+                    },
+                    "i": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "base_chains.html": {
+                            "ref": "base_chains.html",
+                            "tf": 5.555555555555555
+                          },
+                          "base.html": {
+                            "ref": "base.html",
+                            "tf": 1.3888888888888888
+                          },
+                          "module-base_chains.html": {
+                            "ref": "module-base_chains.html",
+                            "tf": 5.555555555555555
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "e": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "base.html": {
+                        "ref": "base.html",
+                        "tf": 1.3888888888888888
+                      }
+                    }
+                  }
+                },
+                "a": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "module-documents_probe.queryOperators.html#.$eq": {
+                        "ref": "module-documents_probe.queryOperators.html#.$eq",
+                        "tf": 2
+                      },
+                      "module-documents_probe.queryOperators.html#.$ne": {
+                        "ref": "module-documents_probe.queryOperators.html#.$ne",
+                        "tf": 2.7777777777777777
+                      },
+                      "module-documents_probe.queryOperators.html#.$size": {
+                        "ref": "module-documents_probe.queryOperators.html#.$size",
+                        "tf": 3.8461538461538463
+                      }
+                    },
+                    "i": {
+                      "docs": {},
+                      "s": {
+                        "docs": {},
+                        "o": {
+                          "docs": {},
+                          "n": {
+                            "docs": {
+                              "module-documents_probe.queryOperators.html#.$eq": {
+                                "ref": "module-documents_probe.queryOperators.html#.$eq",
+                                "tf": 2
+                              },
+                              "module-documents_probe.queryOperators.html#.$ne": {
+                                "ref": "module-documents_probe.queryOperators.html#.$ne",
+                                "tf": 2.7777777777777777
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "n": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "u": {
+                      "docs": {},
+                      "c": {
+                        "docs": {},
+                        "t": {
+                          "docs": {},
+                          "o": {
+                            "docs": {},
+                            "r": {
+                              "docs": {
+                                "base_chains.html#destroy": {
+                                  "ref": "base_chains.html#destroy",
+                                  "tf": 1.282051282051282
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "t": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "n": {
+                      "docs": {
+                        "documents_model.html": {
+                          "ref": "documents_model.html",
+                          "tf": 3.125
+                        },
+                        "module-documents_model.html": {
+                          "ref": "module-documents_model.html",
+                          "tf": 3.125
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "d": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "module-documents_probe.queryOperators.html#.$elemMatch": {
+                        "ref": "module-documents_probe.queryOperators.html#.$elemMatch",
+                        "tf": 2.7777777777777777
+                      },
+                      "module-documents_probe.queryOperators.html#.$and": {
+                        "ref": "module-documents_probe.queryOperators.html#.$and",
+                        "tf": 6.25
+                      },
+                      "module-documents_probe.queryOperators.html#.$or": {
+                        "ref": "module-documents_probe.queryOperators.html#.$or",
+                        "tf": 6.25
+                      },
+                      "module-documents_probe.queryOperators.html#.$nor": {
+                        "ref": "module-documents_probe.queryOperators.html#.$nor",
+                        "tf": 5.555555555555555
+                      },
+                      "module-documents_probe.queryOperators.html#.$not": {
+                        "ref": "module-documents_probe.queryOperators.html#.$not",
+                        "tf": 8.333333333333332
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "u": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "module-documents_probe.queryOperators.html#.$size": {
+                      "ref": "module-documents_probe.queryOperators.html#.$size",
+                      "tf": 3.8461538461538463
+                    }
+                  },
+                  "e": {
+                    "docs": {},
+                    "r": {
+                      "docs": {},
+                      "p": {
+                        "docs": {},
+                        "a": {
+                          "docs": {},
+                          "r": {
+                            "docs": {},
+                            "t": {
+                              "docs": {
+                                "base_chains.html#destroy": {
+                                  "ref": "base_chains.html#destroy",
+                                  "tf": 1.282051282051282
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "d": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "base_chains.html#open": {
+                    "ref": "base_chains.html#open",
+                    "tf": 2.083333333333333
+                  },
+                  "base.html#open": {
+                    "ref": "base.html#open",
+                    "tf": 2.083333333333333
+                  },
+                  "base.html#end": {
+                    "ref": "base.html#end",
+                    "tf": 2.272727272727273
+                  },
+                  "module-mixins_signalable.html": {
+                    "ref": "module-mixins_signalable.html",
+                    "tf": 3.3333333333333335
+                  }
+                }
+              }
+            },
+            "l": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "c": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "module-ink_collector-OCollector.html#length": {
+                          "ref": "module-ink_collector-OCollector.html#length",
+                          "tf": 25
+                        },
+                        "module-ink_collector-ACollector.html#length": {
+                          "ref": "module-ink_collector-ACollector.html#length",
+                          "tf": 25
+                        }
+                      },
+                      "o": {
+                        "docs": {},
+                        "r": {
+                          "docs": {
+                            "module-ink_collector-CollectorBase.html": {
+                              "ref": "module-ink_collector-CollectorBase.html",
+                              "tf": 50
+                            },
+                            "module-ink_collector-OCollector.html": {
+                              "ref": "module-ink_collector-OCollector.html",
+                              "tf": 16.666666666666664
+                            },
+                            "module-ink_collector-ACollector.html": {
+                              "ref": "module-ink_collector-ACollector.html",
+                              "tf": 16.666666666666664
+                            },
+                            "module-ink_collector.html": {
+                              "ref": "module-ink_collector.html",
+                              "tf": 16.666666666666664
+                            }
+                          },
+                          "b": {
+                            "docs": {},
+                            "a": {
+                              "docs": {},
+                              "s": {
+                                "docs": {
+                                  "module-ink_collector-CollectorBase.html": {
+                                    "ref": "module-ink_collector-CollectorBase.html",
+                                    "tf": 500
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "r": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "base.html": {
+                    "ref": "base.html",
+                    "tf": 1.3888888888888888
+                  }
+                }
+              }
+            }
+          },
+          "y": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "l": {
+                "docs": {
+                  "utils_logger.Logger.html#silent": {
+                    "ref": "utils_logger.Logger.html#silent",
+                    "tf": 6.25
+                  }
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "module-mixins_signalable-Signal.html": {
+                      "ref": "module-mixins_signalable-Signal.html",
+                      "tf": 6.25
+                    },
+                    "documents_model.html#.set": {
+                      "ref": "documents_model.html#.set",
+                      "tf": 2.272727272727273
                     }
                   }
                 }
@@ -14212,7 +14219,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 1457
+      "length": 1459
     },
     "corpusTokens": [
       "1",
@@ -14751,11 +14758,11 @@ window.lunrData = {
     },
     "undefined": {
       "kind": "tutorial",
-      "title": "GitHub",
-      "longname": "github",
-      "name": "github",
-      "tags": "github",
-      "summary": "",
+      "title": "Drive Car",
+      "longname": "drive-car",
+      "name": "drive-car",
+      "tags": "drive-car",
+      "summary": "How to drive a car!",
       "description": "",
       "body": ""
     },

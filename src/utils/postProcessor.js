@@ -10,7 +10,6 @@ var extend = require('extend');
 
 exports.process = function(){
 	if (template.options.sort) {
-		console.error("Doing sort for", template.options.sort);
 		template.raw.data.sort(template.options.sort);
 	}
 

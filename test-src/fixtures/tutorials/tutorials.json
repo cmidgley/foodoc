@@ -1,5 +1,5 @@
 {
-  "teeth": {
+  "1-teeth": {
     "title": "Teeth",
     "children": {
       "brush-teeth": {
@@ -23,7 +23,7 @@
       }
     }
   },
-  "cars": {
+  "2-cars": {
     "title": "Cars",
     "children": {
       "drive-car": {
