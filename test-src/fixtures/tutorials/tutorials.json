@@ -1,17 +1,35 @@
 {
-  "brush-teeth": {
-    "title": "Brush Teeth",
-    "summary": "How to brush your teeth!",
+  "cars": {
+    "title": "Cars",
     "children": {
-      "fence-test": {
-        "title": "Fence Test",
-        "summary": "Testing syntax highlighting.",
-        "showTableOfContents": false
+      "drive-car": {
+        "title": "Drive Car",
+        "summary": "How to drive a car!"
       }
     }
   },
-  "drive-car": {
-    "title": "Drive Car",
-    "summary": "How to drive a car!"
+  "teeth": {
+    "title": "Teeth",
+    "children": {
+      "brush-teeth": {
+        "title": "Brush Teeth",
+        "summary": "How to brush your teeth!",
+        "children": {
+          "fence-test": {
+            "title": "Fence Test",
+            "summary": "Testing syntax highlighting.",
+            "showTableOfContents": false
+          }
+        }
+      },
+      "floss-teeth": {
+        "title": "Floss Teeth",
+        "summary": "How to floss your teeth!"
+      },
+      "github": {
+        "title": "GitHub",
+        "url": "https://github.com/cmidgley/foodoc"
+      }
+    }
   }
 }

@@ -336,7 +336,7 @@ Handlebars.registerPartial("site/navbar", this["tmpl"]["site/navbar"] = Handleba
     + alias3(alias2(((stack1 = ((stack1 = (depth0 != null ? depth0.navbar : depth0)) != null ? stack1.index : stack1)) != null ? stack1.title : stack1), depth0))
     + "\r\n			</a>\r\n			<!-- displayed on small devices -->\r\n			<button class=\"navbar-toggle\" type=\"button\" data-toggle=\"collapse\" data-target=\"#topNavigation\">\r\n				<span class=\"icon-bar\"></span>\r\n				<span class=\"icon-bar\"></span>\r\n				<span class=\"icon-bar\"></span>\r\n			</button>\r\n		</div>\r\n		<div class=\"navbar-collapse collapse\" id=\"topNavigation\">\r\n			<ul class=\"nav navbar-nav\">\r\n"
     + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.navbar : depth0)) != null ? stack1.topLevel : stack1),{"name":"each","hash":{},"fn":container.program(7, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "				<li class=\"dropdown\">\r\n					<a href=\"https://github.com/cmidgley/cnc-pendant\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">GitHub<b class=\"caret\"></b></a>\r\n					<ul class=\"dropdown-menu\">\r\n						<li><a href=\"https://github.com/cmidgley/cnc-pendant\">Source code</a></li>\r\n						<li><a href=\"https://github.com/cmidgley/cnc-pendant/issues\">Issues</a></li>\r\n						<li><a href=\"https://github.com/cmidgley/cnc-pendant/pulls\">Pull requests</a></li>\r\n					</ul>\r\n				</li>\r\n			</ul>\r\n"
+    + "			</ul>\r\n"
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.search : stack1),{"name":"if","hash":{},"fn":container.program(16, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "		</div>\r\n	</div>\r\n</header>\r\n<!-- end:navbar.hbs -->";
 },"usePartial":true,"useData":true,"useDepths":true}));
@@ -1173,12 +1173,16 @@ this["tmpl"]["tutorial"] = Handlebars.template({"1":function(container,depth0,he
     + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.children : stack1),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "		</section>\r\n";
 },"3":function(container,depth0,helpers,partials,data) {
-    var stack1;
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "				<div class=\"related-tutorials\">\r\n					<h2>Related Articles</h2>\r\n					<ul>\r\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.children : stack1),{"name":"each","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+  return "				<div class=\"related-tutorials\">\r\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.ancestors : stack1),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "					<ul>\r\n"
+    + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.children : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "					</ul>\r\n				</div>\r\n";
 },"4":function(container,depth0,helpers,partials,data) {
+    return "					<h2>Additional articles</h2>\r\n";
+},"6":function(container,depth0,helpers,partials,data) {
     return "							<li>"
     + container.escapeExpression((helpers.linkto || (depth0 && depth0.linkto) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.longname : depth0),{"name":"linkto","hash":{},"data":data}))
     + "</li>\r\n";

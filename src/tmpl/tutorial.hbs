@@ -6,7 +6,9 @@
 			<article>{{{doclet.contents}}}</article>
 			{{#if doclet.children}}
 				<div class="related-tutorials">
-					<h2>Related Articles</h2>
+				{{#if doclet.ancestors}}
+					<h2>Additional articles</h2>
+				{{/if}}
 					<ul>
 						{{#each doclet.children}}
 							<li>{{linkto longname}}</li>

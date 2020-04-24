@@ -9,7 +9,8 @@ var glob = require('glob');
 var extend = require('extend');
 
 exports.process = function(){
-	template.raw.data.sort(template.options.sort);
+	if (template.options.sort)
+		template.raw.data.sort(template.options.sort);
 
 	template.raw.data().each(function(doclet){
 		doclet.ancestors = helper.getAncestorLinks(template.raw.data, doclet);
@@ -278,6 +279,9 @@ var processTutorial = function(tutorial, tutorials, tutorialToConfig){
 			if (config.description){
 				child.description = config.description;
 			}
+			if (config.url) {
+				child.url = config.url;
+			}
 			if (typeof config.showTableOfContents === 'boolean'){
 				child.showTableOfContents = config.showTableOfContents;
 			}
@@ -328,10 +332,40 @@ exports.buildNavbar = function(navbar){
 		summary: template.options.systemSummary,
 		members: []
 	};
-	navbar.topLevel = template.find({kind:['list','global']}, "longname, name").filter(function(doclet){
-		return doclet.members.length > 0 && (doclet.kind == 'list' || template.hasNavMember(doclet.kind));
+	// set up the navbar
+	navbar.topLevel = [];
+
+	// locate the "tutorials"
+	let tutorials = template.find({kind:['list','global']}, "longname, name").filter(function(doclet){
+		return doclet.members.length > 0 && (doclet.kind == 'list' || template.hasNavMember(doclet.kind)) && doclet.for == 'tutorial';
+	});
+
+	if (tutorials && tutorials.length > 0) {
+		// now process all members of the tutorial by flattening tutorials
+		let members = [];
+		tutorials.forEach(tutorial => tutorial.members.forEach(member => members.push(member)));
+
+		navbar.topLevel = members.map(function(member){
+			let result = {
+				title: member.title,
+				summary: member.summary,
+				link: helper.longnameToUrl[member.longname],
+				members: member.children.map(function(child){
+					// if foodoc json says to use url, use that instead of the original document 
+					if (child.url)
+						return template.linkto(child.url);
+					return template.linkto(child.longname);
+				})
+			};
+			return result;
+		});
+	}
+
+	// process all except "tutorials" (as we handle those differently)
+	navbar.topLevel.push(...template.find({kind:['list','global']}, "longname, name").filter(function(doclet){
+		return doclet.members.length > 0 && (doclet.kind == 'list' || template.hasNavMember(doclet.kind)) && doclet.for != 'tutorial';
 	}).map(function(doclet){
-		return {
+		let result = {
 			title: doclet.name,
 			summary: doclet.summary,
 			link: helper.longnameToUrl[doclet.longname],
@@ -339,5 +373,6 @@ exports.buildNavbar = function(navbar){
 				return template.linkto(member.longname);
 			})
 		};
-	});
+		return result;
+	}));
 };

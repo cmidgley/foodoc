@@ -409,6 +409,73 @@
 									<h3>Methods</h3>
 									<dl class="symbol">
 											<hr/>
+											<dt class="symbol-title function public collapsible-symbol">
+			<h4 id=".mixin" class="function public"><span class="signature-attribs">&lt;static> </span><span class="name">mixin</span><span class="signature-params">( <span class="signature-param">obj</span>, <span class="signature-param">collection</span>&nbsp;)</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details function public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Binds the query and update methods to a specific object and adds the methods to that object. When called these<br>
+			methods can skip the first parameter so that find(object, query) can just be called as object.find(query)</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>obj</code></td>
+							<td><span class="param-type">object</span> | <span class="param-type">array</span></td>
+							<td class="last">
+									<p>The object or array to bind to</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>collection</code></td>
+							<td><span class="param-type">object</span> | <span class="param-type">array</span></td>
+							<td class="last">
+									<p>If the collection is not the same as <code>this</code> but is a property, or even<br>
+			a whole other object, you specify that here. Otherwise the <code>obj</code> is assumed to be the same as the collecion</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-992">line 992</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
 											<dt class="symbol-title function private collapsible-symbol">
 			<h4 id="~processNestedOperator" class="function private"><span class="signature-attribs">&lt;private, inner> </span><span class="name">processNestedOperator</span><span class="signature-params">( <span class="signature-param">path</span>, <span class="signature-param">operand</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{object}</span></h4>
 		</dt>
@@ -1146,7 +1213,8 @@
 		</dt>
 <dd class="symbol-details function public  collapsible-symbol">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Find all records that match a query and returns the keys for those items. This is similar to <a href="module-documents_probe.html#.find">module:documents/probe.find</a> but instead of returning<br> records, returns the keys. If <code>obj</code> is an object it will return the hash key. If 'obj' is an array, it will return the index</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Find all records that match a query and returns the keys for those items. This is similar to <a href="module-documents_probe.html#.find">module:documents/probe.find</a> but instead of returning<br>
+			records, returns the keys. If <code>obj</code> is an object it will return the hash key. If 'obj' is an array, it will return the index</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -1292,7 +1360,8 @@
 		</dt>
 <dd class="symbol-details function public  collapsible-symbol">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Returns the first record that matches the query and returns its key or index depending on whether <code>obj</code> is an object or array respectively.<br> Aliased as <code>seekKey</code>.</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Returns the first record that matches the query and returns its key or index depending on whether <code>obj</code> is an object or array respectively.<br>
+			Aliased as <code>seekKey</code>.</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -1657,7 +1726,8 @@
 		</dt>
 <dd class="symbol-details function public  collapsible-symbol">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>This will write the value into a record at the path, creating intervening objects if they don't exist. This does not work as filtered<br> update and is meant to be used on a single record. It is a nice way of setting a property at an arbitrary depth at will.</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>This will write the value into a record at the path, creating intervening objects if they don't exist. This does not work as filtered<br>
+			update and is meant to be used on a single record. It is a nice way of setting a property at an arbitrary depth at will.</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -1736,7 +1806,8 @@
 		</dt>
 <dd class="symbol-details function public  collapsible-symbol">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Reaches into an object and allows you to get at a value deeply nested in an object. This is not a query, but a<br> straight reach in, useful for event bindings</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Reaches into an object and allows you to get at a value deeply nested in an object. This is not a query, but a<br>
+			straight reach in, useful for event bindings</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -1955,7 +2026,8 @@
 		</dt>
 <dd class="symbol-details function public  collapsible-symbol">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Binds the query and update methods to a new object. When called these<br> methods can skip the first parameter so that find(object, query) can just be called as find(query)</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Binds the query and update methods to a new object. When called these<br>
+			methods can skip the first parameter so that find(object, query) can just be called as find(query)</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -2015,71 +2087,6 @@
 					</form>
 			</div>	</div>
 </dd>
-											<hr/>
-											<dt class="symbol-title function public collapsible-symbol">
-			<h4 id=".mixin" class="function public"><span class="signature-attribs">&lt;static> </span><span class="name">mixin</span><span class="signature-params">( <span class="signature-param">obj</span>, <span class="signature-param">collection</span>&nbsp;)</span><span class="signature-type"></span></h4>
-		</dt>
-<dd class="symbol-details function public  collapsible-symbol">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Binds the query and update methods to a specific object and adds the methods to that object. When called these<br> methods can skip the first parameter so that find(object, query) can just be called as object.find(query)</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>obj</code></td>
-							<td><span class="param-type">object</span> | <span class="param-type">array</span></td>
-							<td class="last">
-									<p>The object or array to bind to</p>
-							</td>
-						</tr>
-						<tr>
-								<td><code>collection</code></td>
-							<td><span class="param-type">object</span> | <span class="param-type">array</span></td>
-							<td class="last">
-									<p>If the collection is not the same as <code>this</code> but is a property, or even<br> a whole other object, you specify that here. Otherwise the <code>obj</code> is assumed to be the same as the collecion</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="documents_probe.js.html">documents/probe.js</a>, <a href="documents_probe.js.html#line-992">line 992</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
 									</dl>
 							</article>
 					</section>
@@ -2091,7 +2098,6 @@
 	</div>
 	<footer>
 				<div class="copyright">FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.</div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on 1st May 2018 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
