@@ -61,8 +61,15 @@
 		<div class="page-header">
 			<div class="container">
 				<span class="kind">{{altKind}}</span>
-				<h1>{{{doclet.pageTitleHTML}}}</h1>
-				{{> tag/summary doclet}}
+				<div class="container-content">
+					<h1>{{{doclet.pageTitleHTML}}}</h1>
+					{{> tag/summary doclet}}
+				</div>
+				{{#if options.systemLogo}}
+					<div class="container-logo">
+						<img src="{{options.systemLogo}}">
+					</div>
+				{{/if}}
 			</div>
 		</div>
 	{{/block}}
