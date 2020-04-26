@@ -17,6 +17,9 @@
         "title": "Floss Teeth",
         "summary": "How to floss your teeth!"
       },
+      "code-documentation": {
+        "replaceWithCodeMenus": true
+      },
       "github": {
         "title": "GitHub",
         "summary": "FooDoc is open source, come on over and fork, improve and join the community",

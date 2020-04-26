@@ -166,6 +166,9 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
     A short summary of the tutorial which is used in various places throughout the documentation, most notably in the page header of the tutorial itself.
 *   __showTableOfContents__
     A boolean value indicating whether or not to generate the Table of Contents for this specific tutorial.
+*   __replaceWithCodeMenus__
+    A boolean value that indicates if the code menus (Class, Modules, ...) should be moved from the top menu bar and instead replace this tutorial item with those menus.  You still need an empty markdown file that matches the name, but it
+    is ignored.
 
 The following shows what the `tutorials.json` in the `fixtures` test code contains.
 

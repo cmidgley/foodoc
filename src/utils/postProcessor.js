@@ -51,7 +51,37 @@ exports.process = function(){
 		doclet.symbols = doc.getSymbols(doclet);
 		doclet.showAccessFilter = doc.getShowAccessFilter(doclet);
 	});
+	
+	// does this doclet want to consume the code options into it's menu?  If so, bring them over
+	processReplaceWithCodeMenus();
 };
+
+function processReplaceWithCodeMenus() {
+	// process all top-level tutorials
+	for (let topIndex = 0; topIndex < template.raw.tutorials.children.length; ++topIndex) {
+		let tutorial = template.raw.tutorials.children[topIndex];
+		// scan children, which are first level menus
+		for (let itemIndex = 0; itemIndex < tutorial.children.length; ++itemIndex) {
+			let subTutorial = tutorial.children[itemIndex];
+			if (subTutorial.replaceWithCodeMenus) {
+				// found the need to replace the menu item with all code menus. 
+				let codeDoclets = [];				
+				// Go locate all non-tutorial doclets
+				template.raw.data().each(menuDoclet => {
+					if (menuDoclet.kind === 'list' && menuDoclet.name !== 'Tutorials' && menuDoclet.members.length > 0) {
+						codeDoclets.push({...menuDoclet});
+						// and drop this from the menu
+						menuDoclet.dropFromMenu = true;
+					}
+				});
+				// now swap out the old for the new
+				tutorial.children.splice(itemIndex, 1, ...codeDoclets);
+
+				return;
+			}
+		}
+	}
+}
 
 var hasOwnProp = Object.prototype.hasOwnProperty;
 function getFilename(longname) {
@@ -274,19 +304,19 @@ var processTutorial = function(tutorial, tutorials, tutorialToConfig){
 		child.showTableOfContents = template.options.showTableOfContents;
 		var config;
 		if (config = tutorialToConfig[child.longname]){
-			if (config.summary){
+			if (config.summary)
 				child.summary = config.summary;
-			}
-			if (config.description){
+			if (config.description)
 				child.description = config.description;
+			if (config.replaceWithCodeMenus) {
+				child.replaceWithCodeMenus = config.replaceWithCodeMenus;
 			}
 			if (config.url) {
 				child.url = config.url;
 				child.externalLink = template.linkto(config.url, config.title);
 			}
-			if (typeof config.showTableOfContents === 'boolean'){
+			if (typeof config.showTableOfContents === 'boolean')
 				child.showTableOfContents = config.showTableOfContents;
-			}
 		}
 		tutorials.push(child);
 		processTutorial(child, tutorials, tutorialToConfig);
@@ -342,39 +372,49 @@ exports.buildNavbar = function(navbar){
 		return doclet.members.length > 0 && (doclet.kind == 'list' || template.hasNavMember(doclet.kind)) && doclet.for == 'tutorial';
 	});
 
+	// track if we have moved generated code documentation into a tutorial menu (the replaceWithCodeMenus option in tutorials JSON file)
+	let useCodeSubmenu = false;
+
 	if (tutorials && tutorials.length > 0) {
 		// now process all members of the tutorial by flattening tutorials
 		let members = [];
 		tutorials.forEach(tutorial => tutorial.members.forEach(member => members.push(member)));
 
 		navbar.topLevel = members.map(function(member){
+			let members = [];
+			member.children.forEach(function(child) {
+				// if foodoc json says to use url, use that instead of the original document 
+				if (child.externalLink)
+					members.push(child.externalLink);
+				else
+					members.push(template.linkto(child.longname));
+			});
 			let result = {
 				title: member.title,
 				summary: member.summary,
 				link: helper.longnameToUrl[member.longname],
-				members: member.children.map(function(child){
-					// if foodoc json says to use url, use that instead of the original document 
-					if (child.externalLink)
-						return child.externalLink;
-					return template.linkto(child.longname);
-				})
+				members: members
 			};
 			return result;
 		});
 	}
 
 	// process all except "tutorials" (as we handle those differently)
-	navbar.topLevel.push(...template.find({kind:['list','global']}, "longname, name").filter(function(doclet){
-		return doclet.members.length > 0 && (doclet.kind == 'list' || template.hasNavMember(doclet.kind)) && doclet.for != 'tutorial';
-	}).map(function(doclet){
-		let result = {
-			title: doclet.name,
-			summary: doclet.summary,
-			link: helper.longnameToUrl[doclet.longname],
-			members: doclet.members.map(function(member){
-				return template.linkto(member.longname);
-			})
-		};
-		return result;
-	}));
+	if (!useCodeSubmenu) {
+		template.find({kind:['list','global']}, "longname, name").filter(function(doclet){
+			return doclet.members.length > 0 && (doclet.kind == 'list' || template.hasNavMember(doclet.kind)) && doclet.for != 'tutorial';
+		}).forEach(function(doclet) {
+			if (!doclet.dropFromMenu) {
+				let result = {
+					title: doclet.name,
+					summary: doclet.summary,
+					link: helper.longnameToUrl[doclet.longname],
+					members: doclet.members.map(function(member){
+						return template.linkto(member.longname);
+					})
+				};
+				navbar.topLevel.push(result);
+			}
+		});
+	}
 };

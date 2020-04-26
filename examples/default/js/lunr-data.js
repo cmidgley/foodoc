@@ -4864,6 +4864,9 @@ window.lunrData = {
                             "ref": "global.html",
                             "tf": 35
                           },
+                          "undefined": {
+                            "tf": 950
+                          },
                           "list_class.html": {
                             "ref": "list_class.html",
                             "tf": 35
@@ -6750,6 +6753,32 @@ window.lunrData = {
           "docs": {},
           "o": {
             "docs": {},
+            "d": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "undefined": {
+                    "tf": 950
+                  },
+                  "base_chains.html#open": {
+                    "ref": "base_chains.html#open",
+                    "tf": 2.083333333333333
+                  },
+                  "base.html#open": {
+                    "ref": "base.html#open",
+                    "tf": 2.083333333333333
+                  },
+                  "base.html#end": {
+                    "ref": "base.html#end",
+                    "tf": 2.272727272727273
+                  },
+                  "module-mixins_signalable.html": {
+                    "ref": "module-mixins_signalable.html",
+                    "tf": 3.3333333333333335
+                  }
+                }
+              }
+            },
             "m": {
               "docs": {},
               "e": {
@@ -6973,29 +7002,6 @@ window.lunrData = {
                         }
                       }
                     }
-                  }
-                }
-              }
-            },
-            "d": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "base_chains.html#open": {
-                    "ref": "base_chains.html#open",
-                    "tf": 2.083333333333333
-                  },
-                  "base.html#open": {
-                    "ref": "base.html#open",
-                    "tf": 2.083333333333333
-                  },
-                  "base.html#end": {
-                    "ref": "base.html#end",
-                    "tf": 2.272727272727273
-                  },
-                  "module-mixins_signalable.html": {
-                    "ref": "module-mixins_signalable.html",
-                    "tf": 3.3333333333333335
                   }
                 }
               }
@@ -14301,7 +14307,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 1468
+      "length": 1471
     },
     "corpusTokens": [
       "1",
