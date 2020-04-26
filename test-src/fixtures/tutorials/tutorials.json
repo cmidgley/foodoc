@@ -19,6 +19,7 @@
       },
       "github": {
         "title": "GitHub",
+        "summary": "FooDoc is open source, come on over and fork, improve and join the community",
         "url": "https://github.com/cmidgley/foodoc"
       }
     }

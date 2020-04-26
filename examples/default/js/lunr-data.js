@@ -2312,8 +2312,37 @@ window.lunrData = {
                       "index.html": {
                         "ref": "index.html",
                         "tf": 600
+                      },
+                      "undefined": {
+                        "tf": 7.777777777777778
                       }
                     }
+                  }
+                }
+              }
+            },
+            "r": {
+              "docs": {},
+              "k": {
+                "docs": {
+                  "undefined": {
+                    "tf": 7.777777777777778
+                  }
+                }
+              },
+              "m": {
+                "docs": {
+                  "module-documents_probe.updateOperators.html#.$inc": {
+                    "ref": "module-documents_probe.updateOperators.html#.$inc",
+                    "tf": 5.555555555555555
+                  },
+                  "module-documents_probe.updateOperators.html#.$dec": {
+                    "ref": "module-documents_probe.updateOperators.html#.$dec",
+                    "tf": 5.555555555555555
+                  },
+                  "module-documents_probe.updateOperators.html#.$unset": {
+                    "ref": "module-documents_probe.updateOperators.html#.$unset",
+                    "tf": 7.142857142857142
                   }
                 }
               }
@@ -2328,25 +2357,6 @@ window.lunrData = {
                       "ref": "documents_model.html#_pkey",
                       "tf": 6.25
                     }
-                  }
-                }
-              }
-            },
-            "r": {
-              "docs": {},
-              "m": {
-                "docs": {
-                  "module-documents_probe.updateOperators.html#.$inc": {
-                    "ref": "module-documents_probe.updateOperators.html#.$inc",
-                    "tf": 5.555555555555555
-                  },
-                  "module-documents_probe.updateOperators.html#.$dec": {
-                    "ref": "module-documents_probe.updateOperators.html#.$dec",
-                    "tf": 5.555555555555555
-                  },
-                  "module-documents_probe.updateOperators.html#.$unset": {
-                    "ref": "module-documents_probe.updateOperators.html#.$unset",
-                    "tf": 7.142857142857142
                   }
                 }
               }
@@ -3673,6 +3683,25 @@ window.lunrData = {
               }
             }
           },
+          "m": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "v": {
+                    "docs": {
+                      "undefined": {
+                        "tf": 7.777777777777778
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "t": {
             "docs": {},
             "s": {
@@ -3880,6 +3909,19 @@ window.lunrData = {
                   "documents_schema.html": {
                     "ref": "documents_schema.html",
                     "tf": 6.25
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "n": {
+                "docs": {
+                  "undefined": {
+                    "tf": 7.777777777777778
                   }
                 }
               }
@@ -6002,6 +6044,39 @@ window.lunrData = {
               }
             }
           },
+          "o": {
+            "docs": {},
+            "u": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "c": {
+                  "docs": {
+                    "undefined": {
+                      "tf": 7.777777777777778
+                    }
+                  }
+                }
+              }
+            },
+            "m": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "h": {
+                    "docs": {
+                      "utils_logger.Logger.html#silent": {
+                        "ref": "utils_logger.Logger.html#silent",
+                        "tf": 6.25
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "h": {
             "docs": {},
             "u": {
@@ -6474,26 +6549,6 @@ window.lunrData = {
               }
             }
           },
-          "o": {
-            "docs": {},
-            "m": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "t": {
-                  "docs": {},
-                  "h": {
-                    "docs": {
-                      "utils_logger.Logger.html#silent": {
-                        "ref": "utils_logger.Logger.html#silent",
-                        "tf": 6.25
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "u": {
             "docs": {},
             "b": {
@@ -6693,303 +6748,30 @@ window.lunrData = {
         },
         "c": {
           "docs": {},
-          "a": {
-            "docs": {},
-            "r": {
-              "docs": {
-                "undefined": {
-                  "tf": 985
-                }
-              }
-            },
-            "l": {
-              "docs": {},
-              "l": {
-                "docs": {
-                  "base_chains.html#close": {
-                    "ref": "base_chains.html#close",
-                    "tf": 1.0869565217391304
-                  },
-                  "base_chains.html#end": {
-                    "ref": "base_chains.html#end",
-                    "tf": 1.6129032258064515
-                  },
-                  "base_chains.html#destroy": {
-                    "ref": "base_chains.html#destroy",
-                    "tf": 2.564102564102564
-                  },
-                  "utils_logger.Logger.html#trace": {
-                    "ref": "utils_logger.Logger.html#trace",
-                    "tf": 16.666666666666664
-                  },
-                  "utils_logger.Logger.html#debug": {
-                    "ref": "utils_logger.Logger.html#debug",
-                    "tf": 16.666666666666664
-                  },
-                  "utils_logger.Logger.html#info": {
-                    "ref": "utils_logger.Logger.html#info",
-                    "tf": 16.666666666666664
-                  },
-                  "utils_logger.Logger.html#warn": {
-                    "ref": "utils_logger.Logger.html#warn",
-                    "tf": 16.666666666666664
-                  },
-                  "utils_logger.Logger.html#error": {
-                    "ref": "utils_logger.Logger.html#error",
-                    "tf": 16.666666666666664
-                  },
-                  "base.html#close": {
-                    "ref": "base.html#close",
-                    "tf": 1.0869565217391304
-                  },
-                  "base.html#end": {
-                    "ref": "base.html#end",
-                    "tf": 6.8181818181818175
-                  },
-                  "base.html#destroy": {
-                    "ref": "base.html#destroy",
-                    "tf": 7.894736842105263
-                  }
-                }
-              }
-            },
-            "p": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "b": {
-                  "docs": {},
-                  "l": {
-                    "docs": {
-                      "mixins_signalable.html": {
-                        "ref": "mixins_signalable.html",
-                        "tf": 7.142857142857142
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "l": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "s": {
-                "docs": {},
-                "s": {
-                  "docs": {
-                    "list_class.html": {
-                      "ref": "list_class.html",
-                      "tf": 635
-                    },
-                    "base_chains.html": {
-                      "ref": "base_chains.html",
-                      "tf": 110
-                    },
-                    "module-ink_collector-CollectorBase.html": {
-                      "ref": "module-ink_collector-CollectorBase.html",
-                      "tf": 110
-                    },
-                    "utils_logger.Logger.html": {
-                      "ref": "utils_logger.Logger.html",
-                      "tf": 120.71428571428571
-                    },
-                    "base.html": {
-                      "ref": "base.html",
-                      "tf": 114.16666666666667
-                    },
-                    "base.html#addOptions": {
-                      "ref": "base.html#addOptions",
-                      "tf": 5.555555555555555
-                    },
-                    "base.html#addDefaultOptions": {
-                      "ref": "base.html#addDefaultOptions",
-                      "tf": 5
-                    },
-                    "base.html#end": {
-                      "ref": "base.html#end",
-                      "tf": 2.272727272727273
-                    },
-                    "base.html#destroy": {
-                      "ref": "base.html#destroy",
-                      "tf": 2.631578947368421
-                    },
-                    "module-mixins_signalable-Signal.html": {
-                      "ref": "module-mixins_signalable-Signal.html",
-                      "tf": 110
-                    },
-                    "documents_model.html": {
-                      "ref": "documents_model.html",
-                      "tf": 110
-                    },
-                    "module-ink_collector-OCollector.html": {
-                      "ref": "module-ink_collector-OCollector.html",
-                      "tf": 110
-                    },
-                    "module-ink_collector-ACollector.html": {
-                      "ref": "module-ink_collector-ACollector.html",
-                      "tf": 110
-                    },
-                    "module-documents_probe.queryOperators.html": {
-                      "ref": "module-documents_probe.queryOperators.html",
-                      "tf": 120
-                    },
-                    "module-documents_probe.updateOperators.html": {
-                      "ref": "module-documents_probe.updateOperators.html",
-                      "tf": 120
-                    },
-                    "module-base.html": {
-                      "ref": "module-base.html",
-                      "tf": 8.333333333333332
-                    }
-                  }
-                }
-              }
-            },
-            "o": {
-              "docs": {},
-              "s": {
-                "docs": {},
-                "e": {
-                  "docs": {
-                    "base_chains.html#close": {
-                      "ref": "base_chains.html#close",
-                      "tf": 752.1739130434783
-                    },
-                    "base_chains.html#end": {
-                      "ref": "base_chains.html#end",
-                      "tf": 1.6129032258064515
-                    },
-                    "base.html#close": {
-                      "ref": "base.html#close",
-                      "tf": 752.1739130434783
-                    },
-                    "base.html#end": {
-                      "ref": "base.html#end",
-                      "tf": 2.272727272727273
-                    }
-                  }
-                }
-              }
-            },
-            "e": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "n": {
-                  "docs": {
-                    "base_chains.html#destroy": {
-                      "ref": "base_chains.html#destroy",
-                      "tf": 2.564102564102564
-                    },
-                    "base.html": {
-                      "ref": "base.html",
-                      "tf": 1.3888888888888888
-                    },
-                    "module-mixins_signalable-Signal.html#destroy": {
-                      "ref": "module-mixins_signalable-Signal.html#destroy",
-                      "tf": 25
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "h": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "i": {
-                "docs": {},
-                "n": {
-                  "docs": {
-                    "base_chains.html": {
-                      "ref": "base_chains.html",
-                      "tf": 5.555555555555555
-                    },
-                    "base_chains.html#close": {
-                      "ref": "base_chains.html#close",
-                      "tf": 1.0869565217391304
-                    },
-                    "base_chains.html#end": {
-                      "ref": "base_chains.html#end",
-                      "tf": 1.6129032258064515
-                    },
-                    "base_chains.html#destroy": {
-                      "ref": "base_chains.html#destroy",
-                      "tf": 1.282051282051282
-                    },
-                    "base_chains.html#open": {
-                      "ref": "base_chains.html#open",
-                      "tf": 2.083333333333333
-                    },
-                    "base.html": {
-                      "ref": "base.html",
-                      "tf": 1.3888888888888888
-                    },
-                    "base.html#close": {
-                      "ref": "base.html#close",
-                      "tf": 1.0869565217391304
-                    },
-                    "base.html#open": {
-                      "ref": "base.html#open",
-                      "tf": 2.083333333333333
-                    },
-                    "module-base_chains.html": {
-                      "ref": "module-base_chains.html",
-                      "tf": 5.555555555555555
-                    }
-                  }
-                }
-              },
-              "n": {
-                "docs": {},
-                "g": {
-                  "docs": {
-                    "module-documents_binder.html": {
-                      "ref": "module-documents_binder.html",
-                      "tf": 5.555555555555555
-                    }
-                  }
-                }
-              }
-            },
-            "e": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "k": {
-                  "docs": {
-                    "module-mixins_signalable-Signal.html#has": {
-                      "ref": "module-mixins_signalable-Signal.html#has",
-                      "tf": 12.5
-                    },
-                    "module-documents_probe.queryOperators.html#.$eq": {
-                      "ref": "module-documents_probe.queryOperators.html#.$eq",
-                      "tf": 2
-                    },
-                    "module-documents_probe.queryOperators.html#.$all": {
-                      "ref": "module-documents_probe.queryOperators.html#.$all",
-                      "tf": 5
-                    },
-                    "module-documents_probe.queryOperators.html#.$mod": {
-                      "ref": "module-documents_probe.queryOperators.html#.$mod",
-                      "tf": 5.555555555555555
-                    },
-                    "module-documents_probe.queryOperators.html#.$elemMatch": {
-                      "ref": "module-documents_probe.queryOperators.html#.$elemMatch",
-                      "tf": 2.7777777777777777
-                    }
-                  }
-                }
-              }
-            }
-          },
           "o": {
             "docs": {},
             "m": {
               "docs": {},
+              "e": {
+                "docs": {
+                  "undefined": {
+                    "tf": 7.777777777777778
+                  }
+                }
+              },
+              "m": {
+                "docs": {},
+                "u": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "undefined": {
+                        "tf": 7.777777777777778
+                      }
+                    }
+                  }
+                }
+              },
               "p": {
                 "docs": {},
                 "o": {
@@ -7291,6 +7073,299 @@ window.lunrData = {
               }
             }
           },
+          "a": {
+            "docs": {},
+            "r": {
+              "docs": {
+                "undefined": {
+                  "tf": 985
+                }
+              }
+            },
+            "l": {
+              "docs": {},
+              "l": {
+                "docs": {
+                  "base_chains.html#close": {
+                    "ref": "base_chains.html#close",
+                    "tf": 1.0869565217391304
+                  },
+                  "base_chains.html#end": {
+                    "ref": "base_chains.html#end",
+                    "tf": 1.6129032258064515
+                  },
+                  "base_chains.html#destroy": {
+                    "ref": "base_chains.html#destroy",
+                    "tf": 2.564102564102564
+                  },
+                  "utils_logger.Logger.html#trace": {
+                    "ref": "utils_logger.Logger.html#trace",
+                    "tf": 16.666666666666664
+                  },
+                  "utils_logger.Logger.html#debug": {
+                    "ref": "utils_logger.Logger.html#debug",
+                    "tf": 16.666666666666664
+                  },
+                  "utils_logger.Logger.html#info": {
+                    "ref": "utils_logger.Logger.html#info",
+                    "tf": 16.666666666666664
+                  },
+                  "utils_logger.Logger.html#warn": {
+                    "ref": "utils_logger.Logger.html#warn",
+                    "tf": 16.666666666666664
+                  },
+                  "utils_logger.Logger.html#error": {
+                    "ref": "utils_logger.Logger.html#error",
+                    "tf": 16.666666666666664
+                  },
+                  "base.html#close": {
+                    "ref": "base.html#close",
+                    "tf": 1.0869565217391304
+                  },
+                  "base.html#end": {
+                    "ref": "base.html#end",
+                    "tf": 6.8181818181818175
+                  },
+                  "base.html#destroy": {
+                    "ref": "base.html#destroy",
+                    "tf": 7.894736842105263
+                  }
+                }
+              }
+            },
+            "p": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "b": {
+                  "docs": {},
+                  "l": {
+                    "docs": {
+                      "mixins_signalable.html": {
+                        "ref": "mixins_signalable.html",
+                        "tf": 7.142857142857142
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "l": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "s": {
+                  "docs": {
+                    "list_class.html": {
+                      "ref": "list_class.html",
+                      "tf": 635
+                    },
+                    "base_chains.html": {
+                      "ref": "base_chains.html",
+                      "tf": 110
+                    },
+                    "module-ink_collector-CollectorBase.html": {
+                      "ref": "module-ink_collector-CollectorBase.html",
+                      "tf": 110
+                    },
+                    "utils_logger.Logger.html": {
+                      "ref": "utils_logger.Logger.html",
+                      "tf": 120.71428571428571
+                    },
+                    "base.html": {
+                      "ref": "base.html",
+                      "tf": 114.16666666666667
+                    },
+                    "base.html#addOptions": {
+                      "ref": "base.html#addOptions",
+                      "tf": 5.555555555555555
+                    },
+                    "base.html#addDefaultOptions": {
+                      "ref": "base.html#addDefaultOptions",
+                      "tf": 5
+                    },
+                    "base.html#end": {
+                      "ref": "base.html#end",
+                      "tf": 2.272727272727273
+                    },
+                    "base.html#destroy": {
+                      "ref": "base.html#destroy",
+                      "tf": 2.631578947368421
+                    },
+                    "module-mixins_signalable-Signal.html": {
+                      "ref": "module-mixins_signalable-Signal.html",
+                      "tf": 110
+                    },
+                    "documents_model.html": {
+                      "ref": "documents_model.html",
+                      "tf": 110
+                    },
+                    "module-ink_collector-OCollector.html": {
+                      "ref": "module-ink_collector-OCollector.html",
+                      "tf": 110
+                    },
+                    "module-ink_collector-ACollector.html": {
+                      "ref": "module-ink_collector-ACollector.html",
+                      "tf": 110
+                    },
+                    "module-documents_probe.queryOperators.html": {
+                      "ref": "module-documents_probe.queryOperators.html",
+                      "tf": 120
+                    },
+                    "module-documents_probe.updateOperators.html": {
+                      "ref": "module-documents_probe.updateOperators.html",
+                      "tf": 120
+                    },
+                    "module-base.html": {
+                      "ref": "module-base.html",
+                      "tf": 8.333333333333332
+                    }
+                  }
+                }
+              }
+            },
+            "o": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "e": {
+                  "docs": {
+                    "base_chains.html#close": {
+                      "ref": "base_chains.html#close",
+                      "tf": 752.1739130434783
+                    },
+                    "base_chains.html#end": {
+                      "ref": "base_chains.html#end",
+                      "tf": 1.6129032258064515
+                    },
+                    "base.html#close": {
+                      "ref": "base.html#close",
+                      "tf": 752.1739130434783
+                    },
+                    "base.html#end": {
+                      "ref": "base.html#end",
+                      "tf": 2.272727272727273
+                    }
+                  }
+                }
+              }
+            },
+            "e": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "n": {
+                  "docs": {
+                    "base_chains.html#destroy": {
+                      "ref": "base_chains.html#destroy",
+                      "tf": 2.564102564102564
+                    },
+                    "base.html": {
+                      "ref": "base.html",
+                      "tf": 1.3888888888888888
+                    },
+                    "module-mixins_signalable-Signal.html#destroy": {
+                      "ref": "module-mixins_signalable-Signal.html#destroy",
+                      "tf": 25
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "h": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "n": {
+                  "docs": {
+                    "base_chains.html": {
+                      "ref": "base_chains.html",
+                      "tf": 5.555555555555555
+                    },
+                    "base_chains.html#close": {
+                      "ref": "base_chains.html#close",
+                      "tf": 1.0869565217391304
+                    },
+                    "base_chains.html#end": {
+                      "ref": "base_chains.html#end",
+                      "tf": 1.6129032258064515
+                    },
+                    "base_chains.html#destroy": {
+                      "ref": "base_chains.html#destroy",
+                      "tf": 1.282051282051282
+                    },
+                    "base_chains.html#open": {
+                      "ref": "base_chains.html#open",
+                      "tf": 2.083333333333333
+                    },
+                    "base.html": {
+                      "ref": "base.html",
+                      "tf": 1.3888888888888888
+                    },
+                    "base.html#close": {
+                      "ref": "base.html#close",
+                      "tf": 1.0869565217391304
+                    },
+                    "base.html#open": {
+                      "ref": "base.html#open",
+                      "tf": 2.083333333333333
+                    },
+                    "module-base_chains.html": {
+                      "ref": "module-base_chains.html",
+                      "tf": 5.555555555555555
+                    }
+                  }
+                }
+              },
+              "n": {
+                "docs": {},
+                "g": {
+                  "docs": {
+                    "module-documents_binder.html": {
+                      "ref": "module-documents_binder.html",
+                      "tf": 5.555555555555555
+                    }
+                  }
+                }
+              }
+            },
+            "e": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "k": {
+                  "docs": {
+                    "module-mixins_signalable-Signal.html#has": {
+                      "ref": "module-mixins_signalable-Signal.html#has",
+                      "tf": 12.5
+                    },
+                    "module-documents_probe.queryOperators.html#.$eq": {
+                      "ref": "module-documents_probe.queryOperators.html#.$eq",
+                      "tf": 2
+                    },
+                    "module-documents_probe.queryOperators.html#.$all": {
+                      "ref": "module-documents_probe.queryOperators.html#.$all",
+                      "tf": 5
+                    },
+                    "module-documents_probe.queryOperators.html#.$mod": {
+                      "ref": "module-documents_probe.queryOperators.html#.$mod",
+                      "tf": 5.555555555555555
+                    },
+                    "module-documents_probe.queryOperators.html#.$elemMatch": {
+                      "ref": "module-documents_probe.queryOperators.html#.$elemMatch",
+                      "tf": 2.7777777777777777
+                    }
+                  }
+                }
+              }
+            }
+          },
           "y": {
             "docs": {},
             "c": {
@@ -7320,6 +7395,580 @@ window.lunrData = {
                     "documents_model.html#.set": {
                       "ref": "documents_model.html#.set",
                       "tf": 2.272727272727273
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "o": {
+          "docs": {},
+          "p": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "n": {
+                "docs": {
+                  "undefined": {
+                    "tf": 7.777777777777778
+                  },
+                  "base_chains.html#close": {
+                    "ref": "base_chains.html#close",
+                    "tf": 1.0869565217391304
+                  },
+                  "base_chains.html#open": {
+                    "ref": "base_chains.html#open",
+                    "tf": 752.0833333333334
+                  },
+                  "base.html#close": {
+                    "ref": "base.html#close",
+                    "tf": 1.0869565217391304
+                  },
+                  "base.html#open": {
+                    "ref": "base.html#open",
+                    "tf": 752.0833333333334
+                  }
+                },
+                "/": {
+                  "docs": {},
+                  "c": {
+                    "docs": {},
+                    "l": {
+                      "docs": {},
+                      "o": {
+                        "docs": {},
+                        "s": {
+                          "docs": {
+                            "base_chains.html#open": {
+                              "ref": "base_chains.html#open",
+                              "tf": 2.083333333333333
+                            },
+                            "base.html#open": {
+                              "ref": "base.html#open",
+                              "tf": 2.083333333333333
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "r": {
+                "docs": {
+                  "documents_model.html#_idField": {
+                    "ref": "documents_model.html#_idField",
+                    "tf": 5.555555555555555
+                  },
+                  "documents_model.html#.update": {
+                    "ref": "documents_model.html#.update",
+                    "tf": 5.555555555555555
+                  },
+                  "module-ink_collector-OCollector.html#update": {
+                    "ref": "module-ink_collector-OCollector.html#update",
+                    "tf": 5.555555555555555
+                  },
+                  "module-ink_collector-ACollector.html#update": {
+                    "ref": "module-ink_collector-ACollector.html#update",
+                    "tf": 5.555555555555555
+                  },
+                  "module-documents_probe.queryOperators.html#.$mod": {
+                    "ref": "module-documents_probe.queryOperators.html#.$mod",
+                    "tf": 5.555555555555555
+                  },
+                  "module-documents_probe.queryOperators.html#.$elemMatch": {
+                    "ref": "module-documents_probe.queryOperators.html#.$elemMatch",
+                    "tf": 2.7777777777777777
+                  },
+                  "module-documents_probe.updateOperators.html#.$pop": {
+                    "ref": "module-documents_probe.updateOperators.html#.$pop",
+                    "tf": 1.6666666666666667
+                  },
+                  "module-documents_probe.updateOperators.html#.$push": {
+                    "ref": "module-documents_probe.updateOperators.html#.$push",
+                    "tf": 5
+                  },
+                  "module-documents_probe.updateOperators.html#.$pull": {
+                    "ref": "module-documents_probe.updateOperators.html#.$pull",
+                    "tf": 4.545454545454546
+                  },
+                  "module-documents_binder.html": {
+                    "ref": "module-documents_binder.html",
+                    "tf": 2.7777777777777777
+                  }
+                }
+              }
+            },
+            "t": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "base.html": {
+                        "ref": "base.html",
+                        "tf": 2.7777777777777777
+                      },
+                      "base.html#addOptions": {
+                        "ref": "base.html#addOptions",
+                        "tf": 55.55555555555556
+                      },
+                      "base.html#addDefaultOptions": {
+                        "ref": "base.html#addDefaultOptions",
+                        "tf": 65
+                      },
+                      "module-documents_probe.queryOperators.html#.$regex": {
+                        "ref": "module-documents_probe.queryOperators.html#.$regex",
+                        "tf": 4.545454545454546
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "v": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "r": {
+                "docs": {
+                  "undefined": {
+                    "tf": 7.777777777777778
+                  }
+                },
+                "w": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "t": {
+                        "docs": {},
+                        "t": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "n": {
+                              "docs": {
+                                "base.html#addOptions": {
+                                  "ref": "base.html#addOptions",
+                                  "tf": 5.555555555555555
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "r": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "r": {
+                  "docs": {
+                    "base_chains.html": {
+                      "ref": "base_chains.html",
+                      "tf": 5.555555555555555
+                    },
+                    "module-base_chains.html": {
+                      "ref": "module-base_chains.html",
+                      "tf": 5.555555555555555
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "b": {
+            "docs": {},
+            "j": {
+              "docs": {
+                "documents_model.html#.update": {
+                  "ref": "documents_model.html#.update",
+                  "tf": 25.555555555555557
+                },
+                "documents_model.html#.find": {
+                  "ref": "documents_model.html#.find",
+                  "tf": 20
+                },
+                "documents_model.html#.findKeys": {
+                  "ref": "documents_model.html#.findKeys",
+                  "tf": 24.166666666666664
+                },
+                "documents_model.html#.findOne": {
+                  "ref": "documents_model.html#.findOne",
+                  "tf": 20
+                },
+                "documents_model.html#.findOneKey": {
+                  "ref": "documents_model.html#.findOneKey",
+                  "tf": 23.125
+                },
+                "documents_model.html#.remove": {
+                  "ref": "documents_model.html#.remove",
+                  "tf": 20
+                },
+                "documents_model.html#.all": {
+                  "ref": "documents_model.html#.all",
+                  "tf": 25
+                },
+                "documents_model.html#.any": {
+                  "ref": "documents_model.html#.any",
+                  "tf": 25
+                },
+                "documents_model.html#.some": {
+                  "ref": "documents_model.html#.some",
+                  "tf": 25
+                },
+                "documents_model.html#.every": {
+                  "ref": "documents_model.html#.every",
+                  "tf": 25
+                },
+                "module-ink_collector-OCollector.html#findOneKey": {
+                  "ref": "module-ink_collector-OCollector.html#findOneKey",
+                  "tf": 3.125
+                },
+                "module-ink_collector-OCollector.html#findKeys": {
+                  "ref": "module-ink_collector-OCollector.html#findKeys",
+                  "tf": 4.166666666666666
+                },
+                "module-ink_collector-OCollector.html#update": {
+                  "ref": "module-ink_collector-OCollector.html#update",
+                  "tf": 5.555555555555555
+                },
+                "module-ink_collector-ACollector.html#findOneKey": {
+                  "ref": "module-ink_collector-ACollector.html#findOneKey",
+                  "tf": 3.125
+                },
+                "module-ink_collector-ACollector.html#findKeys": {
+                  "ref": "module-ink_collector-ACollector.html#findKeys",
+                  "tf": 4.166666666666666
+                },
+                "module-ink_collector-ACollector.html#update": {
+                  "ref": "module-ink_collector-ACollector.html#update",
+                  "tf": 5.555555555555555
+                }
+              },
+              "e": {
+                "docs": {},
+                "c": {
+                  "docs": {},
+                  "t": {
+                    "docs": {
+                      "base_chains.html#close": {
+                        "ref": "base_chains.html#close",
+                        "tf": 2.1739130434782608
+                      },
+                      "base_chains.html#end": {
+                        "ref": "base_chains.html#end",
+                        "tf": 3.225806451612903
+                      },
+                      "base_chains.html#destroy": {
+                        "ref": "base_chains.html#destroy",
+                        "tf": 1.282051282051282
+                      },
+                      "base_chains.html#open": {
+                        "ref": "base_chains.html#open",
+                        "tf": 2.083333333333333
+                      },
+                      "utils_logger.Logger.html": {
+                        "ref": "utils_logger.Logger.html",
+                        "tf": 3.571428571428571
+                      },
+                      "base.html#close": {
+                        "ref": "base.html#close",
+                        "tf": 2.1739130434782608
+                      },
+                      "base.html#open": {
+                        "ref": "base.html#open",
+                        "tf": 2.083333333333333
+                      },
+                      "base.html#end": {
+                        "ref": "base.html#end",
+                        "tf": 2.272727272727273
+                      },
+                      "base.html#destroy": {
+                        "ref": "base.html#destroy",
+                        "tf": 2.631578947368421
+                      },
+                      "module-mixins_signalable-Signal.html": {
+                        "ref": "module-mixins_signalable-Signal.html",
+                        "tf": 6.25
+                      },
+                      "documents_model.html#.findKeys": {
+                        "ref": "documents_model.html#.findKeys",
+                        "tf": 2.083333333333333
+                      },
+                      "documents_model.html#.findOne": {
+                        "ref": "documents_model.html#.findOne",
+                        "tf": 20
+                      },
+                      "documents_model.html#.findOneKey": {
+                        "ref": "documents_model.html#.findOneKey",
+                        "tf": 23.125
+                      },
+                      "documents_model.html#.set": {
+                        "ref": "documents_model.html#.set",
+                        "tf": 2.272727272727273
+                      },
+                      "documents_model.html#.get": {
+                        "ref": "documents_model.html#.get",
+                        "tf": 7.6923076923076925
+                      },
+                      "module-ink_collector-OCollector.html": {
+                        "ref": "module-ink_collector-OCollector.html",
+                        "tf": 16.666666666666664
+                      },
+                      "module-ink_collector-OCollector.html#findOneKey": {
+                        "ref": "module-ink_collector-OCollector.html#findOneKey",
+                        "tf": 36.45833333333333
+                      },
+                      "module-ink_collector-OCollector.html#findOne": {
+                        "ref": "module-ink_collector-OCollector.html#findOne",
+                        "tf": 33.33333333333333
+                      },
+                      "module-ink_collector-OCollector.html#findKeys": {
+                        "ref": "module-ink_collector-OCollector.html#findKeys",
+                        "tf": 2.083333333333333
+                      },
+                      "module-ink_collector-ACollector.html#findOneKey": {
+                        "ref": "module-ink_collector-ACollector.html#findOneKey",
+                        "tf": 36.45833333333333
+                      },
+                      "module-ink_collector-ACollector.html#findOne": {
+                        "ref": "module-ink_collector-ACollector.html#findOne",
+                        "tf": 33.33333333333333
+                      },
+                      "module-ink_collector-ACollector.html#findKeys": {
+                        "ref": "module-ink_collector-ACollector.html#findKeys",
+                        "tf": 2.083333333333333
+                      },
+                      "module-documents_probe.queryOperators.html#.$size": {
+                        "ref": "module-documents_probe.queryOperators.html#.$size",
+                        "tf": 3.8461538461538463
+                      },
+                      "module-documents_probe.queryOperators.html#.$elemMatch": {
+                        "ref": "module-documents_probe.queryOperators.html#.$elemMatch",
+                        "tf": 2.7777777777777777
+                      },
+                      "module-documents_probe.updateOperators.html#.$unset": {
+                        "ref": "module-documents_probe.updateOperators.html#.$unset",
+                        "tf": 7.142857142857142
+                      },
+                      "mixins_signalable.html": {
+                        "ref": "mixins_signalable.html",
+                        "tf": 7.142857142857142
+                      },
+                      "module-documents_binder.html": {
+                        "ref": "module-documents_binder.html",
+                        "tf": 2.7777777777777777
+                      },
+                      "module-ink_collector.html": {
+                        "ref": "module-ink_collector.html",
+                        "tf": 16.666666666666664
+                      },
+                      "module-documents_probe.html": {
+                        "ref": "module-documents_probe.html",
+                        "tf": 10
+                      },
+                      "module-documents_schema.html": {
+                        "ref": "module-documents_schema.html",
+                        "tf": 7.142857142857142
+                      },
+                      "module-mixins_signalable.html": {
+                        "ref": "module-mixins_signalable.html",
+                        "tf": 6.666666666666667
+                      }
+                    },
+                    "/": {
+                      "docs": {},
+                      "a": {
+                        "docs": {},
+                        "r": {
+                          "docs": {},
+                          "r": {
+                            "docs": {},
+                            "a": {
+                              "docs": {},
+                              "y": {
+                                "docs": {
+                                  "documents_model.html#.remove": {
+                                    "ref": "documents_model.html#.remove",
+                                    "tf": 10
+                                  },
+                                  "module-ink_collector-OCollector.html#remove": {
+                                    "ref": "module-ink_collector-OCollector.html#remove",
+                                    "tf": 10
+                                  },
+                                  "module-ink_collector-ACollector.html#remove": {
+                                    "ref": "module-ink_collector-ACollector.html#remove",
+                                    "tf": 10
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "|": {
+                      "docs": {},
+                      "a": {
+                        "docs": {},
+                        "r": {
+                          "docs": {},
+                          "r": {
+                            "docs": {},
+                            "a": {
+                              "docs": {},
+                              "y": {
+                                "docs": {
+                                  "documents_model.html#.remove": {
+                                    "ref": "documents_model.html#.remove",
+                                    "tf": 20
+                                  },
+                                  "module-ink_collector-OCollector.html#remove": {
+                                    "ref": "module-ink_collector-OCollector.html#remove",
+                                    "tf": 33.33333333333333
+                                  },
+                                  "module-ink_collector-ACollector.html#remove": {
+                                    "ref": "module-ink_collector-ACollector.html#remove",
+                                    "tf": 33.33333333333333
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "n": {
+            "docs": {
+              "base_chains.html#close": {
+                "ref": "base_chains.html#close",
+                "tf": 2.1739130434782608
+              },
+              "base_chains.html#end": {
+                "ref": "base_chains.html#end",
+                "tf": 3.225806451612903
+              },
+              "base_chains.html#destroy": {
+                "ref": "base_chains.html#destroy",
+                "tf": 2.564102564102564
+              },
+              "base_chains.html#open": {
+                "ref": "base_chains.html#open",
+                "tf": 4.166666666666666
+              },
+              "utils_logger.Logger.html#level": {
+                "ref": "utils_logger.Logger.html#level",
+                "tf": 5.555555555555555
+              },
+              "base.html": {
+                "ref": "base.html",
+                "tf": 1.3888888888888888
+              },
+              "base.html#close": {
+                "ref": "base.html#close",
+                "tf": 2.1739130434782608
+              },
+              "base.html#open": {
+                "ref": "base.html#open",
+                "tf": 4.166666666666666
+              },
+              "module-mixins_signalable-Signal.html#once": {
+                "ref": "module-mixins_signalable-Signal.html#once",
+                "tf": 10
+              },
+              "module-documents_probe.queryOperators.html#.$in": {
+                "ref": "module-documents_probe.queryOperators.html#.$in",
+                "tf": 5.555555555555555
+              }
+            },
+            "c": {
+              "docs": {
+                "module-mixins_signalable-Signal.html#once": {
+                  "ref": "module-mixins_signalable-Signal.html#once",
+                  "tf": 670
+                }
+              }
+            }
+          },
+          "c": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "l": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "c": {
+                      "docs": {},
+                      "t": {
+                        "docs": {},
+                        "o": {
+                          "docs": {},
+                          "r": {
+                            "docs": {
+                              "module-ink_collector-OCollector.html": {
+                                "ref": "module-ink_collector-OCollector.html",
+                                "tf": 500
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "t": {
+            "docs": {},
+            "h": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "w": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "s": {
+                        "docs": {
+                          "module-documents_probe.queryOperators.html#.$eq": {
+                            "ref": "module-documents_probe.queryOperators.html#.$eq",
+                            "tf": 2
+                          },
+                          "module-documents_probe.queryOperators.html#.$ne": {
+                            "ref": "module-documents_probe.queryOperators.html#.$ne",
+                            "tf": 2.7777777777777777
+                          },
+                          "module-documents_binder.html": {
+                            "ref": "module-documents_binder.html",
+                            "tf": 2.7777777777777777
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -11495,573 +12144,6 @@ window.lunrData = {
             }
           }
         },
-        "o": {
-          "docs": {},
-          "r": {
-            "docs": {},
-            "d": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "r": {
-                  "docs": {
-                    "base_chains.html": {
-                      "ref": "base_chains.html",
-                      "tf": 5.555555555555555
-                    },
-                    "module-base_chains.html": {
-                      "ref": "module-base_chains.html",
-                      "tf": 5.555555555555555
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "b": {
-            "docs": {},
-            "j": {
-              "docs": {
-                "documents_model.html#.update": {
-                  "ref": "documents_model.html#.update",
-                  "tf": 25.555555555555557
-                },
-                "documents_model.html#.find": {
-                  "ref": "documents_model.html#.find",
-                  "tf": 20
-                },
-                "documents_model.html#.findKeys": {
-                  "ref": "documents_model.html#.findKeys",
-                  "tf": 24.166666666666664
-                },
-                "documents_model.html#.findOne": {
-                  "ref": "documents_model.html#.findOne",
-                  "tf": 20
-                },
-                "documents_model.html#.findOneKey": {
-                  "ref": "documents_model.html#.findOneKey",
-                  "tf": 23.125
-                },
-                "documents_model.html#.remove": {
-                  "ref": "documents_model.html#.remove",
-                  "tf": 20
-                },
-                "documents_model.html#.all": {
-                  "ref": "documents_model.html#.all",
-                  "tf": 25
-                },
-                "documents_model.html#.any": {
-                  "ref": "documents_model.html#.any",
-                  "tf": 25
-                },
-                "documents_model.html#.some": {
-                  "ref": "documents_model.html#.some",
-                  "tf": 25
-                },
-                "documents_model.html#.every": {
-                  "ref": "documents_model.html#.every",
-                  "tf": 25
-                },
-                "module-ink_collector-OCollector.html#findOneKey": {
-                  "ref": "module-ink_collector-OCollector.html#findOneKey",
-                  "tf": 3.125
-                },
-                "module-ink_collector-OCollector.html#findKeys": {
-                  "ref": "module-ink_collector-OCollector.html#findKeys",
-                  "tf": 4.166666666666666
-                },
-                "module-ink_collector-OCollector.html#update": {
-                  "ref": "module-ink_collector-OCollector.html#update",
-                  "tf": 5.555555555555555
-                },
-                "module-ink_collector-ACollector.html#findOneKey": {
-                  "ref": "module-ink_collector-ACollector.html#findOneKey",
-                  "tf": 3.125
-                },
-                "module-ink_collector-ACollector.html#findKeys": {
-                  "ref": "module-ink_collector-ACollector.html#findKeys",
-                  "tf": 4.166666666666666
-                },
-                "module-ink_collector-ACollector.html#update": {
-                  "ref": "module-ink_collector-ACollector.html#update",
-                  "tf": 5.555555555555555
-                }
-              },
-              "e": {
-                "docs": {},
-                "c": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "base_chains.html#close": {
-                        "ref": "base_chains.html#close",
-                        "tf": 2.1739130434782608
-                      },
-                      "base_chains.html#end": {
-                        "ref": "base_chains.html#end",
-                        "tf": 3.225806451612903
-                      },
-                      "base_chains.html#destroy": {
-                        "ref": "base_chains.html#destroy",
-                        "tf": 1.282051282051282
-                      },
-                      "base_chains.html#open": {
-                        "ref": "base_chains.html#open",
-                        "tf": 2.083333333333333
-                      },
-                      "utils_logger.Logger.html": {
-                        "ref": "utils_logger.Logger.html",
-                        "tf": 3.571428571428571
-                      },
-                      "base.html#close": {
-                        "ref": "base.html#close",
-                        "tf": 2.1739130434782608
-                      },
-                      "base.html#open": {
-                        "ref": "base.html#open",
-                        "tf": 2.083333333333333
-                      },
-                      "base.html#end": {
-                        "ref": "base.html#end",
-                        "tf": 2.272727272727273
-                      },
-                      "base.html#destroy": {
-                        "ref": "base.html#destroy",
-                        "tf": 2.631578947368421
-                      },
-                      "module-mixins_signalable-Signal.html": {
-                        "ref": "module-mixins_signalable-Signal.html",
-                        "tf": 6.25
-                      },
-                      "documents_model.html#.findKeys": {
-                        "ref": "documents_model.html#.findKeys",
-                        "tf": 2.083333333333333
-                      },
-                      "documents_model.html#.findOne": {
-                        "ref": "documents_model.html#.findOne",
-                        "tf": 20
-                      },
-                      "documents_model.html#.findOneKey": {
-                        "ref": "documents_model.html#.findOneKey",
-                        "tf": 23.125
-                      },
-                      "documents_model.html#.set": {
-                        "ref": "documents_model.html#.set",
-                        "tf": 2.272727272727273
-                      },
-                      "documents_model.html#.get": {
-                        "ref": "documents_model.html#.get",
-                        "tf": 7.6923076923076925
-                      },
-                      "module-ink_collector-OCollector.html": {
-                        "ref": "module-ink_collector-OCollector.html",
-                        "tf": 16.666666666666664
-                      },
-                      "module-ink_collector-OCollector.html#findOneKey": {
-                        "ref": "module-ink_collector-OCollector.html#findOneKey",
-                        "tf": 36.45833333333333
-                      },
-                      "module-ink_collector-OCollector.html#findOne": {
-                        "ref": "module-ink_collector-OCollector.html#findOne",
-                        "tf": 33.33333333333333
-                      },
-                      "module-ink_collector-OCollector.html#findKeys": {
-                        "ref": "module-ink_collector-OCollector.html#findKeys",
-                        "tf": 2.083333333333333
-                      },
-                      "module-ink_collector-ACollector.html#findOneKey": {
-                        "ref": "module-ink_collector-ACollector.html#findOneKey",
-                        "tf": 36.45833333333333
-                      },
-                      "module-ink_collector-ACollector.html#findOne": {
-                        "ref": "module-ink_collector-ACollector.html#findOne",
-                        "tf": 33.33333333333333
-                      },
-                      "module-ink_collector-ACollector.html#findKeys": {
-                        "ref": "module-ink_collector-ACollector.html#findKeys",
-                        "tf": 2.083333333333333
-                      },
-                      "module-documents_probe.queryOperators.html#.$size": {
-                        "ref": "module-documents_probe.queryOperators.html#.$size",
-                        "tf": 3.8461538461538463
-                      },
-                      "module-documents_probe.queryOperators.html#.$elemMatch": {
-                        "ref": "module-documents_probe.queryOperators.html#.$elemMatch",
-                        "tf": 2.7777777777777777
-                      },
-                      "module-documents_probe.updateOperators.html#.$unset": {
-                        "ref": "module-documents_probe.updateOperators.html#.$unset",
-                        "tf": 7.142857142857142
-                      },
-                      "mixins_signalable.html": {
-                        "ref": "mixins_signalable.html",
-                        "tf": 7.142857142857142
-                      },
-                      "module-documents_binder.html": {
-                        "ref": "module-documents_binder.html",
-                        "tf": 2.7777777777777777
-                      },
-                      "module-ink_collector.html": {
-                        "ref": "module-ink_collector.html",
-                        "tf": 16.666666666666664
-                      },
-                      "module-documents_probe.html": {
-                        "ref": "module-documents_probe.html",
-                        "tf": 10
-                      },
-                      "module-documents_schema.html": {
-                        "ref": "module-documents_schema.html",
-                        "tf": 7.142857142857142
-                      },
-                      "module-mixins_signalable.html": {
-                        "ref": "module-mixins_signalable.html",
-                        "tf": 6.666666666666667
-                      }
-                    },
-                    "/": {
-                      "docs": {},
-                      "a": {
-                        "docs": {},
-                        "r": {
-                          "docs": {},
-                          "r": {
-                            "docs": {},
-                            "a": {
-                              "docs": {},
-                              "y": {
-                                "docs": {
-                                  "documents_model.html#.remove": {
-                                    "ref": "documents_model.html#.remove",
-                                    "tf": 10
-                                  },
-                                  "module-ink_collector-OCollector.html#remove": {
-                                    "ref": "module-ink_collector-OCollector.html#remove",
-                                    "tf": 10
-                                  },
-                                  "module-ink_collector-ACollector.html#remove": {
-                                    "ref": "module-ink_collector-ACollector.html#remove",
-                                    "tf": 10
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    },
-                    "|": {
-                      "docs": {},
-                      "a": {
-                        "docs": {},
-                        "r": {
-                          "docs": {},
-                          "r": {
-                            "docs": {},
-                            "a": {
-                              "docs": {},
-                              "y": {
-                                "docs": {
-                                  "documents_model.html#.remove": {
-                                    "ref": "documents_model.html#.remove",
-                                    "tf": 20
-                                  },
-                                  "module-ink_collector-OCollector.html#remove": {
-                                    "ref": "module-ink_collector-OCollector.html#remove",
-                                    "tf": 33.33333333333333
-                                  },
-                                  "module-ink_collector-ACollector.html#remove": {
-                                    "ref": "module-ink_collector-ACollector.html#remove",
-                                    "tf": 33.33333333333333
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "n": {
-            "docs": {
-              "base_chains.html#close": {
-                "ref": "base_chains.html#close",
-                "tf": 2.1739130434782608
-              },
-              "base_chains.html#end": {
-                "ref": "base_chains.html#end",
-                "tf": 3.225806451612903
-              },
-              "base_chains.html#destroy": {
-                "ref": "base_chains.html#destroy",
-                "tf": 2.564102564102564
-              },
-              "base_chains.html#open": {
-                "ref": "base_chains.html#open",
-                "tf": 4.166666666666666
-              },
-              "utils_logger.Logger.html#level": {
-                "ref": "utils_logger.Logger.html#level",
-                "tf": 5.555555555555555
-              },
-              "base.html": {
-                "ref": "base.html",
-                "tf": 1.3888888888888888
-              },
-              "base.html#close": {
-                "ref": "base.html#close",
-                "tf": 2.1739130434782608
-              },
-              "base.html#open": {
-                "ref": "base.html#open",
-                "tf": 4.166666666666666
-              },
-              "module-mixins_signalable-Signal.html#once": {
-                "ref": "module-mixins_signalable-Signal.html#once",
-                "tf": 10
-              },
-              "module-documents_probe.queryOperators.html#.$in": {
-                "ref": "module-documents_probe.queryOperators.html#.$in",
-                "tf": 5.555555555555555
-              }
-            },
-            "c": {
-              "docs": {
-                "module-mixins_signalable-Signal.html#once": {
-                  "ref": "module-mixins_signalable-Signal.html#once",
-                  "tf": 670
-                }
-              }
-            }
-          },
-          "p": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "n": {
-                "docs": {
-                  "base_chains.html#close": {
-                    "ref": "base_chains.html#close",
-                    "tf": 1.0869565217391304
-                  },
-                  "base_chains.html#open": {
-                    "ref": "base_chains.html#open",
-                    "tf": 752.0833333333334
-                  },
-                  "base.html#close": {
-                    "ref": "base.html#close",
-                    "tf": 1.0869565217391304
-                  },
-                  "base.html#open": {
-                    "ref": "base.html#open",
-                    "tf": 752.0833333333334
-                  }
-                },
-                "/": {
-                  "docs": {},
-                  "c": {
-                    "docs": {},
-                    "l": {
-                      "docs": {},
-                      "o": {
-                        "docs": {},
-                        "s": {
-                          "docs": {
-                            "base_chains.html#open": {
-                              "ref": "base_chains.html#open",
-                              "tf": 2.083333333333333
-                            },
-                            "base.html#open": {
-                              "ref": "base.html#open",
-                              "tf": 2.083333333333333
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "r": {
-                "docs": {
-                  "documents_model.html#_idField": {
-                    "ref": "documents_model.html#_idField",
-                    "tf": 5.555555555555555
-                  },
-                  "documents_model.html#.update": {
-                    "ref": "documents_model.html#.update",
-                    "tf": 5.555555555555555
-                  },
-                  "module-ink_collector-OCollector.html#update": {
-                    "ref": "module-ink_collector-OCollector.html#update",
-                    "tf": 5.555555555555555
-                  },
-                  "module-ink_collector-ACollector.html#update": {
-                    "ref": "module-ink_collector-ACollector.html#update",
-                    "tf": 5.555555555555555
-                  },
-                  "module-documents_probe.queryOperators.html#.$mod": {
-                    "ref": "module-documents_probe.queryOperators.html#.$mod",
-                    "tf": 5.555555555555555
-                  },
-                  "module-documents_probe.queryOperators.html#.$elemMatch": {
-                    "ref": "module-documents_probe.queryOperators.html#.$elemMatch",
-                    "tf": 2.7777777777777777
-                  },
-                  "module-documents_probe.updateOperators.html#.$pop": {
-                    "ref": "module-documents_probe.updateOperators.html#.$pop",
-                    "tf": 1.6666666666666667
-                  },
-                  "module-documents_probe.updateOperators.html#.$push": {
-                    "ref": "module-documents_probe.updateOperators.html#.$push",
-                    "tf": 5
-                  },
-                  "module-documents_probe.updateOperators.html#.$pull": {
-                    "ref": "module-documents_probe.updateOperators.html#.$pull",
-                    "tf": 4.545454545454546
-                  },
-                  "module-documents_binder.html": {
-                    "ref": "module-documents_binder.html",
-                    "tf": 2.7777777777777777
-                  }
-                }
-              }
-            },
-            "t": {
-              "docs": {},
-              "i": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "n": {
-                    "docs": {
-                      "base.html": {
-                        "ref": "base.html",
-                        "tf": 2.7777777777777777
-                      },
-                      "base.html#addOptions": {
-                        "ref": "base.html#addOptions",
-                        "tf": 55.55555555555556
-                      },
-                      "base.html#addDefaultOptions": {
-                        "ref": "base.html#addDefaultOptions",
-                        "tf": 65
-                      },
-                      "module-documents_probe.queryOperators.html#.$regex": {
-                        "ref": "module-documents_probe.queryOperators.html#.$regex",
-                        "tf": 4.545454545454546
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "v": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "r": {
-                "docs": {},
-                "w": {
-                  "docs": {},
-                  "r": {
-                    "docs": {},
-                    "i": {
-                      "docs": {},
-                      "t": {
-                        "docs": {},
-                        "t": {
-                          "docs": {},
-                          "e": {
-                            "docs": {},
-                            "n": {
-                              "docs": {
-                                "base.html#addOptions": {
-                                  "ref": "base.html#addOptions",
-                                  "tf": 5.555555555555555
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "c": {
-            "docs": {},
-            "o": {
-              "docs": {},
-              "l": {
-                "docs": {},
-                "l": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "c": {
-                      "docs": {},
-                      "t": {
-                        "docs": {},
-                        "o": {
-                          "docs": {},
-                          "r": {
-                            "docs": {
-                              "module-ink_collector-OCollector.html": {
-                                "ref": "module-ink_collector-OCollector.html",
-                                "tf": 500
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "t": {
-            "docs": {},
-            "h": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "r": {
-                  "docs": {},
-                  "w": {
-                    "docs": {},
-                    "i": {
-                      "docs": {},
-                      "s": {
-                        "docs": {
-                          "module-documents_probe.queryOperators.html#.$eq": {
-                            "ref": "module-documents_probe.queryOperators.html#.$eq",
-                            "tf": 2
-                          },
-                          "module-documents_probe.queryOperators.html#.$ne": {
-                            "ref": "module-documents_probe.queryOperators.html#.$ne",
-                            "tf": 2.7777777777777777
-                          },
-                          "module-documents_binder.html": {
-                            "ref": "module-documents_binder.html",
-                            "tf": 2.7777777777777777
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "p": {
           "docs": {},
           "r": {
@@ -14219,7 +14301,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 1459
+      "length": 1468
     },
     "corpusTokens": [
       "1",
@@ -14288,6 +14370,8 @@ window.lunrData = {
       "collect",
       "collector",
       "collectorbas",
+      "come",
+      "commun",
       "compar",
       "comparison",
       "compet",
@@ -14382,6 +14466,7 @@ window.lunrData = {
       "floss",
       "food",
       "foodoc",
+      "fork",
       "form",
       "found",
       "function",
@@ -14402,6 +14487,7 @@ window.lunrData = {
       "highlight",
       "http://pimterry.github.io/loglevel",
       "identifi",
+      "improv",
       "inc",
       "includ",
       "increment",
@@ -14421,6 +14507,7 @@ window.lunrData = {
       "it'",
       "item",
       "itself",
+      "join",
       "jsdoc3",
       "json",
       "keep",
@@ -14576,6 +14663,7 @@ window.lunrData = {
       "option",
       "order",
       "otherwis",
+      "over",
       "overwritten",
       "papyru",
       "paradigm",
@@ -14651,6 +14739,7 @@ window.lunrData = {
       "size",
       "slightli",
       "someth",
+      "sourc",
       "specifi",
       "state",
       "still",

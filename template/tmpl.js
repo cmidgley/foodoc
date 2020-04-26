@@ -1195,12 +1195,20 @@ this["tmpl"]["tutorial"] = Handlebars.template({"1":function(container,depth0,he
 
   return ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.externalLink : depth0),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.program(9, data, 0),"data":data})) != null ? stack1 : "");
 },"7":function(container,depth0,helpers,partials,data) {
-    return "							<li>"
-    + container.escapeExpression((helpers.linkto || (depth0 && depth0.linkto) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.externalLink : depth0),(depth0 != null ? depth0.title : depth0),{"name":"linkto","hash":{},"data":data}))
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing;
+
+  return "							<li>"
+    + container.escapeExpression((helpers.linkto || (depth0 && depth0.linkto) || alias2).call(alias1,(depth0 != null ? depth0.externalLink : depth0),(depth0 != null ? depth0.title : depth0),{"name":"linkto","hash":{},"data":data}))
+    + ": "
+    + ((stack1 = ((helper = (helper = helpers.summary || (depth0 != null ? depth0.summary : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"summary","hash":{},"data":data}) : helper))) != null ? stack1 : "")
     + "</li>\r\n";
 },"9":function(container,depth0,helpers,partials,data) {
-    return "							<li>"
-    + container.escapeExpression((helpers.linkto || (depth0 && depth0.linkto) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.longname : depth0),{"name":"linkto","hash":{},"data":data}))
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing;
+
+  return "							<li>"
+    + container.escapeExpression((helpers.linkto || (depth0 && depth0.linkto) || alias2).call(alias1,(depth0 != null ? depth0.longname : depth0),{"name":"linkto","hash":{},"data":data}))
+    + ": "
+    + ((stack1 = ((helper = (helper = helpers.summary || (depth0 != null ? depth0.summary : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"summary","hash":{},"data":data}) : helper))) != null ? stack1 : "")
     + "</li>\r\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;

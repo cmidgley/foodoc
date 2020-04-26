@@ -354,8 +354,6 @@ exports.buildNavbar = function(navbar){
 				link: helper.longnameToUrl[member.longname],
 				members: member.children.map(function(child){
 					// if foodoc json says to use url, use that instead of the original document 
-					console.error("URL is", child.url, "and title is", child.title);
-					console.error("   extLink", child.externalLink);
 					if (child.externalLink)
 						return child.externalLink;
 					return template.linkto(child.longname);
