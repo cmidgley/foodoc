@@ -11,7 +11,11 @@
 				{{/if}}
 					<ul>
 						{{#each doclet.children}}
+						  {{#if externalLink}}
+							<li>{{linkto externalLink title}}</li>
+						  {{else}}
 							<li>{{linkto longname}}</li>
+						  {{/if}}
 						{{/each}}
 					</ul>
 				</div>

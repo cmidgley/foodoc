@@ -282,6 +282,7 @@ var processTutorial = function(tutorial, tutorials, tutorialToConfig){
 			}
 			if (config.url) {
 				child.url = config.url;
+				child.externalLink = template.linkto(config.url, config.title);
 			}
 			if (typeof config.showTableOfContents === 'boolean'){
 				child.showTableOfContents = config.showTableOfContents;
@@ -353,8 +354,8 @@ exports.buildNavbar = function(navbar){
 				link: helper.longnameToUrl[member.longname],
 				members: member.children.map(function(child){
 					// if foodoc json says to use url, use that instead of the original document 
-					if (child.url)
-						return template.linkto(child.url);
+					if (child.externalLink)
+						return child.externalLink;
 					return template.linkto(child.longname);
 				})
 			};
