@@ -66,6 +66,8 @@ function processReplaceWithCodeMenus() {
 			if (subTutorial.replaceWithCodeMenus) {
 				// found the need to replace the menu item with all code menus. 
 				let codeDoclets = [];				
+				// track which document is using code menus
+				template.raw.codeMenusLongname = tutorial.longname;
 				// Go locate all non-tutorial doclets
 				template.raw.data().each(menuDoclet => {
 					if (menuDoclet.kind === 'list' && menuDoclet.name !== 'Tutorials' && menuDoclet.members.length > 0) {

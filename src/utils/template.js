@@ -242,6 +242,12 @@ exports.createCrumbs = function(doclet){
 	var crumbs = [];
 	if (doclet.kind === 'readme' || doclet.kind === 'source') return crumbs;
 	crumbs.push(linkto("index", "Home"));
+	// check if this is using code menus
+	// if using code menus, make sure we add the crumb to the top level menu list
+	if (this.raw.codeMenusLongname && doclet.kind != 'tutorial' && doclet.kind != 'global' ) {
+		crumbs.push(linkto(this.raw.codeMenusLongname));
+	}
+	// add link to the list of items, unless it is a list, tutorial or global
 	if (doclet.kind !== 'list' && doclet.kind !== 'tutorial' && doclet.kind !== 'global' && hasNavMember(doclet.kind)){
 		crumbs.push(linkto("list:"+doclet.kind));
 	}
