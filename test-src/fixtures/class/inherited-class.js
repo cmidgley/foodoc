@@ -1,8 +1,8 @@
 /**
  * Inherited class example
- * @extends baseClass
+ * @extends BaseClass
  */
-export class inheritedClass {
+export class InheritedClass extends BaseClass{
     /**
      * Constructor for inherited class
      * @param {string} extraParameter Extra parameter example

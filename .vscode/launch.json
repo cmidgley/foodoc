@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Generate sample doc",
             "skipFiles": [
                 "<node_internals>/**"
             ],
@@ -17,6 +17,23 @@
                 "--recurse",
                 "--destination", "./examples/default",
                 "--template", "./template",
+                "--configure", "./test-src/default.conf.json",
+                "--tutorials", "./test-src/fixtures/tutorials/",
+                "--private"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Generate sample doc (no template)",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\node_modules\\jsdoc\\jsdoc.js",
+            "args": [ 
+                "test-src/fixtures",
+                "--recurse",
+                "--destination", "./examples/default",
                 "--configure", "./test-src/default.conf.json",
                 "--tutorials", "./test-src/fixtures/tutorials/",
                 "--private"

@@ -2,7 +2,7 @@
  * Base class example
  * @abstract
  */
-export class baseClass {
+export class BaseClass {
     /**
      * Constructor for base class
      */

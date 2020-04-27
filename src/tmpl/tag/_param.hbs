@@ -1,7 +1,17 @@
+{{#if useParamHeader}}
+	<div class="callout callout-info">
+{{/if}}
+{{#if classdesc}}
+	{{#if description}}
+		<div class="constructor">
+			<h5>Constructor</h5>
+			{{{description}}}
+		</div>
+	{{/if}}
+{{/if}}
 {{#if params}}
 	{{#unless child}}
-<div class="callout callout-info">
-	<h5>Parameters</h5>
+		<h5>Parameters</h5>
 	{{/unless}}
 	<table class="params table table-striped">
 		<thead>
@@ -44,7 +54,7 @@
 		{{/each}}
 		</tbody>
 	</table>
-	{{#unless child}}
+{{/if}}
+{{#if useParamHeader}}
 </div>
-	{{/unless}}
 {{/if}}

@@ -69,6 +69,9 @@
 .callout-info {
 	border-left-color: #87b9f1;
 }
+.callout-info .constructor {
+	padding-bottom: 14px;
+}
 .callout-info h5 {
 	color: #87b9f1;
 }
