@@ -26,17 +26,11 @@
 			{{#if augments}}
 				<!-- augments -->
 				<div class="form-group">
-					<label class="col-sm-3 control-label">Augments</label>
-					<div class="col-sm-9">
-						{{#single augments}}
-							<p class="form-control-static">{{linkto this}}</p>
-						{{else}}
-							<ul class="form-control-static">
-								{{#each augments}}
-									<li>{{linkto this}}</li>
-								{{/each}}
-							</ul>
-						{{/single}}
+					<label class="col-sm-3 control-label">Inherits</label>
+					<div class="col-sm-9 form-control-static">
+						{{#each augments}}
+							{{linkto this}}<br>
+						{{/each}}
 					</div>
 				</div>
 			{{/if}}
