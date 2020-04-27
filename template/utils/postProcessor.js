@@ -70,7 +70,7 @@ function processReplaceWithCodeMenus() {
 				template.raw.codeMenusLongname = tutorial.longname;
 				// Go locate all non-tutorial doclets
 				template.raw.data().each(menuDoclet => {
-					if (menuDoclet.kind === 'list' && menuDoclet.name.toLowerCase() !== 'tutorials' && menuDoclet.members.length > 0) {
+					if (menuDoclet.kind === 'list' && menuDoclet.for !== 'tutorial' && menuDoclet.members.length > 0) {
 						codeDoclets.push({...menuDoclet});
 						// and drop this from the menu
 						menuDoclet.dropFromMenu = true;
