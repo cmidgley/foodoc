@@ -229,7 +229,11 @@ exports.getPageTitle = function(doclet, sanitized){
 		parts.push('<sup class="variation">' + doclet.variation + '</sup>');
 	}
 	var result = parts.join('');
-	return sanitized ? template.sanitize(result) : result;
+	// used to do the following, but that resulted in page titles with &amp; and other such side effects
+	//	return sanitized ? template.sanitize(result) : result;
+	if (sanitized)
+		return doclet.title ? doclet.title : doclet.name;
+	return result;
 };
 
 exports.getListTitle = function(doclet, sanitized){

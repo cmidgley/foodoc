@@ -27,13 +27,14 @@
 .page-header .ancestors {
 	display: block;
 	font-size: 16px;
+	color: #C0C0C0;
 }
 .page-header .ancestors a {
-	color: #FFF;
-	opacity: 0.3;
+	color: #C0C0C0;
 }
 .page-header .ancestors a:hover {
 	opacity: 1;
+	color: #FFFFFF;
 	text-decoration: underline;
 }
 .page-header .ancestors+.name {
