@@ -88,8 +88,8 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
 	"navMembers"            : "{array.<object>}",
 	"linenums"              : "{boolean}",
 	"showTableOfContents"   : "{boolean}",
-    "showAccessFilter"      : "{boolean}",
-    "includeMermaid"        : "{boolean}",
+	"showAccessFilter"      : "{boolean}",
+	"includeMermaid"        : "{boolean}",
 	"analytics"             : "{object}",
 	"collapseSymbols"       : "{boolean}",
 	"methodHeadingReturns"  : "{boolean}",
@@ -212,7 +212,17 @@ The following shows what the `tutorials.json` in the `fixtures` test code contai
   },
   "drive-car": {
     "title": "Drive Car",
-    "summary": "How to drive a car!"
+    "summary": "How to drive a car!",
+    "children": {
+        "include-docs": {
+            "replaceWithCodeMenus": true
+        },
+        "GitHub": {
+            "title": "Fork on GitHub",
+            "summary": "Help improve this project and fork on GitHub",
+            "url": "https://github.com/cmidgley/foodoc"
+        }
+    }
   }
 }
 ```
@@ -253,7 +263,7 @@ You can optionally include [Mermaid](https://mermaid-js.github.io/mermaid/#/) ba
     *     C-->D;
     */
     ```
-* Markdown can use the language specifier `mermaid` is code blocks, such as:
+* Markdown can use the language specifier `mermaid` in code blocks, such as:
     <pre>```mermaid
         classDiagram
             InheritedClass <|-- BaseClass
@@ -327,9 +337,14 @@ var index = lunr(function(){
 
 Quite simply Sunlight is no longer maintained and while it does work I prefer Prism which is actively maintained and follows HTML5 standards.
 
-### Quick hints on forking and changing the template
+## Getting started with the source code 
 
-This project uses Grunt to build the templates, and the most common Grunt commands are also in `package.json` scripts.  Some quick hints to help understand the project:
+The most important tools to understand, or at least know about and research as needed, are:
+* [JSDoc](https://jsdoc.app/): Obviously...!
+* [Handlebars](https://handlebarsjs.com/): This is the template engine used.  The templates are located in `src\tmpl`, and the JavaScript support code is in `src\utils`.  
+* [TaffyDB](http://taffydb.com/): This is the database used by JSDoc, and all `doclets` are held in there.  You can generally find this database as `template.raw.data`
+
+This project requires building to be used, as the .js/.css/.hbs/etc files are pre-processed, using Grunt (with build commands also located in `package.json`).  
 * The `examples` and `templates` directories are built from grunt. If you run the `clean` command, they will be removed which can make finding source and browsing the structure easier.
 * If you change source (under `src`) it will not be used until you build (such as the default grunt build, `template`, or `all`).  Processes all the source into the `templates` directory.
 * Running `templates` builds just the templates, whereas default and `all` (and several others) also runs JSDoc on the `test-src` directory and outputs this into the `examples` directory. 
