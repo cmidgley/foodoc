@@ -7,19 +7,20 @@
 	margin-top: 0;
 	margin-bottom: 40px;
 	padding: 15px 0;
-	background-color: #337ab7;
+	background-color: #c44e00;
 }
 .page-header .kind {
-	font-size: 50px;
 	line-height: 1.1;
 	text-transform: uppercase;
-	opacity: .1;
+	opacity: 0; /* set to .1 to see page kind, like CLASS or README */
 	position: absolute;
 	right: 15px;
 	color: #fff;
+	margin-top: -25px;
+	font-size: 25px;
 }
 .page-header h1 {
-	font-size: 36px;
+	font-size: 30px;
 	line-height: 1.1;
 	margin-top: 0;
 	color: #fff;
@@ -41,7 +42,7 @@
 	margin-left: 15px;
 }
 .page-header p {
-	font-size: 20px;
+	font-size: 17px;
 	margin-bottom: 0;
 	font-weight: 300;
 	line-height: 1.4;
@@ -49,6 +50,16 @@
 }
 .page-header .container {
 	position: relative;
+	display: flex;
+    align-items: center;
+}
+
+.page-header .container .container-logo, .page-header .container .container-logo img {
+    width: 40px;
+}
+.page-header .container .container-content {
+    flex-grow: 1;
+    margin-right: 10px;
 }
 
 #topNavigation .dropdown-menu {
@@ -68,13 +79,29 @@
 		line-height: 1;
 	}
 	.page-header h1 {
-		font-size: 60px;
+		font-size: 45px;
 		line-height: 1;
 	}
 	.page-header .ancestors {
 		font-size: 20px;
 	}
 	.page-header p {
-		font-size: 24px;
+		font-size: 22px;
 	}
+    .page-header .container .container-logo, .page-header .container .container-logo img {
+        width: 60px;
+	}
+}
+
+@media(min-width: 992px) {
+	.page-header .container .container-logo, .page-header .container .container-logo img {
+		width: 80px;
+	}
+	.page-header h1 {
+		font-size: 60px;
+	}
+	.page-header p {
+		font-size: 28px;
+	}
+
 }

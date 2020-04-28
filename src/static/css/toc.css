@@ -26,18 +26,18 @@
 .toc .nav > li > a:hover,
 .toc .nav > li > a:focus {
 	padding-left: 35px;
-	color: #337ab7;
+	color: #c44e00;
 	text-decoration: none;
 	background-color: transparent;
-	border-left: 1px solid #337ab7;
+	border-left: 1px solid #c44e00;
 }
 .toc .nav > li.active > a,
 .toc .nav > li.active > a:hover,
 .toc .nav > li.active > a:focus {
 	padding-left: 34px;
-	color: #337ab7;
+	color: #c44e00;
 	background-color: transparent;
-	border-left: 2px solid #337ab7;
+	border-left: 2px solid #c44e00;
 }
 
 .toc .nav .nav {

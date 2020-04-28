@@ -46,6 +46,12 @@ p.lunr-search-result-summary {
 	text-overflow: ellipsis;
 }
 
+@media(min-width: 768px) {
+    .navbar-form {
+        width: 228px;
+    }
+}
+
 @media (min-width: 992px) {
 	.navbar-form {
 		width: 228px;/* 3 col */

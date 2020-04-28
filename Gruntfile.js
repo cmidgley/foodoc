@@ -127,7 +127,8 @@ module.exports = function(grunt) {
 						'src/static/css/lunr-search.css',
 						'src/static/css/related-tutorials.css',
 						'src/static/css/toc.css',
-						'src/static/css/access-filter.css'
+						'src/static/css/access-filter.css',
+						'src/static/css/mermaid.css'
 					]
 				}
 			}

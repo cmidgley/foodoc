@@ -9,4 +9,5 @@
 .signature-new {
 	color: #adadad;
 	font-size: smaller;
+	display: none; /* remove if want "new" in front of classes */
 }

@@ -2,18 +2,21 @@ html {
 	margin-top: 50px;
 	background-color: #f9f9f9;
 }
+.navbar-header {
+	white-space: nowrap;
+}
 .navbar-brand.branding-logo {
 	background-position: 15px center;
 	background-size: 40px;
 	background-repeat: no-repeat;
-	text-indent: 44px;
+	text-indent: 0;
 }
 .main-content {
 	padding-bottom: 200px;
 }
 .main-content h1,
 .main-content h2 {
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #c47c00;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	padding-bottom: 9px;

@@ -21,12 +21,12 @@ dl.symbol dl.symbol {
 
 .symbol-title .name-signature,
 .symbol-title .signature-params {
-	color: #222;
+	color: #202020;
 }
 .symbol-title h4.event,
 .symbol-title .name-string,
 .symbol-title .signature-param {
-	color: #c7254e;
+	color: #007d66;
 }
 .symbol-details {
 	overflow: hidden;
@@ -36,7 +36,7 @@ dl.symbol dl.symbol {
 	cursor: pointer;
 }
 .symbol-title.collapsible-symbol .toggle-icon {
-	color: #337ab7;
+	color: #c44e00;
 	text-indent: 0;
 }
 .symbol-title.collapsible-symbol:hover .toggle-icon {
