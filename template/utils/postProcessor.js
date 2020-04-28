@@ -107,6 +107,7 @@ function getFilename(longname) {
  */
 var registerDoclet = exports.registerDoclet = function (doclet) {
 	var url;
+
 	if (template.kinds.custom.indexOf(doclet.kind) !== -1) {
 		url = helper.getUniqueFilename(doclet.longname);
 	} else if (doclet.kind === 'event') {

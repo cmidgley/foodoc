@@ -90,6 +90,9 @@ var raw = exports.raw = {
 var configured = false;
 exports.configure = function(taffyData, opts, tutorials){
 	raw.data = helper.prune(taffyData);
+	// remove all pseudo-classes the JSDoc generates for inherited class usage.  This does not remove actual
+	// inherited classes, just those annoying #inherted#class (etc) classes.
+	raw.data({kind:'class', inherited:true}).remove();
 	raw.opts = opts;
 	raw.tutorials = tutorials;
 	config.dir.root = opts.templates;
