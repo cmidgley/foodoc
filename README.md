@@ -326,6 +326,14 @@ var index = lunr(function(){
 
 Quite simply Sunlight is no longer maintained and while it does work I prefer Prism which is actively maintained and follows HTML5 standards.
 
+### Quick hints on forking and changing the template
+
+This project uses Grunt to build the templates, and the most common Grunt commands are also in `package.json` scripts.  Some quick hints to help understand the project:
+* The `examples` and `templates` directories are built from grunt. If you run the `clean` command, they will be removed which can make finding source and browsing the structure easier.
+* If you change source (under `src`) it will not be used until you build (such as the default grunt build, `template`, or `all`).  Processes all the source into the `templates` directory.
+* Running `templates` builds just the templates, whereas default and `all` (and several others) also runs JSDoc on the `test-src` directory and outputs this into the `examples` directory. 
+* The `templates` directory is pushed to GitHub, but `examples` is not.  This means that after making changes, you should run one of the build options that generates templates, and push those back to GitHub to use them.
+
 ## To Do
 
 *   Refactor and document the template source code. Now that I know how it all works I can slim down source code and then heavily document it so I can use it as the example documentation.
