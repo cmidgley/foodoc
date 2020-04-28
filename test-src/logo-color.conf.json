@@ -2,7 +2,9 @@
   "tags": {
     "allowUnknownTags": true
   },
-  "plugins": ["plugins/markdown"],
+  "plugins": ["plugins/markdown",
+    "../foodoc/node_modules/jsdoc-mermaid"
+  ],
   "templates": {
     "favicon": "./test-src/foobot-40x40.png",
     "systemLogo": "./test-src/foobot-40x40.png",

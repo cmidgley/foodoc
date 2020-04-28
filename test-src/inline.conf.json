@@ -2,7 +2,9 @@
   "tags": {
     "allowUnknownTags": true
   },
-  "plugins": ["plugins/markdown"],
+  "plugins": ["plugins/markdown",
+    "../foodoc/node_modules/jsdoc-mermaid"
+  ],
   "templates": {
     "inlineNav": true
   },

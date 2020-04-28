@@ -19,8 +19,13 @@ This cmidgley/foodoc fork has many changes to FooDoc, including:
 - Adds the ability to embed the generated code documentation (classes, functions, etc) within a "tutorial" style menu
 - Fixes several problems, including errors with latest JQuery and "constructor" error loading default json files 
 - Several style changes, including default color, hiding the document "kind" (README, CLASS, etc).  All can be overridden with personal stylesheets, and all have comments in the CSS files (except color changes)
-- Adds support for [Mermaid](https://mermaid-js.github.io/mermaid/#/) when `includeMermaid: true` is used.  This allows for @mermaid in the source code (see [JSDoc Mermaid](https://github.com/cmidgley/jsdoc-mermaid)) as well as code blocks in markdown with the `mermaid` language specifier.  
-
+- Adds support for [Mermaid](https://mermaid-js.github.io/mermaid/#/) when `includeMermaid: true` is used.  This allows for @mermaid in the source code (see [JSDoc Mermaid](https://github.com/cmidgley/jsdoc-mermaid)) as well as code blocks in markdown with the `mermaid` language specifier.  To use, your plug-ins in your `conf.json` must include `../foodoc/node_modules/jsdoc-mermaid`.  See the `template/conf.json` for a complete example, but this is the fragment needed:
+    ```js
+    "plugins": [
+        "plugins/markdown",
+        "../foodoc/node_modules/jsdoc-mermaid"
+    ],
+    ```
 ## Features
 
 * Right side Table of Contents which auto hides on pages it's not required on.
