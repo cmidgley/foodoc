@@ -28,7 +28,8 @@
     "grunt-contrib-handlebars": "^1.0.0",
     "grunt-jsdoc": "^2.2.0",
     "jquery": "3.4.1",
-    "prismjs": "^1.14.0"
+    "prismjs": "^1.14.0",
+    "jsdoc-mermaid": "https://github.com/cmidgley/jsdoc-mermaid.git"
   },
   "dependencies": {
     "cheerio": "^0.22.0",

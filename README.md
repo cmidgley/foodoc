@@ -19,7 +19,7 @@ This cmidgley/foodoc fork has many changes to FooDoc, including:
 - Adds the ability to embed the generated code documentation (classes, functions, etc) within a "tutorial" style menu
 - Fixes several problems, including errors with latest JQuery and "constructor" error loading default json files 
 - Several style changes, including default color, hiding the document "kind" (README, CLASS, etc).  All can be overridden with personal stylesheets, and all have comments in the CSS files (except color changes)
-- Adds style support for Mermaid (see [JSDoc Mermaid](https://github.com/cmidgley/jsdoc-mermaid))
+- Adds support for [Mermaid](https://mermaid-js.github.io/mermaid/#/) when `includeMermaid: true` is used.  This allows for @mermaid in the source code (see [JSDoc Mermaid](https://github.com/cmidgley/jsdoc-mermaid)) as well as code blocks in markdown with the `mermaid` language specifier.  
 
 ## Features
 
@@ -94,7 +94,8 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
 	"navMembers"            : "{array.<object>}",
 	"linenums"              : "{boolean}",
 	"showTableOfContents"   : "{boolean}",
-	"showAccessFilter"      : "{boolean}",
+    "showAccessFilter"      : "{boolean}",
+    "includeMermaid"        : "{boolean}",
 	"analytics"             : "{object}",
 	"collapseSymbols"       : "{boolean}",
 	"methodHeadingReturns"  : "{boolean}",
@@ -162,6 +163,8 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
     When `true`, a TOC is generated from all `H1`, `H2`, `H3` and `H4` headings in the generated pages, this includes the README and tutorial pages. If you want to disable this for specific tutorial pages you can set this same option per tutorial in the extended tutorial configuration.
 *   __showAccessFilter - `true`__
     When `true`, a checkbox list is displayed allowing the user to toggle the visibility of inherited, public, protected and private symbols of the current doclet. Each checkbox will only be displayed if the doclet contains at least one symbol of that type. If there is only a single type available across the entire doclet the filter is not displayed at all.
+*   __includeMermaid - `false`__
+    When `true`, includes Mermaid which allows for doing flowcharts, class diagrams and more from within your documentation and rendered onto the pages.   
 *   __analytics - `{"ua": "", "domain": ""}`__
     Adds a [Google Analytics](http://www.google.com/analytics) code block to the template output
     _e.g._ `"analytics":{"ua":"UA-XXXXX-XXX", "domain":"XXXX"}`
@@ -303,6 +306,8 @@ Quite simply Sunlight is no longer maintained and while it does work I prefer Pr
 ## Changelog
 
 All releases prior to 1.0.0 are considered pre-release, i.e. I'm not finished changing stuff yet so anything can happen ;)
+
+### See notes above for changes made to this fork
 
 ### 0.0.9
 

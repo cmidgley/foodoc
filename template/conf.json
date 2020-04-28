@@ -25,6 +25,7 @@
     "methodHeadingReturns": true,
     "showTableOfContents": true,
     "showAccessFilter": false,
+    "includeMermaid": false,
     "sort": "linenum, longname, version, since",
     "search": true,
     "analytics": {"ua": "", "domain": ""},

@@ -40,6 +40,7 @@ var options = exports.options = extend({
 	outputSourcePath: false,
 	showTableOfContents: true,
 	showAccessFilter: true,
+	includeMermaid: false,
 	analytics: null,
 	methodHeadingReturns: true,
 	sort: "linenum, longname, version, since",
