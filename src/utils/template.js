@@ -18,10 +18,14 @@ var kinds = exports.kinds = {
 
 var options = exports.options = extend({
 	includeDate: true,
+	includeClass: true,
+	includeGeneratedBy: true,
+	removeInheritedStubs: false,
 	dateFormat: "Do MMM YYYY",
 	systemName: "FooDoc",
 	systemSummary: "A Bootstrap and Handlebars based template for JSDoc3.",
 	systemLogo: "",
+	pageLogo: "",
 	systemColor: "",
 	navMembers: [],
 	footer: "",
@@ -92,7 +96,8 @@ exports.configure = function(taffyData, opts, tutorials){
 	raw.data = helper.prune(taffyData);
 	// remove all pseudo-classes the JSDoc generates for inherited class usage.  This does not remove actual
 	// inherited classes, just those annoying #inherted#class (etc) classes.
-	raw.data({kind:'class', inherited:true}).remove();
+	if (this.options.removeInheritedStubs)
+		raw.data({kind:'class', inherited:true}).remove();
 	raw.opts = opts;
 	raw.tutorials = tutorials;
 	config.dir.root = opts.templates;
@@ -180,6 +185,16 @@ var generateStaticFiles = exports.generateStaticFiles = function(){
 			fs.mkPath(config.dir.images);
 			fs.copyFileSync(options.systemLogo, config.dir.images);
 			options.systemLogo = 'img/'+path.basename(options.systemLogo);
+		}
+	}
+
+	// and copy the pageLogo file if one was supplied and update the option with the output file path
+	if (options.pageLogo){
+		var stats = fs.lstatSync(options.pageLogo);
+		if (stats.isFile()){
+			fs.mkPath(config.dir.images);
+			fs.copyFileSync(options.pageLogo, config.dir.images);
+			options.systepageLogomLogo = 'img/'+path.basename(options.systempageLogoLogo);
 		}
 	}
 
