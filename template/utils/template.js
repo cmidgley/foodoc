@@ -194,7 +194,7 @@ var generateStaticFiles = exports.generateStaticFiles = function(){
 		if (stats.isFile()){
 			fs.mkPath(config.dir.images);
 			fs.copyFileSync(options.pageLogo, config.dir.images);
-			options.systepageLogomLogo = 'img/'+path.basename(options.systempageLogoLogo);
+			options.systepageLogomLogo = 'img/'+path.basename(options.pageLogo);
 		}
 	}
 
