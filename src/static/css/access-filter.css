@@ -31,8 +31,7 @@
 	position: relative;
 	left: -25px;
 }
-.access-filter .checkbox-inline:first-of-type:before {
-}
+
 .access-filter .checkbox-inline+.checkbox-inline:before {
 	content: "|";
 }
