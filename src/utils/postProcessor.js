@@ -16,10 +16,6 @@ exports.process = function(){
 		doclet.linkText = doc.getLinkText(doclet);
 		doclet.summary = doc.getSummary(doclet);
 		doclet.params = doc.getParamsOrProps(doclet, 'params');
-		// define a helper for the _param.hbs which determines if the header should be rendered.  The header is
-		// needed (true) if the parameters are not being rendered as a child, yet there are parameters to render or
-		// there is a constructor on a class
-		doclet.useParamHeader = !doclet.child && (doclet.params.length > 0 || (doclet.classdesc !== undefined && doclet.description !== undefined));
 		doc.checkParamsOrProps(doclet, 'params');
 		doclet.properties = doc.getParamsOrProps(doclet, 'properties');
 		doc.checkParamsOrProps(doclet, 'properties');
@@ -39,6 +35,13 @@ exports.process = function(){
 		doclet.hasDetails = doc.hasDetails(doclet);
 		doclet.inherited = doc.isInherited(doclet);
 		doclet.access = typeof doclet.access == 'string' ? doclet.access : "public";
+		doclet.classDiagram = doc.classDiagram(doclet);
+
+		// define a helper for the _param.hbs which determines if the header should be rendered.  The header is
+		// needed (true) if the parameters are not being rendered as a child, yet there are parameters to render,
+		// or there is a constructor on a class
+		doclet.useParamHeader = !doclet.child && 
+			(doclet.params.length > 0 || (doclet.classdesc !== undefined && doclet.description !== undefined));
 		// todo: maybe expose this as an additional option, basically switches the description to a summary if no summary was supplied and the descriptions text is shorter than 120 characters
 		//if (!doclet.summary.length && doclet.description && template.sanitize(doclet.description).length <= 120){
 		//	doclet.summary = doclet.description;

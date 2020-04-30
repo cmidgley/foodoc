@@ -75,6 +75,15 @@
 .callout-info h5 {
 	color: #606060;
 }
+.callout-class-diagram {
+	border-left-color: #606060;
+}
+.callout-class-diagram .constructor {
+	padding-bottom: 14px;
+}
+.callout-class-diagram h5 {
+	color: #606060;
+}
 .callout-rpc {
 	border-left-color: #c7bfd3;
 }

@@ -1,4 +1,3 @@
-
 .tutorial-section .lang-mermaid, .tutorial-section .language-mermaid {
     opacity: 0
 }
@@ -7,68 +6,67 @@
     display: none;
 }
 
-.tutorial-section .language-mermaid code, div.mermaid {
+.language-mermaid code {
     display: flex;
     overflow: hidden;
+    opacity: 0
 }
 
-:not(pre)>code[class*=language-mermaid], pre[class*=language-mermaid] {
-    background-color: #c47c00;
-}
-
-.mermaid .relation {
+.filtered-mermaid .relation {
     stroke: #404040 !important;
     stroke-width: 3 !important;
 }
 
-.mermaid .label, .mermaid .edgeLabel .label text {
+.filtered-mermaid .label, .filtered-mermaid .edgeLabel .label text {
     fill: #ffffff !important;
 }
 
-.mermaid .box {
+.filtered-mermaid .box {
     fill: #404040 !important;
     opacity: 1 !important;
     stroke: #404040 !important;
     stroke-width: 4px !important;
 }
 
-.mermaid text {
+.filtered-mermaid text {
     fill: #ffffff !important;
 }
 
-.tutorial-section .mermaid text {
+.tutorial-section .filtered-mermaid text {
     fill: #000000 !important;
 }
 
-.tutorial-section .mermaid .classLabel text {
+.tutorial-section .filtered-mermaid .classLabel text {
     fill: #ffffff !important;
 }
 
-.mermaid rect, .mermaid .node polygon {
-    fill: #c47c00 !important;
+.filtered-mermaid rect, .filtered-mermaid .node polygon {
+    fill: #909090 !important;
     stroke: #303030 !important;
     stroke-width: 1.5 !important;
 }
 
-.tutorial-section .mermaid rect, .tutorial-section .mermaid .node polygon {
+.class-diagram-primary rect {
+    fill: #c47c00 !important
+}
+.tutorial-section .filtered-mermaid rect, .tutorial-section .filtered-mermaid .node polygon {
     fill: #ffffff !important;
     stroke: #303030 !important;
     stroke-width: 1.5 !important;
 }
 
-.mermaid .classLabel rect, .mermaid .label rect {
+.filtered-mermaid .classLabel rect, .filtered-mermaid .label rect {
     fill: #404040 !important;
     opacity: 1 !important;
     stroke: #404040 !important;
     stroke-width: 10px !important;
 }
 
-.mermaid line {
+.filtered-mermaid line {
     stroke: #303030 !important;
     stroke-width: 1 !important;
 }
 
-.mermaid #extensionStart {
+.filtered-mermaid #extensionStart {
     opacity: 0 !important;
 }
-

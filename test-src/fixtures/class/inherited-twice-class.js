@@ -1,7 +1,6 @@
 /**
  * Inherited class example
  * @extends InheritedClass
- * @extends BaseClass
  */
 export class InheritedTwiceClass extends InheritedClass{
     /**

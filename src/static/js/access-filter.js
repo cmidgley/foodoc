@@ -41,6 +41,10 @@
 				$elem = $elem.add($elem.filter(".symbol-title").prev("hr"));
 				$elem.toggle(self.inherited);
 				self.$toggleInherited.closest(".checkbox-inline").toggleClass("checked", self.inherited);
+
+				$('.language-mermaid').toggleClass('inherited');
+				if (mermaid.rerender) 
+					mermaid.rerender();
 			}
 		},
 		setPublic: function(){
@@ -54,6 +58,10 @@
 				$elem = $elem.add($elem.filter(".symbol-title").prev("hr"));
 				$elem.toggle(self.public);
 				self.$togglePublic.closest(".checkbox-inline").toggleClass("checked", self.public);
+
+				$('.language-mermaid').toggleClass('public');
+				if (mermaid.rerender) 
+					mermaid.rerender();
 			}
 		},
 		setProtected: function(){
@@ -67,6 +75,10 @@
 				$elem = $elem.add($elem.filter(".symbol-title").prev("hr"));
 				$elem.toggle(self.protected);
 				self.$toggleProtected.closest(".checkbox-inline").toggleClass("checked", self.protected);
+
+				$('.language-mermaid').toggleClass('protected');
+				if (mermaid.rerender) 
+					mermaid.rerender();
 			}
 		},
 		setPrivate: function(){
@@ -80,6 +92,10 @@
 				$elem = $elem.add($elem.filter(".symbol-title").prev("hr"));
 				$elem.toggle(self.private);
 				self.$togglePrivate.closest(".checkbox-inline").toggleClass("checked", self.private);
+
+				$('.language-mermaid').toggleClass('private');
+				if (mermaid.rerender) 
+					mermaid.rerender();
 			}
 		},
 		onInheritedChanged: function(e){

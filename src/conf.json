@@ -28,6 +28,7 @@
     "showTableOfContents": true,
     "showAccessFilter": false,
     "includeMermaid": false,
+    "includeClassDiagrams": false,
     "sort": "linenum, longname, version, since",
     "search": true,
     "analytics": {"ua": "", "domain": ""},

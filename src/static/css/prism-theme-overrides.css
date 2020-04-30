@@ -1,6 +1,7 @@
 /* Override default Bootstrap border for PRE */
 pre {
 	border: 1px solid #e1e1e8;
+	background-color: #fff3df;
 }
 
 /* Override prism default theme and make it look like Chromes debugger which everyone should recognise */

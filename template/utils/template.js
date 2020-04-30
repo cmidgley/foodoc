@@ -41,6 +41,7 @@ var options = exports.options = extend({
 	showTableOfContents: true,
 	showAccessFilter: true,
 	includeMermaid: false,
+	includeClassDiagrams: false,
 	analytics: null,
 	methodHeadingReturns: true,
 	sort: "linenum, longname, version, since",
@@ -210,16 +211,24 @@ var generateStaticFiles = exports.generateStaticFiles = function(){
 
 	// then copy all user supplied files
 	var userFiles;
+
 	if (options.default && (userFiles = options.default.staticFiles)) {
 		// The canonical property name is `include`. We accept `paths` for backwards compatibility with a bug in JSDoc 3.2.x.
 		var paths = userFiles.include || userFiles.paths || [];
 		var filter = new (require('jsdoc/src/filter')).Filter(userFiles);
 		var scanner = new (require('jsdoc/src/scanner')).Scanner();
-		paths.forEach(function(filePath) {
+		paths.forEach(function(nextEntry) {
+			if (typeof nextEntry === 'object') {
+				filePath = nextEntry.filePath;
+				outputPath = '/' + nextEntry.outputPath;
+			} else {
+				filePath = nextEntry;
+				outputPath = "";
+			}
 			var files = scanner.scan([filePath], 10, filter);
 			files.forEach(function(fileName) {
 				var from = fs.toDir(filePath);
-				var toDir = fs.toDir( fileName.replace(from, config.dir.output) );
+				var toDir = fs.toDir( fileName.replace(from, config.dir.output + outputPath) );
 				fs.mkPath(toDir);
 				fs.copyFileSync(fileName, toDir);
 			});

@@ -2,6 +2,14 @@
 
 Curabitur est mi, fermentum lacinia tincidunt vitae, mattis sit amet neque. Quisque diam nisl, accumsan ac porta tincidunt, iaculis facilisis ipsum. Nulla facilisi. Aenean a metus tortor. Pellentesque congue, mauris vitae viverra varius, elit nunc dictum nisl, rhoncus ultrices nulla sapien at leo. Duis ultricies porttitor diam. Nulla facilisi. Nullam elementum, lorem eu imperdiet laoreet, est turpis sollicitudin velit, in porttitor justo dolor vel urna. Mauris in ante magna. Curabitur vitae lacus in magna mollis commodo.
 
+## Mermaid flowchart example
+```mermaid
+classDiagram
+    InheritedClass <|-- BaseClass
+    AmazingClass <|-- InheritedClass
+    SimpleClass <|-- BaseClass
+```
+
 ## Fusce lacinia, mauris ac aliquam consequat
 Fusce molestie blandit velit, sit amet dictum eros pharetra vitae. In erat urna, condimentum ac feugiat id, rutrum et nisi. Cras ac velit lorem. Nulla facilisi. Maecenas dignissim nulla in turpis tempus sed rhoncus augue dapibus. Nulla feugiat, urna non sagittis laoreet, dolor metus rhoncus justo, sed semper ante lacus eget quam. Sed ac ligula magna. Sed tincidunt pulvinar neque in porta. Nullam quis lacus orci. Pellentesque ornare viverra lacus, id aliquam magna venenatis a.
 

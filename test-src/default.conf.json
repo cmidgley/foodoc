@@ -2,10 +2,17 @@
   "tags": {
     "allowUnknownTags": true
   },
-  "plugins": ["plugins/markdown",
-    "../foodoc/node_modules/jsdoc-mermaid"
+  "plugins": ["plugins/markdown"
   ],
   "templates": {
+    "default": {
+      "staticFiles": {
+        "include": [
+          { "filePath": "images",
+            "outputPath": "images" }
+        ]
+      }
+    },
     "includeDate": true,
     "dateFormat": "Do MMM YYYY",
     "includeClass": false,
@@ -28,6 +35,7 @@
     "showTableOfContents": true,
     "showAccessFilter": true,
     "includeMermaid": true,
+    "includeClassDiagrams": true,
     "sort": "linenum, longname, version, since",
     "search": true,
     "analytics": {"ua": "", "domain": ""},

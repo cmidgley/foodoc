@@ -389,3 +389,174 @@ exports.hasDetails = function (doclet) {
 	|| (doclet.see && doclet.see.length)
 	|| (doclet.todo && doclet.todo.length))
 };
+
+/**
+ * Build a Mermaid compliant diagram of class members and inheritance
+ * 
+ * This function walks the doclet chains for superclasses (following doclet.augments) and the subclasses (scanning the doclet database for classes that are members of the class) and then constructs a Mermaid complaint classDiagram.  Member information is included for all subclasses, whereas superclasses are just listed by name.
+ * 
+ * For example, a mermaid section might look like this (without extra decorations for members and whatnot):
+ * ```
+ * classDiagram
+ *   InheritedClass <| -- BaseClass
+ *   AnotherInheritedClass <| -- BaseClass
+ *   TwiceInheritedClass <| -- AnotherInheritedClass
+ * ```
+ * 
+ * @private
+ * @param {Doclet} doclet doclet to to build class diagram for
+ */
+exports.classDiagram = function (doclet) {
+	// if no class diagrams, or not class, ignore
+	if (doclet.kind !== 'class' || !template.options.includeClassDiagrams)
+		return;
+
+	// gather all subclasses and superclasses
+	let subClasses = findSubClasses(doclet);
+	let superClasses = findSuperClasses(doclet);
+
+	// now build the diagram
+	let mermaid = "classDiagram\n";
+	mermaid += "%% superclasses\n";
+	mermaid += renderMermaidClassDiagram(doclet, superClasses, true, true);
+	mermaid += "%% this class\n";
+	mermaid += renderMermaidClassDiagram(null, [{ doclet: doclet, nestedClasses: []}], true, true);
+	mermaid += `style ${sanitizeMermaidName(doclet.name)} class-diagram-primary\n`;
+	mermaid += "%% subclasses\n";
+	mermaid += renderMermaidClassDiagram(doclet, subClasses, false, false);
+
+//	return `<pre><code>${mermaid}</code></pre><pre class='language-mermaid'><code>${mermaid}</code></pre>`;
+	return `<pre class='language-mermaid'><code>${mermaid}</code></pre>`;
+}
+
+/**
+ * Build a Mermaid compliant diagram from a class diagram
+ * 
+ * @param {Doclet} doclet parent doclet starting this class tree
+ * @param {Object[]} classTree tree of super/subclasses (array containing objects with doclet and nestedClasses array members)
+ * @param {boolean} includeMembers true if members should be included in the mermaid class, false if empty class
+ * @param {boolean} isSuperclassTree true if this is a superclass tree (used to determine inheritance direction)
+ */
+function renderMermaidClassDiagram(doclet, classTree, includeMembers, isSuperclassTree) {
+	let result = "";
+	classTree.forEach(item => {
+		result += renderMermaidClassNode(item.doclet, includeMembers);
+		if (doclet != null)
+			if (isSuperclassTree)
+				result += `  ${sanitizeMermaidName(doclet.name)} <| -- ${sanitizeMermaidName(item.doclet.name)}\n`;
+			else
+				result += `  ${sanitizeMermaidName(item.doclet.name)} <| -- ${sanitizeMermaidName(doclet.name)}\n`;
+			result += renderMermaidClassDiagram(item.doclet, item.nestedClasses, includeMembers, isSuperclassTree);
+	});
+	return result;
+}
+
+/**
+ * Renders a single class element in Mermaid syntax
+ * 
+ * @private
+ * @param {Doclet} doclet doclet to render 
+ * @param {boolean} includeMembers true if members are to be included, false if just the class 
+ */
+function renderMermaidClassNode(doclet, includeMembers) {
+	const memberTypes = [ 'member', 'function', 'constant'];
+
+	// render the class spec itself
+	let member = `  class ${sanitizeMermaidName(doclet.name)} {\n`;
+	// process inside members
+	if (includeMembers) {
+		// grab the doclets that are part of this class
+		let memberDoclets = template.raw.data({ memberof: doclet.longname, kind: memberTypes});
+		memberDoclets.each(memberDoclet => {
+			switch (memberDoclet.kind) {
+				case 'member':
+				case 'constant':
+					member += `    ${sanitizeMermaidName(memberDoclet.name)}\n`;
+					break;
+				case 'function':
+					member += `    ${sanitizeMermaidName(memberDoclet.name)}()\n`;
+					break;
+			}
+		});
+	}
+	member += "  }\n";
+	if (includeMembers) {
+		// set the filters for the access level of the members
+		let memberDoclets = template.raw.data({ memberof: doclet.longname, kind: memberTypes});
+		memberDoclets.each(memberDoclet => {
+			switch (memberDoclet.access) {
+				case 'private':
+					member += `filter ${sanitizeMermaidName(doclet.name)}.${sanitizeMermaidName(memberDoclet.name)} !private\n`;
+					break;
+				case 'protected':
+					member += `filter ${sanitizeMermaidName(doclet.name)}.${sanitizeMermaidName(memberDoclet.name)} !protected\n`;
+					break;
+				default:
+					member += `filter ${sanitizeMermaidName(doclet.name)}.${sanitizeMermaidName(memberDoclet.name)} !public\n`;
+					break;
+			}
+			if (memberDoclet.inherited)
+				member += `filter ${sanitizeMermaidName(doclet.name)}.${sanitizeMermaidName(memberDoclet.name)} !inherited\n`;
+		});
+	}
+	return member;
+}
+
+/**
+ * Sanitizes names to be mermaid friendly
+ * 
+ * Mermaid does not accept all supported naming that JSDoc uses, so this method replaces unwanted characters with Mermaid legal ones.
+ * 
+ * @param {string} name Name to sanitize
+ * @returns {string} Sanitized name 
+ */
+function sanitizeMermaidName(name) {
+	return name.replace(/[//\\#]/g, '_');
+}
+
+/**
+ * Locate all subclasses of this doclet, using recursion to the root
+ * 
+ * @param {Doclet} doclet doclet to scan for subclasses
+ * @returns {Object[]} Array of objects containing members doclet and nestedClasses with array of it's subclasses 
+ */
+function findSubClasses(doclet) {
+	let subClasses = [];
+	// find any superclasses of us
+	template.raw.data(function() {
+		return (this.kind == 'class' && this.augments && this.augments.includes(doclet.longname)) ? true : false;
+	}).each(subDoclet => {
+		let subClass = { doclet: subDoclet };
+		// recurse to follow the chain
+		subClass.nestedClasses = findSubClasses(subDoclet);
+		// add to the subClasses array
+		subClasses.push(subClass);
+	});
+
+	return subClasses;
+}
+
+/**
+ * Locate all superclasses of this doclet, using recursion to find them all
+ * 
+ * @param {Doclet} doclet doclet to scan for superclasses
+ * @returns {Object[]} Array of objects containing members doclet and nestedClasses with array of it's superclasses
+ */
+function findSuperClasses(doclet) {
+	let superClasses = [];
+	// follow the augments chain for our immediate parents
+	if (doclet.augments) {
+		doclet.augments.forEach(inheritedClassName => {
+			// locate this class
+			template.raw.data({longname: inheritedClassName, kind: 'class'}).each(superDoclet => {
+				let superClass = { doclet: superDoclet };
+				// recurse to follow the chain
+				superClass.nestedClasses = findSuperClasses(superDoclet);
+				// add to the subClasses array
+				superClasses.push(superClass);
+			});
+		});
+	}
+	return superClasses;
+}
+

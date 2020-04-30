@@ -26,7 +26,7 @@ See [Changelog](#Changelog) below for information on changes for this fork.
 * Responsive design, the generated documentation works across both desktop and mobile devices thanks to Bootstrap.
 * Makes use of the JSDoc `@summary` tag where appropriate, this tag now also supports markdown syntax.
 * Ability to nest generated code documentation into "tutorial" menus for a clean menu layout (adjusts crumbs and links accordingly)
-* Optionally adds [Mermaid](https://mermaid-js.github.io/mermaid/#/).  This allows for @mermaid in the source code as well as code blocks in markdown with the `mermaid` language specifier. 
+* Optionally adds [Mermaid](https://mermaid-js.github.io/mermaid/#/).  This allows for markdown in both code and tutorials using the `mermaid` language specifier.. 
 
 ### What it looks like
 
@@ -41,11 +41,13 @@ As this started off as a DocStrap modification I've used it's `fixtures` code to
 
 ## Ooooh, I want it! How do I get it?
 
-If you manage your own version of jsdoc:
+<!--If you manage your own version of jsdoc:
 
 ```bash
 npm install foodoc
 ```
+-->
+At this time, this fork is not in NPM.  Until that happens, you must get the source directly from GitHub.  One easy answer is to set up your package.json to have a reference to the NPM package `https:\\github.com\cmidgley\foodoc`.
 
 When using [grunt](http://gruntjs.com/), please look at [grunt-jsdoc](https://github.com/krampstudio/grunt-jsdoc) which you can use with FooDoc.
 
@@ -90,6 +92,7 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
 	"showTableOfContents"   : "{boolean}",
 	"showAccessFilter"      : "{boolean}",
 	"includeMermaid"        : "{boolean}",
+	"includeClassDiagrams"  : "{boolean}",
 	"analytics"             : "{object}",
 	"collapseSymbols"       : "{boolean}",
 	"methodHeadingReturns"  : "{boolean}",
@@ -159,6 +162,8 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
     When `true`, a checkbox list is displayed allowing the user to toggle the visibility of inherited, public, protected and private symbols of the current doclet. Each checkbox will only be displayed if the doclet contains at least one symbol of that type. If there is only a single type available across the entire doclet the filter is not displayed at all.
 *   __includeMermaid - `false`__
     When `true`, includes Mermaid which allows for doing flowcharts, class diagrams and more from within your documentation and rendered onto the pages.   
+*   __includeClassDiagrams - `false`__
+    When `true` automatically generates Mermaid class diagrams for all classes.  Must also set `includeMermaid` for drawings to be rendered.
 *   __analytics - `{"ua": "", "domain": ""}`__
     Adds a [Google Analytics](http://www.google.com/analytics) code block to the template output
     _e.g._ `"analytics":{"ua":"UA-XXXXX-XXX", "domain":"XXXX"}`
@@ -249,37 +254,49 @@ If you need to use a language provided by a Prism plugin you will need to fork t
 
 ### Mermaid graphics drawings
 
-You can optionally include [Mermaid](https://mermaid-js.github.io/mermaid/#/) based drawings (such as class diagrams, flowcharts and more):
-* JSDoc comments can have an @mermaid section, followed by mermaid-syntax for drawings.  For example:
-    ```
+You can include graphics images of many things, including class diagrams (inclujding automatically generated from your source), flow charts, entity-relationship diagrams and more.  This is implemented using a markdown-like language supported by [Mermaid](https://mermaid-js.github.io/mermaid/#/).  
+
+* JSDoc comments can use markdown with the Mermaid language specifier followed by mermaid-syntax for drawings.  Here is an example within source code documentation:
+    <pre>
     /**
-    * example of how a flowchart might work
+    * Example of how a flowchart works
     * 
-    * @mermaid
+    * ```mermaid
     *   graph TD;
     *     A-->B;
     *     A-->C;
     *     B-->D;
     *     C-->D;
+    * ```
     */
-    ```
-* Markdown can use the language specifier `mermaid` in code blocks, such as:
+    </pre>
+    which will render:
+    ![flowchart](https://github.com/cmidgley/foodoc/raw/master/images/flowchart.png)
+    and here is an example using it in a tutorial markdown:
     <pre>```mermaid
         classDiagram
             InheritedClass <|-- BaseClass
             AmazingClass <|-- InheritedClass
-            SimpeClass <|-- BaseClass
+            SimpleClass <|-- BaseClass
     ```</pre>
+    which will render:
+    ![class diagram](https://github.com/cmidgley/foodoc/raw/master/images/class-diagram.png)
+* Classes can automatically generate class diagrams (requires the `generateClassDiagrams` option), including members, super-classes (with members) and sub-classes (name only)
 
-To enable, you must make sure you do two things in your `conf.json` file (see the example file `template/conf.json`):
-* Under `"template: {...}` you must specify `"includeMermaid": true`
-* Under `"plugins: {...}` you must specify the [JSDoc Mermaid](https://github.com/cmidgley/jsdoc-mermaid) plugin along with your markdown (and any other) plugins:
+If you are hand-crafting Mermaid syntax, a great tool to use when building it is the [Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor/).
+
+To enable, you must make sure your `conf.json` file is configured correctly (see the example file `template/conf.json`):
+* Under `"template: {...}` you must specify at least one of these options to enable Mermaid:
+  * `"includeMermaid": true` will set up Mermaid, but it will not generate class diagrams automatically for you.
+  * `"generateClassDiagram": true` will cause all `class` pages to automatically include a class diagram, will auto-set `includeMermaid: true`.
+* Under `"plugins: {...}` you must be using the markdown plugin:
     ```js
     "plugins": [
-        "plugins/markdown",
-        "../foodoc/node_modules/jsdoc-mermaid"
-    ],
+        "plugins/markdown"
+    ]
     ```
+
+_Quick debugging tip_: If you set `"includeMermaid": false`, the Mermaid markdown will render in the browser so you can verify that it's working, and can view source and copy/paste it over to the [Mermaid Live Editor](https://mermaid-js.github.io/mermaid-live-editor/) to test.
 
 ## FAQ
 
@@ -369,6 +386,7 @@ All releases prior to 1.0.0 are considered pre-release, i.e. I'm not finished ch
 * Fixes several problems, including errors with latest JQuery and "constructor" error loading default json files 
 * Several style changes, including default color, hiding the document "kind" (README, CLASS, etc).  All can be overridden with personal stylesheets, and all have comments in the CSS files (except color changes)
 * Adds support for [Mermaid](https://mermaid-js.github.io/mermaid/#/) when `includeMermaid: true` is used.  See [Mermaid](#Mermaid graphics drawings) for more information on configuration and use.
+* Adds support for automatically generating class diagrams based on classes and members when `includeClassDiagrams: true` is used.
 
 ### 0.0.9
 
