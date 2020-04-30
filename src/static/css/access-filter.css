@@ -32,7 +32,6 @@
 	left: -25px;
 }
 .access-filter .checkbox-inline:first-of-type:before {
-	content: "Show -";
 }
 .access-filter .checkbox-inline+.checkbox-inline:before {
 	content: "|";
