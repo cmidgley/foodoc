@@ -21,6 +21,7 @@ var options = exports.options = extend({
 	includeClass: true,
 	includeGeneratedBy: true,
 	removeInheritedStubs: false,
+	removeInheritedPrivate: true,
 	dateFormat: "Do MMM YYYY",
 	systemName: "FooDoc",
 	systemSummary: "A Bootstrap and Handlebars based template for JSDoc3.",
@@ -100,6 +101,10 @@ exports.configure = function(taffyData, opts, tutorials){
 	// inherited classes, just those annoying #inherted#class (etc) classes.
 	if (this.options.removeInheritedStubs)
 		raw.data({kind:'class', inherited:true}).remove();
+	// skip private methods that are inherited, as that isn't supposed to be possible
+	if (this.options.removeInheritedPrivate)
+		raw.data({inherited: true, access: 'private'}).remove();
+
 	raw.opts = opts;
 	raw.tutorials = tutorials;
 	config.dir.root = opts.templates;
@@ -285,7 +290,9 @@ exports.createCrumbs = function(doclet){
 		});
 		crumbs.push(doclet.title || doclet.name);
 	} else {
-		crumbs.push(doclet.ancestors.join('') + doclet.name);
+		// removed ancestors as that created some ugly (and long) breadcrumbs like "mixins/signalable~Signal"
+		//crumbs.push(doclet.ancestors.join('') + doclet.name);
+		crumbs.push(doclet.name);
 	}
 	return crumbs;
 };

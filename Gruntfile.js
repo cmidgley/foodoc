@@ -98,7 +98,8 @@ module.exports = function(grunt) {
 						'src/static/js/lunr-search.js',
 						'src/static/js/example-run.js',
 						'src/static/js/google-analytics.js',
-						'src/static/js/setup-mermaid.js'
+						'src/static/js/setup-mermaid.js',
+						'src/static/js/sticky-scroll.js'
 					]
 				}
 			}

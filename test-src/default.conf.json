@@ -18,6 +18,7 @@
     "includeClass": false,
     "includeGeneratedBy": false,
     "removeInheritedStubs": true,
+    "removeInheritedPrivate": true,
     "systemName": "FooDoc",
     "systemSummary": "A Bootstrap and Handlebars based JSDoc3 template.",
     "systemLogo": "",

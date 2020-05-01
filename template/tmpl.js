@@ -81,41 +81,43 @@ Handlebars.registerPartial("site/layout", this["tmpl"]["site/layout"] = Handleba
 },"17":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.crumbs : depth0),{"name":"if","hash":{},"fn":container.program(18, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.showAccessFilter : stack1),{"name":"if","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+  return "					<div class='crumbs-and-filter-container row sticky-scroll' data-sticky-scroll-target='header' data-sticky-scroll-on-stick='onCrumbFilterStick' data-sticky-scroll-on-unstick='onCrumbFilterUnstick'>\r\n						<nav id='crumbs-and-filter' class=\"col-xs-12 row navbar navbar-default\" >\r\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.crumbs : depth0),{"name":"if","hash":{},"fn":container.program(18, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.showAccessFilter : stack1),{"name":"if","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "						</nav>\r\n					</div>\r\n";
 },"18":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "						<ol class=\"breadcrumb\">\r\n"
+  return "								<div id='crumbs'>\r\n									<ol class=\"breadcrumb\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.crumbs : depth0),{"name":"each","hash":{},"fn":container.program(19, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "						</ol>\r\n";
+    + "									</ol>\r\n								</div>\r\n";
 },"19":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "							<li"
+  return "										<li  class=\"breadcrumb-item"
     + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),(data && data.last),{"name":"if","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ">"
+    + "\">"
     + ((stack1 = container.lambda(depth0, depth0)) != null ? stack1 : "")
     + "</li>\r\n";
 },"20":function(container,depth0,helpers,partials,data) {
-    return " class=\"active\"";
+    return " active";
 },"22":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "						<div class=\"access-filter\">\r\n"
+  return "								<div id='filter' class='access-filter'>\r\n"
     + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.has : stack1)) != null ? stack1.inherited : stack1),{"name":"if","hash":{},"fn":container.program(23, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.has : stack1)) != null ? stack1["public"] : stack1),{"name":"if","hash":{},"fn":container.program(25, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.has : stack1)) != null ? stack1["protected"] : stack1),{"name":"if","hash":{},"fn":container.program(27, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.has : stack1)) != null ? stack1["private"] : stack1),{"name":"if","hash":{},"fn":container.program(29, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "						</div>\r\n";
+    + "								</div>\r\n";
 },"23":function(container,depth0,helpers,partials,data) {
-    return "								<label class=\"checkbox-inline\">\r\n									<input class=\"toggle-inherited\" type=\"checkbox\" value=\"\" checked>\r\n									Inherited\r\n								</label>\r\n";
+    return "										<label class=\"checkbox-inline\">\r\n											<input class=\"toggle-inherited\" type=\"checkbox\" value=\"\" checked>\r\n											Inherited\r\n										</label>\r\n";
 },"25":function(container,depth0,helpers,partials,data) {
-    return "								<label class=\"checkbox-inline\">\r\n									<input class=\"toggle-public\" type=\"checkbox\" value=\"\" checked>\r\n									Public\r\n								</label>\r\n";
+    return "										<label class=\"checkbox-inline\">\r\n											<input class=\"toggle-public\" type=\"checkbox\" value=\"\" checked>\r\n											Public\r\n										</label>\r\n";
 },"27":function(container,depth0,helpers,partials,data) {
-    return "								<label class=\"checkbox-inline\">\r\n									<input class=\"toggle-protected\" type=\"checkbox\" value=\"\" checked>\r\n									Protected\r\n								</label>\r\n";
+    return "										<label class=\"checkbox-inline\">\r\n											<input class=\"toggle-protected\" type=\"checkbox\" value=\"\" checked>\r\n											Protected\r\n										</label>\r\n";
 },"29":function(container,depth0,helpers,partials,data) {
-    return "								<label class=\"checkbox-inline\">\r\n									<input class=\"toggle-private\" type=\"checkbox\" value=\"\" checked>\r\n									Private\r\n								</label>\r\n";
+    return "										<label class=\"checkbox-inline\">\r\n											<input class=\"toggle-private\" type=\"checkbox\" value=\"\" checked>\r\n											Private\r\n										</label>\r\n";
 },"31":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing;
 
@@ -283,7 +285,7 @@ Handlebars.registerPartial("site/layout", this["tmpl"]["site/layout"] = Handleba
     + "</head>\r\n<body>\r\n"
     + ((stack1 = container.invokePartial(partials["site/navbar"],depth0,{"name":"site/navbar","data":data,"indent":"\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
     + ((stack1 = (helpers.block || (depth0 && depth0.block) || alias2).call(alias1,"page-header",{"name":"block","hash":{},"fn":container.program(10, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "	<div class=\"container content\">\r\n		<div class=\"row\">\r\n			<div class=\""
+    + "	<script>\r\n		function onCrumbFilterStick(elem) { $('.toc').css({\"padding-top\": \"50px\", \"transition\": \".25s padding ease-out\"}); }\r\n		function onCrumbFilterUnstick(elem) { $('.toc').css({\"padding-top\": \"inherit\", \"transition\": \".25s padding ease-out\"}); }\r\n	</script>\r\n	<div class=\"container content\">\r\n		<div class=\"row\">\r\n			<div class=\""
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.showTableOfContents : stack1),{"name":"if","hash":{},"fn":container.program(13, data, 0, blockParams, depths),"inverse":container.program(15, data, 0, blockParams, depths),"data":data})) != null ? stack1 : "")
     + " main-content\">\r\n"
     + ((stack1 = (helpers.block || (depth0 && depth0.block) || alias2).call(alias1,"controls",{"name":"block","hash":{},"fn":container.program(17, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")

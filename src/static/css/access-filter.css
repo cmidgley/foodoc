@@ -1,5 +1,12 @@
 .access-filter {
 	text-align: right;
+	color: #767676;
+	margin-right: 15px;
+	margin-top: 8px;
+	float: right;
+}
+/* .access-filter {
+	text-align: right;
 	font-size: 12px;
 	padding: 8px 15px;
 	margin-top: 0;
@@ -34,4 +41,4 @@
 
 .access-filter .checkbox-inline+.checkbox-inline:before {
 	content: "|";
-}
+} */

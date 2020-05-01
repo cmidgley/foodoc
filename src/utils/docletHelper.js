@@ -353,12 +353,22 @@ exports.getSymbols = function(doclet){
 exports.getShowAccessFilter = function(doclet){
 	var result = typeof doclet.showAccessFilter != 'boolean' ? template.options.showAccessFilter : doclet.showAccessFilter;
 	if (result){
-		// if we can show the filter check if we should actually show it
+
+		// when generating class pages, if the classDiagram is being used then the superclasses might
+		// have members that need access filteres, so we need to look down the augments chain to
+		// understand all available access types.  
+		var docletLongnames;
+		if (doclet.kind === 'class' && template.options.includeClassDiagrams)
+			docletLongnames = gatherAugments(doclet);
+		else
+			docletLongnames = [doclet.longname];
+
+			// if we can show the filter check if we should actually show it
 		doclet.has = {
-			inherited: template.find({kind: template.kinds.symbols, memberof: doclet.longname, inherited: true}).length > 0,
-			public: template.find({kind: template.kinds.symbols, memberof: doclet.longname, access: "public"}).length > 0,
-			protected: template.find({kind: template.kinds.symbols, memberof: doclet.longname, access: "protected"}).length > 0,
-			private: template.find({kind: template.kinds.symbols, memberof: doclet.longname, access: "private"}).length > 0
+			inherited: template.find({kind: template.kinds.symbols, memberof: docletLongnames, inherited: true}).length > 0,
+			public: template.find({kind: template.kinds.symbols, memberof: docletLongnames, access: "public"}).length > 0,
+			protected: template.find({kind: template.kinds.symbols, memberof: docletLongnames, access: "protected"}).length > 0,
+			private: template.find({kind: template.kinds.symbols, memberof: docletLongnames, access: "private"}).length > 0
 		};
 		var count = (doclet.has.inherited ? 1 : 0) + (doclet.has.public ? 1 : 0) + (doclet.has.protected ? 1 : 0) + (doclet.has.private ? 1 : 0);
 		// only show the filter if there are two or more accessors available
@@ -366,6 +376,16 @@ exports.getShowAccessFilter = function(doclet){
 	}
 	return result;
 };
+
+function gatherAugments(doclet) {
+	let arrayOfLongnames = [];
+	arrayOfLongnames.push(doclet.longname);
+	template.raw.data({longname: doclet.augments}).each(doc => {
+		arrayOfLongnames.push(doc.longname);
+		arrayOfLongnames.push(...gatherAugments(doc, arrayOfLongnames));
+	});
+	return arrayOfLongnames;
+}
 
 exports.isInherited = function(doclet){
 	return !!doclet.inherited;
