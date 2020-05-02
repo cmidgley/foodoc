@@ -41,7 +41,7 @@
 }
 
 .toc .nav .nav {
-	display: none; /* Hide by default, but at >768px, show it */
+	display: none;
 	padding-bottom: 10px;
 }
 .toc .nav .nav > li > a {

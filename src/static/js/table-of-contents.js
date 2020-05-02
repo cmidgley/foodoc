@@ -204,6 +204,7 @@
 		};
 		this._items.all.push(item);
 		this._items[item.tag].push(item);
+		
 		this._setLast(item);
 		if (item.tag != 'h1'){ // find the parent and add this to the children
 			var parent = this._getParent(item);

@@ -90,7 +90,8 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
 	"inverseNav"            : "{boolean}",
 	"navMembers"            : "{array.<object>}",
 	"linenums"              : "{boolean}",
-	"showTableOfContents"   : "{boolean}",
+    "showTableOfContents"   : "{boolean}",
+    "expandTableOfContents" : "{boolean}",
 	"showAccessFilter"      : "{boolean}",
 	"includeMermaid"        : "{boolean}",
 	"includeClassDiagrams"  : "{boolean}",
@@ -161,6 +162,11 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
     When `true`, line numbers will appear in any pretty printed source code blocks. If `outputSourceFiles` is `true` this will add an additional link to all documented members pointing to the exact line number in the pretty printed source file the documentation was pulled from.
 *   __showTableOfContents - `true`__
     When `true`, a TOC is generated from all `H1`, `H2`, `H3` and `H4` headings in the generated pages, this includes the README and tutorial pages. If you want to disable this for specific tutorial pages you can set this same option per tutorial in the extended tutorial configuration.
+*   __expandTableOfContents - `false`__
+    When showTableOfContents is enabled, by default it shows the contents collapsed and as you scroll into each
+    section it auto-expands.  Setting this to `true` will expand all sections in the table of contents without
+    requiring scrolling into the area.  This causes all member and method names, as well as H4 level markdown,
+    to be shown all the time.
 *   __showAccessFilter - `true`__
     When `true`, a checkbox list is displayed allowing the user to toggle the visibility of inherited, public, protected and private symbols of the current doclet. Each checkbox will only be displayed if the doclet contains at least one symbol of that type. If there is only a single type available across the entire doclet the filter is not displayed at all.
 *   __includeMermaid - `false`__
@@ -384,10 +390,11 @@ All releases prior to 1.0.0 are considered pre-release, i.e. I'm not finished ch
 * Optionally removes the inherited class stubs, which IMHO clutters the documentation
 * Optionally removes the "Class" section from generated document, which is mostly redundant with the inherited/Augments section
 * Renamed several items, including "Tutorials" are now "Resources" (more generic), and Augments is now Inherits
-* Slightly improves responsive design, especially on mobile devices
+* Improved responsive design, especially on mobile devices
+* Changed filter to be responsive and stick to the top
 * Adds the ability to embed the generated code documentation (classes, functions, etc) within a "tutorial" style menu
 * Fixes several problems, including errors with latest JQuery and "constructor" error loading default json files 
-* Several style changes, including default color, hiding the document "kind" (README, CLASS, etc).  All can be overridden with personal stylesheets, and all have comments in the CSS files (except color changes)
+* Several style changes, including default color, hiding the document "kind" (README, CLASS, etc), and lots of style changes throughout.  All can be overridden with personal stylesheets, and all have comments in the CSS files (except color changes)
 * Adds support for [Mermaid](https://mermaid-js.github.io/mermaid/#/) when `includeMermaid: true` is used.  See [Mermaid](#Mermaid graphics drawings) for more information on configuration and use.
 * Adds support for automatically generating class diagrams based on classes and members when `includeClassDiagrams: true` is used.
 

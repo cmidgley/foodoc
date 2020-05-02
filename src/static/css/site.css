@@ -21,6 +21,7 @@ html {
 	margin-bottom: 20px;
 	padding-bottom: 9px;
 }
+
 .main-content .primary p+h1,
 .main-content .primary p+h2,
 .main-content .readme-section p+h1,
@@ -41,3 +42,58 @@ footer {
 	font-size: small;
 	color: #777;
 }
+
+.main-content h1 {
+	font-size: 24px;
+}
+.main-content h2 {
+	font-size: 20px;
+}
+.main-content h3 {
+	font-size: 17px;
+}
+.main-content h4 {
+	font-size: 14px;
+}
+.main-content h5 {
+	font-size: 12px;
+}
+
+
+@media (min-width: 768px) {
+	.main-content h1 {
+		font-size: 28px;
+	}
+	.main-content h2 {
+		font-size: 22px;
+	}
+	.main-content h3 {
+		font-size: 18px;
+	}
+	.main-content h4 {
+		font-size: 15px;
+	}
+	.main-content h5 {
+		font-size: 13px;
+	}
+}
+
+@media(min-width: 992px) {
+	.main-content h1 {
+		font-size: 30px;
+	}
+	.main-content h2 {
+		font-size: 24px;
+	}
+	.main-content h3 {
+		font-size: 20px;
+	}
+	.main-content h4 {
+		font-size: 16px;
+	}
+	.main-content h5 {
+		font-size: 14px;
+	}
+}
+
+

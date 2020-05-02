@@ -20,10 +20,11 @@
 	font-size: 25px;
 }
 .page-header h1 {
-	font-size: 30px;
+	font-size: 24px;
 	line-height: 1.1;
 	margin-top: 0;
 	color: #fff;
+	margin-bottom: 0px;
 }
 .page-header .ancestors {
 	display: block;
@@ -70,8 +71,8 @@
 
 @media (min-width: 768px) {
 	.page-header {
-		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-top: 35px;
+		padding-bottom: 35px;
 		text-align: left;
 	}
 	.page-header .kind {
@@ -79,7 +80,7 @@
 		line-height: 1;
 	}
 	.page-header h1 {
-		font-size: 45px;
+		font-size: 30px;
 		line-height: 1;
 	}
 	.page-header .ancestors {
@@ -98,7 +99,7 @@
 		width: 80px;
 	}
 	.page-header h1 {
-		font-size: 60px;
+		font-size: 36px;
 	}
 	.page-header p {
 		font-size: 28px;

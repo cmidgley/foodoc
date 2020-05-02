@@ -40,6 +40,7 @@ var options = exports.options = extend({
 	disablePackagePath: true,
 	outputSourcePath: false,
 	showTableOfContents: true,
+	expandTableOfContents: false,
 	showAccessFilter: true,
 	includeMermaid: false,
 	includeClassDiagrams: false,
@@ -167,6 +168,17 @@ var linkto = exports.linkto = function(longname, linkText){
 	}
 	return helper.linkto(longname, text);
 };
+
+var linktoMember = exports.linktoMember = function(longname) {
+	var text = longname;
+	// find the member doclet
+	var found = find({longname: longname});
+	if (found.length && found[0].kind){
+		var doclet = found[0];
+		text = doclet.memberof;
+	} 
+	return helper.linkto(longname, text);
+}
 
 var getPages = exports.getPages = function(sort){
 	var members = {};

@@ -7,7 +7,7 @@
 			{{#if doclet.members}}
 				<dl class="symbol">
 					{{#each doclet.members}}
-						{{#unless @first}}<hr/>{{/unless}}
+						{{!---#unless @first}}<hr/>{{/unless---}}
 						{{symbol this list=true options=../options}}
 					{{/each}}
 				</dl>

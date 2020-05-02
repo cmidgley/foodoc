@@ -27,6 +27,7 @@
     "disablePackagePath": true,
     "methodHeadingReturns": true,
     "showTableOfContents": true,
+    "expandTableOfContents": false,
     "showAccessFilter": false,
     "includeMermaid": false,
     "includeClassDiagrams": false,

@@ -50,6 +50,8 @@ exports.process = function(){
 		if (typeof doclet.showTableOfContents != 'boolean'){
 			doclet.showTableOfContents = template.options.showTableOfContents;
 		}
+		// if (doclet.longname == 'InheritedTwiceClass#protectedMemberThree')
+		// 	console.error(doclet);
 	});
 
 	template.raw.data().each(function(doclet){

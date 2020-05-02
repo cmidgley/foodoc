@@ -94,3 +94,7 @@ handlebars.registerHelper("single", function(array, options){
 handlebars.registerHelper("linkto", function(longname){
 	return new handlebars.SafeString(template.linkto(longname));
 });
+
+handlebars.registerHelper("linktoMember", function(longname){
+	return new handlebars.SafeString(template.linktoMember(longname));
+});

@@ -34,6 +34,7 @@
     "disablePackagePath": true,
     "methodHeadingReturns": true,
     "showTableOfContents": true,
+    "expandTableOfContents": true,
     "showAccessFilter": true,
     "includeMermaid": true,
     "includeClassDiagrams": true,

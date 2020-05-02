@@ -1,4 +1,4 @@
-.tutorial-section .lang-mermaid, .tutorial-section .language-mermaid {
+.tutorial-section .lang-mermaid code, .tutorial-section .language-mermaid code {
     opacity: 0
 }
 
@@ -70,3 +70,8 @@
 .filtered-mermaid #extensionStart {
     opacity: 0 !important;
 }
+
+.language-mermaid .toolbar {
+    display: none !important;
+}
+

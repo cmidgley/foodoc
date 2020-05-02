@@ -10,6 +10,9 @@
 	border: 1px solid #C0C0C0;
 	border-left-width: 5px;
 	border-radius: 3px;
+	min-height: 106px;
+	padding-left: 38px;
+	position: relative;
 }
 .callout h5 {
 	margin-top: 0;
@@ -20,6 +23,13 @@
 	font-weight: 500;
 	line-height: 1.1;
 	font-size: 18px;
+}
+.callout h5:nth-child(1) {
+	transform: rotate(90deg);
+	position: absolute;
+	transform-origin: bottom left;
+	left: 4px;
+	top: -12px;
 }
 .callout p:last-child,
 .callout table:last-child {
@@ -44,6 +54,7 @@
 }
 .callout-primary {
 	border-left-color: #c44e00;
+	overflow: auto;
 }
 .callout-primary h5 {
 	color: #c44e00;
@@ -76,13 +87,29 @@
 	color: #606060;
 }
 .callout-class-diagram {
-	border-left-color: #606060;
+	border-left-color: #c44e00;
+}
+@media(min-width: 576px) {
+	.callout-class-diagram {
+		float: right;
+	}
+}
+.callout-class-diagram svg {
+	margin: auto;
+}
+
+.callout-class-diagram pre {
+	margin-top: -10px;
+	margin-right: -10px;
+	padding: 0 0 0 0;
+	background-color: #ffffff;
+	border: none;
 }
 .callout-class-diagram .constructor {
 	padding-bottom: 14px;
 }
 .callout-class-diagram h5 {
-	color: #606060;
+	color: #c44e00;
 }
 .callout-rpc {
 	border-left-color: #c7bfd3;
@@ -98,8 +125,9 @@
 }
 
 .callout .form-group {
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
+
 .callout .form-group > div.control-static > p {
 	min-height: 34px;
 	padding-top: 7px;
