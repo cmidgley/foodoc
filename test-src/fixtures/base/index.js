@@ -14,6 +14,8 @@ var chains = require( "./chains" );
  * pretty clean little class whose primary purpose is to surface the composition chains and a basis for storing
  * options on mixin and subclass instances. Options are handled at the instance rather than the prototype level
  * so that multiple instances don't compete for default values.
+ * 
+ * Example of a multiple paragraph comment with `markdown`.
  *
  * @exports base
  * @constructor

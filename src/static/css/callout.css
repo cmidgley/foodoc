@@ -134,6 +134,11 @@
 	padding-bottom: 7px;
 	margin-bottom: 0;
 }
+.callout .form-control-static {
+	min-height: 12px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
 .callout .table > thead > tr > th {
 	font-weight: normal;
 }
