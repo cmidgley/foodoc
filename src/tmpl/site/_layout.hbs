@@ -65,7 +65,7 @@
 			<div class="container">
 				<span class="kind">{{doclet.kind}}</span>
 				<div class="container-content">
-					<h1>{{{doclet.pageTitleHTML}}}</h1>
+					<h1><span class='kind-inline'>{{doclet.kind}} </span>{{{doclet.pageTitleHTML}}}</h1>
 					{{> tag/summary doclet}}
 				</div>
 				{{#if options.pageLogo}}
@@ -84,45 +84,55 @@
 		<div class="row">
 			<div class="{{#if doclet.showTableOfContents}}col-md-9{{else}}col-md-12{{/if}} main-content">
 				{{#block "controls"}}
-					<div class='crumbs-and-filter-container row sticky-scroll' data-sticky-scroll-target='header' data-sticky-scroll-on-stick='onCrumbFilterStick' data-sticky-scroll-on-unstick='onCrumbFilterUnstick'>
-						<nav id='crumbs-and-filter' class="col-xs-12 row navbar navbar-default" >
-							{{#if crumbs}}
-								<div id='crumbs'>
-									<ol class="breadcrumb">
-										{{#each crumbs}}
-										<li  class="breadcrumb-item{{#if @last}} active{{/if}}">{{{.}}}</li>
-										{{/each}}
-									</ol>
+					<div id='movable-crumbs-and-filter' class='sticky-scroll' data-sticky-scroll-target='header' data-sticky-scroll-on-stick='onCrumbFilterStick' data-sticky-scroll-on-unstick='onCrumbFilterUnstick'>
+						<nav id='nav-crumbs-and-filter' class="navbar navbar-default" >
+							<div class="container">
+								<div class="row">
+									<div class='crumbs-and-filter col-md-9'>
+										<div class='caf-banner'>
+											{{#if crumbs}}
+												<div id='crumbs'>
+													<ol class="breadcrumb">
+														{{#each crumbs}}
+														<li  class="breadcrumb-item{{#if @last}} active{{/if}}">{{{.}}}</li>
+														{{/each}}
+													</ol>
+												</div>
+											{{/if}}
+											{{#if doclet.showAccessFilter}}
+												<div id='filter' class='access-filter'>
+													{{#if doclet.has.inherited}}
+														<label class="checkbox-inline">
+															<input class="toggle-inherited" type="checkbox" value="" checked>
+															Inherited
+														</label>
+													{{/if}}
+													{{#if doclet.has.public}}
+														<label class="checkbox-inline">
+															<input class="toggle-public" type="checkbox" value="" checked>
+															Public
+														</label>
+													{{/if}}
+													{{#if doclet.has.protected}}
+														<label class="checkbox-inline">
+															<input class="toggle-protected" type="checkbox" value="" checked>
+															Protected
+														</label>
+													{{/if}}
+													{{#if doclet.has.private}}
+														<label class="checkbox-inline">
+															<input class="toggle-private" type="checkbox" value="" checked>
+															Private
+														</label>
+													{{/if}}
+												</div>
+											{{/if}}
+										</div>
+									</div>
+									<div class='col-md-3'>
+									</div>
 								</div>
-							{{/if}}
-							{{#if doclet.showAccessFilter}}
-								<div id='filter' class='access-filter'>
-									{{#if doclet.has.inherited}}
-										<label class="checkbox-inline">
-											<input class="toggle-inherited" type="checkbox" value="" checked>
-											Inherited
-										</label>
-									{{/if}}
-									{{#if doclet.has.public}}
-										<label class="checkbox-inline">
-											<input class="toggle-public" type="checkbox" value="" checked>
-											Public
-										</label>
-									{{/if}}
-									{{#if doclet.has.protected}}
-										<label class="checkbox-inline">
-											<input class="toggle-protected" type="checkbox" value="" checked>
-											Protected
-										</label>
-									{{/if}}
-									{{#if doclet.has.private}}
-										<label class="checkbox-inline">
-											<input class="toggle-private" type="checkbox" value="" checked>
-											Private
-										</label>
-									{{/if}}
-								</div>
-							{{/if}}
+							</div>
 						</nav>
 					</div>
 				{{/block}}

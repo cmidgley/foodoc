@@ -2,29 +2,47 @@
 	color: #c44e00;
 }
 
-#crumbs-and-filter {
+#nav-crumbs-and-filter {
 	min-height: inherit;
 	border-width: 0px;
 	border-radius: unset;
 }
 
-.crumbs-and-filter-container.stick {
-	margin-left: 0px;
-	margin-right: 0px;
-	left: 0px;
-	right: 0px;
-	width: 100% !important;
-}
-
-.crumbs-and-filter-container.stick nav {
-	margin-left: 0;
-	margin-right: 0;
-}
-
-#crumbs-and-filter ol {
+#nav-crumbs-and-filter ol {
 	margin-block-end: 0px;
 }
 
+#movable-crumbs-and-filter.stick {
+	left: 0;
+	width: 100% !important;
+	background-color: #f0f0f0;
+}
+
+#nav-crumbs-and-filter.navbar-default {
+	background-color: inherit;
+	border-width: 0;
+	background-color: #f0f0f0;
+}
+
+.caf-banner {
+	background-color: #f0f0f0;
+}
+.stick .caf-banner {
+	margin-left: 0;
+	margin-right: 0;
+}
+.caf-banner {
+	margin-left: -15px;
+	margin-right: 15px;
+}
+#movable-crumbs-and-filter nav {
+	margin-bottom: 0px;
+}
 #crumbs {
-	float: left;
+	display: inline-block;
+}
+
+#crumbs .breadcrumb {
+	background-color: inherit;
+	border: 0px;
 }

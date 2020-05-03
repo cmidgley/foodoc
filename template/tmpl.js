@@ -57,11 +57,13 @@ Handlebars.registerPartial("site/layout", this["tmpl"]["site/layout"] = Handleba
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.systemColor : stack1), depth0))
     + ";\r\n				}\r\n			</style>\r\n";
 },"10":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=container.lambda;
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
   return "		<div class=\"page-header\">\r\n			<div class=\"container\">\r\n				<span class=\"kind\">"
-    + container.escapeExpression(alias1(((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.kind : stack1), depth0))
-    + "</span>\r\n				<div class=\"container-content\">\r\n					<h1>"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.kind : stack1), depth0))
+    + "</span>\r\n				<div class=\"container-content\">\r\n					<h1><span class='kind-inline'>"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.kind : stack1), depth0))
+    + " </span>"
     + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.pageTitleHTML : stack1), depth0)) != null ? stack1 : "")
     + "</h1>\r\n"
     + ((stack1 = container.invokePartial(partials["tag/summary"],(depth0 != null ? depth0.doclet : depth0),{"name":"tag/summary","data":data,"indent":"\t\t\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
@@ -81,20 +83,20 @@ Handlebars.registerPartial("site/layout", this["tmpl"]["site/layout"] = Handleba
 },"17":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "					<div class='crumbs-and-filter-container row sticky-scroll' data-sticky-scroll-target='header' data-sticky-scroll-on-stick='onCrumbFilterStick' data-sticky-scroll-on-unstick='onCrumbFilterUnstick'>\r\n						<nav id='crumbs-and-filter' class=\"col-xs-12 row navbar navbar-default\" >\r\n"
+  return "					<div id='movable-crumbs-and-filter' class='sticky-scroll' data-sticky-scroll-target='header' data-sticky-scroll-on-stick='onCrumbFilterStick' data-sticky-scroll-on-unstick='onCrumbFilterUnstick'>\r\n						<nav id='nav-crumbs-and-filter' class=\"navbar navbar-default\" >\r\n							<div class=\"container\">\r\n								<div class=\"row\">\r\n									<div class='crumbs-and-filter col-md-9'>\r\n										<div class='caf-banner'>\r\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.crumbs : depth0),{"name":"if","hash":{},"fn":container.program(18, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.showAccessFilter : stack1),{"name":"if","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "						</nav>\r\n					</div>\r\n";
+    + "										</div>\r\n									</div>\r\n									<div class='col-md-3'>\r\n									</div>\r\n								</div>\r\n							</div>\r\n						</nav>\r\n					</div>\r\n";
 },"18":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "								<div id='crumbs'>\r\n									<ol class=\"breadcrumb\">\r\n"
+  return "												<div id='crumbs'>\r\n													<ol class=\"breadcrumb\">\r\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.crumbs : depth0),{"name":"each","hash":{},"fn":container.program(19, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "									</ol>\r\n								</div>\r\n";
+    + "													</ol>\r\n												</div>\r\n";
 },"19":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "										<li  class=\"breadcrumb-item"
+  return "														<li  class=\"breadcrumb-item"
     + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),(data && data.last),{"name":"if","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\">"
     + ((stack1 = container.lambda(depth0, depth0)) != null ? stack1 : "")
@@ -104,20 +106,20 @@ Handlebars.registerPartial("site/layout", this["tmpl"]["site/layout"] = Handleba
 },"22":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "								<div id='filter' class='access-filter'>\r\n"
+  return "												<div id='filter' class='access-filter'>\r\n"
     + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.has : stack1)) != null ? stack1.inherited : stack1),{"name":"if","hash":{},"fn":container.program(23, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.has : stack1)) != null ? stack1["public"] : stack1),{"name":"if","hash":{},"fn":container.program(25, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.has : stack1)) != null ? stack1["protected"] : stack1),{"name":"if","hash":{},"fn":container.program(27, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.has : stack1)) != null ? stack1["private"] : stack1),{"name":"if","hash":{},"fn":container.program(29, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "								</div>\r\n";
+    + "												</div>\r\n";
 },"23":function(container,depth0,helpers,partials,data) {
-    return "										<label class=\"checkbox-inline\">\r\n											<input class=\"toggle-inherited\" type=\"checkbox\" value=\"\" checked>\r\n											Inherited\r\n										</label>\r\n";
+    return "														<label class=\"checkbox-inline\">\r\n															<input class=\"toggle-inherited\" type=\"checkbox\" value=\"\" checked>\r\n															Inherited\r\n														</label>\r\n";
 },"25":function(container,depth0,helpers,partials,data) {
-    return "										<label class=\"checkbox-inline\">\r\n											<input class=\"toggle-public\" type=\"checkbox\" value=\"\" checked>\r\n											Public\r\n										</label>\r\n";
+    return "														<label class=\"checkbox-inline\">\r\n															<input class=\"toggle-public\" type=\"checkbox\" value=\"\" checked>\r\n															Public\r\n														</label>\r\n";
 },"27":function(container,depth0,helpers,partials,data) {
-    return "										<label class=\"checkbox-inline\">\r\n											<input class=\"toggle-protected\" type=\"checkbox\" value=\"\" checked>\r\n											Protected\r\n										</label>\r\n";
+    return "														<label class=\"checkbox-inline\">\r\n															<input class=\"toggle-protected\" type=\"checkbox\" value=\"\" checked>\r\n															Protected\r\n														</label>\r\n";
 },"29":function(container,depth0,helpers,partials,data) {
-    return "										<label class=\"checkbox-inline\">\r\n											<input class=\"toggle-private\" type=\"checkbox\" value=\"\" checked>\r\n											Private\r\n										</label>\r\n";
+    return "														<label class=\"checkbox-inline\">\r\n															<input class=\"toggle-private\" type=\"checkbox\" value=\"\" checked>\r\n															Private\r\n														</label>\r\n";
 },"31":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing;
 
