@@ -89,8 +89,14 @@
 			toolbar.appendChild(item);
 		});
 
-		// Add our toolbar to the <pre> tag
-		pre.appendChild(toolbar);
+		// create outer div around pre and insert our toolbar into it
+		var wrapper = document.createElement('div');
+		wrapper.className = pre.className;
+		wrapper.classList.add('toolbar-wrapper');
+		pre.className = '';
+		pre.parentNode.insertBefore(wrapper, pre);
+		wrapper.appendChild(toolbar);
+		wrapper.appendChild(pre);
 	};
 
 	registerButton('label', function(env) {

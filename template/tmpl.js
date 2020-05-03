@@ -39,7 +39,7 @@ Handlebars.registerPartial("site/layout", this["tmpl"]["site/layout"] = Handleba
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.favicon : stack1), depth0))
     + "\"/>\r\n";
 },"4":function(container,depth0,helpers,partials,data) {
-    return "		<script src=\"https://unpkg.com/mermaid/dist/mermaid.min.js\"></script>\r\n";
+    return "		<script src=\"https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.5.0/mermaid.min.js\"></script>\r\n";
 },"6":function(container,depth0,helpers,partials,data) {
     return "			<link type=\"text/css\" rel=\"stylesheet\" href=\""
     + container.escapeExpression(container.lambda(depth0, depth0))

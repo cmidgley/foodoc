@@ -2,8 +2,8 @@
     opacity: 0
 }
 
-.tutorial-section .language-mermaid .toolbar {
-    display: none;
+.language-mermaid {
+    overflow: inherit;
 }
 
 .language-mermaid code {
