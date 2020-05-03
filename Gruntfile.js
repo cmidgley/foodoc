@@ -77,10 +77,10 @@ module.exports = function(grunt) {
 			}
 		},
 		uglify: {
-			options: {
-				mangle: false,
-				beautify: true
-			},
+			// options: {
+			// 	mangle: false,
+			// 	beautify: true
+			// },
 			prism: { // prism requires it's own build as I've modified some plugins and use some default ones to.
 				files: {
 					'template/static/js/prism.min.js': [
