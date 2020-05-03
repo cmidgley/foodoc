@@ -59,6 +59,9 @@ footer {
 	font-size: 12px;
 }
 
+.kind-readme, .kind-tutorial, .kind-list { 
+	display: none;
+}
 
 @media (min-width: 768px) {
 	.main-content h1 {
