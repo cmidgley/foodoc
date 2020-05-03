@@ -63,9 +63,9 @@
 	{{#block "page-header"}}
 		<div class="page-header">
 			<div class="container">
-				<span class="kind">{{doclet.kind}}</span>
+				<span class="kind kind-{{doclet.kind}}">{{doclet.kind}}</span>
 				<div class="container-content">
-					<h1><span class='kind-inline'>{{doclet.kind}} </span>{{{doclet.pageTitleHTML}}}</h1>
+					<h1><span class='kind-inline kind-{{doclet.kind}}'>{{doclet.kind}} </span>{{{doclet.pageTitleHTML}}}</h1>
 					{{> tag/summary doclet}}
 				</div>
 				{{#if options.pageLogo}}

@@ -59,9 +59,13 @@ Handlebars.registerPartial("site/layout", this["tmpl"]["site/layout"] = Handleba
 },"10":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "		<div class=\"page-header\">\r\n			<div class=\"container\">\r\n				<span class=\"kind\">"
+  return "		<div class=\"page-header\">\r\n			<div class=\"container\">\r\n				<span class=\"kind kind-"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.kind : stack1), depth0))
-    + "</span>\r\n				<div class=\"container-content\">\r\n					<h1><span class='kind-inline'>"
+    + "\">"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.kind : stack1), depth0))
+    + "</span>\r\n				<div class=\"container-content\">\r\n					<h1><span class='kind-inline kind-"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.kind : stack1), depth0))
+    + "'>"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.kind : stack1), depth0))
     + " </span>"
     + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.pageTitleHTML : stack1), depth0)) != null ? stack1 : "")
