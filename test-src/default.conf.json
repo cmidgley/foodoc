@@ -4,6 +4,9 @@
   },
   "plugins": ["plugins/markdown"
   ],
+  "opts": {
+    "access": "all"
+  },
   "templates": {
     "default": {
       "staticFiles": {
@@ -31,7 +34,6 @@
     "inlineNav": false,
     "outputSourceFiles": true,
     "outputSourcePath": false,
-    "disablePackagePath": true,
     "methodHeadingReturns": true,
     "showTableOfContents": true,
     "expandTableOfContents": true,

@@ -5,6 +5,9 @@
   "plugins": ["plugins/markdown",
     "../foodoc/node_modules/jsdoc-mermaid"
   ],
+  "opts": {
+    "access": "all"
+  },
   "templates": {
     "includeDate": true,
     "dateFormat": "Do MMM YYYY",
@@ -24,7 +27,6 @@
     "inlineNav": false,
     "outputSourceFiles": true,
     "outputSourcePath": false,
-    "disablePackagePath": true,
     "methodHeadingReturns": true,
     "showTableOfContents": true,
     "expandTableOfContents": false,

@@ -37,7 +37,6 @@ var options = exports.options = extend({
 	inlineNav: false,
 	outputSourceFiles: true,
 	sourceRootPath: null,
-	disablePackagePath: true,
 	outputSourcePath: false,
 	showTableOfContents: true,
 	expandTableOfContents: false,
