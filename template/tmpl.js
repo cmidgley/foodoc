@@ -13,22 +13,22 @@ Handlebars.registerPartial("search/navbar-input", this["tmpl"]["search/navbar-in
 },"useData":true}));
 
 Handlebars.registerPartial("site/layout", this["tmpl"]["site/layout"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing;
+    var stack1, alias1=container.lambda, alias2=depth0 != null ? depth0 : (container.nullContext || {}), alias3=helpers.helperMissing;
 
   return "		<title>"
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.pageTitle : stack1), depth0))
+    + container.escapeExpression(alias1(((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.pageTitle : stack1), depth0))
     + "</title>\r\n"
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.favicon : stack1),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.includeMermaid : stack1),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias2,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.favicon : stack1),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias2,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.includeMermaid : stack1),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "		<!--[if lt IE 9]>\r\n		<script src=\"//html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\r\n		<![endif]-->\r\n		<link href=\"https://fonts.googleapis.com/css?family=PT+Mono\" rel=\"stylesheet\">\r\n		<link type=\"text/css\" rel=\"stylesheet\" href=\"css/bootstrap.min.css\">\r\n		<link type=\"text/css\" rel=\"stylesheet\" href=\"css/prism.min.css\">\r\n		<link type=\"text/css\" rel=\"stylesheet\" href=\"css/template.min.css\">\r\n"
-    + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.stylesheets : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.systemColor : stack1),{"name":"if","hash":{},"fn":container.program(8, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(alias2,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.stylesheets : stack1),{"name":"each","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias2,((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.systemColor : stack1),{"name":"if","hash":{},"fn":container.program(8, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "		<script type=\"text/javascript\">\r\n			window.TEMPLATE_OPTIONS = "
-    + ((stack1 = (helpers.json || (depth0 && depth0.json) || alias2).call(alias1,(depth0 != null ? depth0.options : depth0),{"name":"json","hash":{},"data":data})) != null ? stack1 : "")
+    + ((stack1 = (helpers.json || (depth0 && depth0.json) || alias3).call(alias2,(depth0 != null ? depth0.options : depth0),{"name":"json","hash":{},"data":data})) != null ? stack1 : "")
     + ";\r\n			window.DOCLET_TOC_ENABLED = "
-    + ((stack1 = (helpers.json || (depth0 && depth0.json) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.showTableOfContents : stack1),{"name":"json","hash":{},"data":data})) != null ? stack1 : "")
+    + ((stack1 = (helpers.json || (depth0 && depth0.json) || alias3).call(alias2,((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.showTableOfContents : stack1),{"name":"json","hash":{},"data":data})) != null ? stack1 : "")
     + ";\r\n			window.DOCLET_AFILTER_ENABLED = "
-    + ((stack1 = (helpers.json || (depth0 && depth0.json) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.doclet : depth0)) != null ? stack1.showAccessFilter : stack1),{"name":"json","hash":{},"data":data})) != null ? stack1 : "")
+    + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.showAccessFilter : stack1), depth0)) != null ? stack1 : "")
     + ";\r\n		</script>\r\n";
 },"2":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
