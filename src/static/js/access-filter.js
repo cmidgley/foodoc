@@ -43,7 +43,7 @@
 				self.$toggleInherited.closest(".checkbox-inline").toggleClass("checked", self.inherited);
 			}
 			
-			$('.language-mermaid').toggleClass('inherited');
+			$('.language-mermaid').toggleClass('inherited', self.inherited);
 			if (mermaid.rerender) 
 				mermaid.rerender();
 		},
@@ -60,7 +60,7 @@
 				self.$togglePublic.closest(".checkbox-inline").toggleClass("checked", self.public);
 			}
 
-			$('.language-mermaid').toggleClass('public');
+			$('.language-mermaid').toggleClass('public', self.public);
 			if (mermaid.rerender) 
 				mermaid.rerender();
 		},
@@ -77,7 +77,7 @@
 				self.$toggleProtected.closest(".checkbox-inline").toggleClass("checked", self.protected);
 			}
 
-			$('.language-mermaid').toggleClass('protected');
+			$('.language-mermaid').toggleClass('protected', self.protected);
 			if (mermaid.rerender) 
 				mermaid.rerender();
 		},
@@ -94,7 +94,7 @@
 				self.$togglePrivate.closest(".checkbox-inline").toggleClass("checked", self.private);
 			}
 
-			$('.language-mermaid').toggleClass('private');
+			$('.language-mermaid').toggleClass('private', self.private);
 			if (mermaid.rerender) 
 				mermaid.rerender();
 		},

@@ -19,6 +19,7 @@
         "private": true
     },
     "templates": {
+        "useShortNamesInLinks": true,
         "cleverLinks": true,
         "includeDate": true,
         "dateFormat": "Do MMM YYYY",
@@ -41,6 +42,10 @@
         "methodHeadingReturns": true,
         "showTableOfContents": true,
         "showAccessFilter": true,
+        "defaultFilterInherited": true,
+        "defaultFilterPublic": true,
+        "defaultFilterProtected": false,
+        "defaultFilterPrivate": false,
         "includeMermaid": true,
         "includeClassDiagrams": true,
         "sort": "",

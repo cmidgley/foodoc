@@ -50,8 +50,10 @@ exports.process = function(){
 		if (typeof doclet.showTableOfContents != 'boolean'){
 			doclet.showTableOfContents = template.options.showTableOfContents;
 		}
-		// if (doclet.longname == 'InheritedTwiceClass#protectedMemberThree')
+		// if (doclet.name == 'Configuration') {
 		// 	console.error(doclet);
+		// 	debugger;
+		// }
 	});
 
 	template.raw.data().each(function(doclet){

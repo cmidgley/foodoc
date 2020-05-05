@@ -103,25 +103,25 @@
 												<div id='filter' class='access-filter'>
 													{{#if doclet.has.inherited}}
 														<label class="checkbox-inline">
-															<input class="toggle-inherited" type="checkbox" value="" checked>
+															<input class="toggle-inherited" type="checkbox" value="" {{#if options.defaultFilterInherited}}checked{{/if}}>
 															Inherited
 														</label>
 													{{/if}}
 													{{#if doclet.has.public}}
 														<label class="checkbox-inline">
-															<input class="toggle-public" type="checkbox" value="" checked>
+															<input class="toggle-public" type="checkbox" value="" {{#if options.defaultFilterPublic}}checked{{/if}}>
 															Public
 														</label>
 													{{/if}}
 													{{#if doclet.has.protected}}
 														<label class="checkbox-inline">
-															<input class="toggle-protected" type="checkbox" value="" checked>
+															<input class="toggle-protected" type="checkbox" value="" {{#if options.defaultFilterProtected}}checked{{/if}}>
 															Protected
 														</label>
 													{{/if}}
 													{{#if doclet.has.private}}
 														<label class="checkbox-inline">
-															<input class="toggle-private" type="checkbox" value="" checked>
+															<input class="toggle-private" type="checkbox" value="" {{#if options.defaultFilterPrivate}}checked{{/if}}>
 															Private
 														</label>
 													{{/if}}

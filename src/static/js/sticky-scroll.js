@@ -46,7 +46,7 @@ function stickyScroll(event) {
         if (!event.data.scrollingElem.hasClass('stick') && event.data.scrollingElem.data('sticky-scroll-on-stick'))
             triggerEvent = true;
         event.data.scrollingElem.addClass('stick')
-            .attr('style', 'margin-top: 0; position: fixed; top: ' + lockedPosition + 'px; z-index: 9999; width: ' + event.data.anchorElem.width() + 'px');
+            .attr('style', 'margin-top: 0; position: fixed; top: ' + lockedPosition + 'px; z-index: 1001; width: ' + event.data.anchorElem.width() + 'px');
         event.data.anchorElem.height(event.data.scrollingElem.outerHeight());
         if (triggerEvent)
             window[event.data.scrollingElem.data('sticky-scroll-on-stick')](event.data.scrollingElem);

@@ -12,16 +12,17 @@
 </dt>
 <dd class="symbol-details {{kind}}{{#unless @primary}} {{access}}{{#if inherited}} inherited{{/if}}{{/unless}}{{#if @options.collapseSymbols}}{{#unless (content "symbol-details")}}  collapsible-symbol{{#if @expanded}} expanded{{/if}}{{/unless}}{{/if}}"{{#if @expanded}} style="max-height: 9999px;"{{/if}}>
 	<div class="symbol-details-inner">
-		{{#block "symbol-details"}}
-			{{> tag/description this}}
-			{{> tag/param this}}
-			{{> tag/prop this}}
-			{{> tag/returns this}}
-			{{> tag/requires this}}
-			{{> tag/example this options=@options}}
-			{{> tag/fires this}}
-			{{> tag/exceptions this}}
-			{{> tag/details this options=@options}}
-		{{/block}}
+	{{#block "symbol-details"}}
+{{> tag/description this}}{{!-- must be left-aligned so code blocks don't indent and format correctly; known bug in
+jsdoc to be fixed in version 3 --}}
+		{{> tag/param this}}
+		{{> tag/prop this}}
+		{{> tag/returns this}}
+		{{> tag/requires this}}
+		{{> tag/example this options=@options}}
+		{{> tag/fires this}}
+		{{> tag/exceptions this}}
+		{{> tag/details this options=@options}}
+	{{/block}}
 	</div>
 </dd>

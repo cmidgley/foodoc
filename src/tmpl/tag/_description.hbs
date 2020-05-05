@@ -4,13 +4,13 @@
 	{{/callout}}
 {{/if--}}
 {{#if classdesc}}
-	{{#callout "Description" "callout-primary"}}
-		<div class='callout-class-diagram'><div>{{{classDiagram}}}</div></div>
-		<div class="description classdesc"><div>{{{classdesc}}}</div></div>
-	{{/callout}}
+{{#callout "Description" "callout-primary"}}
+	<div class='callout-class-diagram'><div>{{{classDiagram}}}</div></div>
+	<div class="description classdesc"><div>{{{classdesc}}}</div></div>
+{{/callout}}
 {{else if description}}
-	{{#callout "Description" "callout-primary"}}
-		<div class='callout-class-diagram'>{{{classDiagram}}}</div>
-		<div class="description">{{{description}}}</div>
-	{{/callout}}
+{{#callout "Description" "callout-primary"}}
+	<div class='callout-class-diagram'>{{{classDiagram}}}</div>
+	<div class="description">{{{description}}}</div>
+{{/callout}}
 {{/if}}

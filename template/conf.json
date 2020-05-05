@@ -9,6 +9,7 @@
     "access": "all"
   },
   "templates": {
+    "useShortNamesInLinks": true,
     "includeDate": true,
     "dateFormat": "Do MMM YYYY",
     "includeClass": true,
@@ -31,6 +32,10 @@
     "showTableOfContents": true,
     "expandTableOfContents": false,
     "showAccessFilter": false,
+    "defaultFilterInherited": true,
+    "defaultFilterPublic": true,
+    "defaultFilterProtected": false,
+    "defaultFilterPrivate": false,
     "includeMermaid": false,
     "includeClassDiagrams": false,
     "sort": "linenum, longname, version, since",

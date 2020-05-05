@@ -92,7 +92,11 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
 	"linenums"              : "{boolean}",
     "showTableOfContents"   : "{boolean}",
     "expandTableOfContents" : "{boolean}",
-	"showAccessFilter"      : "{boolean}",
+    "showAccessFilter"      : "{boolean}",
+    "defaultFilterInherited": "{boolean}",
+    "defaultFilterPublic"   : "{boolean}",
+    "defaultFilterProtected": "{boolean}",
+    "defaultFilterPrivate"  : "{boolean}",
 	"includeMermaid"        : "{boolean}",
 	"includeClassDiagrams"  : "{boolean}",
 	"analytics"             : "{object}",
@@ -168,7 +172,18 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
     requiring scrolling into the area.  This causes all member and method names, as well as H4 level markdown,
     to be shown all the time.
 *   __showAccessFilter - `true`__
-    When `true`, a checkbox list is displayed allowing the user to toggle the visibility of inherited, public, protected and private symbols of the current doclet. Each checkbox will only be displayed if the doclet contains at least one symbol of that type. If there is only a single type available across the entire doclet the filter is not displayed at all.
+    When `true`, a checkbox list is displayed allowing the user to toggle the visibility of inherited, public, protected
+    and private symbols of the current doclet. Each checkbox will only be displayed if the doclet contains at least one
+    symbol of that type. If there is only a single type available across the entire doclet the filter is not displayed
+    at all.
+*   __defaultFilterInherited - `true`__
+    When `showAccessFilter` is enabled, this determines if the default filter setting enables showing inherited members.
+*   __defaultFilterPublic - `true`__
+    When `showAccessFilter` is enabled, this determines if the default filter setting enables showing public members.
+*   __defaultFilterProtected - `false`__
+    When `showAccessFilter` is enabled, this determines if the default filter setting enables showing protected members.
+*   __defaultFilterPrivate - `false`__
+    When `showAccessFilter` is enabled, this determines if the default filter setting enables showing private members.
 *   __includeMermaid - `false`__
     When `true`, includes Mermaid which allows for doing flowcharts, class diagrams and more from within your documentation and rendered onto the pages.   
 *   __includeClassDiagrams - `false`__
@@ -397,6 +412,8 @@ All releases prior to 1.0.0 are considered pre-release, i.e. I'm not finished ch
 * Several style changes, including default color, hiding the document "kind" (README, CLASS, etc), and lots of style changes throughout.  All can be overridden with personal stylesheets, and all have comments in the CSS files (except color changes)
 * Adds support for [Mermaid](https://mermaid-js.github.io/mermaid/#/) when `includeMermaid: true` is used.  See [Mermaid](#Mermaid graphics drawings) for more information on configuration and use.
 * Adds support for automatically generating class diagrams based on classes and members when `includeClassDiagrams: true` is used.
+* Adds settings for how the access filter should default, using new options defaultFilterInherited, defaultFilterPublic,
+  defaultFilterProtected, and defaultFilterPrivate.  Default is protected and private unchecked.
 
 ### 0.0.9
 

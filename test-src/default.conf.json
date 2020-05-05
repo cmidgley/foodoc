@@ -16,6 +16,7 @@
         ]
       }
     },
+    "useShortNamesInLinks": true,
     "includeDate": true,
     "dateFormat": "Do MMM YYYY",
     "includeClass": false,
@@ -38,6 +39,10 @@
     "showTableOfContents": true,
     "expandTableOfContents": true,
     "showAccessFilter": true,
+    "defaultFilterInherited": true,
+    "defaultFilterPublic": true,
+    "defaultFilterProtected": false,
+    "defaultFilterPrivate": false,
     "includeMermaid": true,
     "includeClassDiagrams": true,
     "sort": "linenum, longname, version, since",

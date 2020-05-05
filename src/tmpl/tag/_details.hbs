@@ -87,16 +87,10 @@
 				<!-- implementations -->
 				<div class="form-group">
 					<label class="col-xs-3 form-control-static control-label">Implementations</label>
-					<div class="col-xs-9">
-						{{#single implementations}}
-							<p class="form-control-static">{{linkto this}}</p>
-						{{else}}
-							<ul class="form-control-static">
-								{{#each implementations}}
-									<li>{{linkto this}}</li>
-								{{/each}}
-							</ul>
-						{{/single}}
+					<div class="col-xs-9 form-control-static">
+						{{#each implementations}}
+							{{linkto this}}<br>
+						{{/each}}
 					</div>
 				</div>
 			{{/if}}
@@ -105,16 +99,10 @@
 				<!-- implements -->
 				<div class="form-group">
 					<label class="col-xs-3 form-control-static control-label">Implements</label>
-					<div class="col-xs-9">
-						{{#single implements}}
-							<p class="form-control-static">{{linkto this}}</p>
-						{{else}}
-							<ul class="form-control-static">
-								{{#each implements}}
-									<li>{{linkto this}}</li>
-								{{/each}}
-							</ul>
-						{{/single}}
+					<div class="col-xs-9 form-control-static">
+						{{#each implements}}
+							{{linkto this}}<br>
+						{{/each}}
 					</div>
 				</div>
 			{{/if}}
@@ -123,16 +111,10 @@
 				<!-- mixes -->
 				<div class="form-group">
 					<label class="col-xs-3 form-control-static control-label">Mixes In</label>
-					<div class="col-xs-9">
-						{{#single mixes}}
-							<p class="form-control-static">{{linkto this}}</p>
-						{{else}}
-							<ul class="form-control-static">
-								{{#each mixes}}
-									<li>{{linkto this}}</li>
-								{{/each}}
-							</ul>
-						{{/single}}
+					<div class="col-xs-9 form-control-static">
+						{{#each mixes}}
+							{{linkto this}}<br>
+						{{/each}}
 					</div>
 				</div>
 			{{/if}}
@@ -151,16 +133,10 @@
 				<!-- author -->
 				<div class="form-group">
 					<label class="col-xs-3 form-control-static control-label">Author</label>
-					<div class="col-xs-9">
-						{{#single author}}
-							<p class="form-control-static">{{linkto this}}</p>
-						{{else}}
-							<ul class="form-control-static">
-								{{#each author}}
-									<li>{{linkto this}}</li>
-								{{/each}}
-							</ul>
-						{{/single}}
+					<div class="col-xs-9 form-control-static">
+						{{#each author}}
+							{{linkto this}}<br>
+						{{/each}}
 					</div>
 				</div>
 			{{/if}}
@@ -199,16 +175,10 @@
 				<!-- tutorials -->
 				<div class="form-group">
 					<label class="col-xs-3 form-control-static control-label">Tutorials</label>
-					<div class="col-xs-9">
-						{{#single tutorials}}
-							<p class="form-control-static">{{linkto this}}</p>
-						{{else}}
-							<ul class="form-control-static">
-								{{#each tutorials}}
-									<li>{{linkto this}}</li>
-								{{/each}}
-							</ul>
-						{{/single}}
+					<div class="col-xs-9 form-control-static">
+						{{#each tutorials}}
+							{{linkto this}}<br>
+						{{/each}}
 					</div>
 				</div>
 			{{/if}}
@@ -217,16 +187,10 @@
 				<!-- see -->
 				<div class="form-group">
 					<label class="col-xs-3 form-control-static control-label">See</label>
-					<div class="col-xs-9">
-						{{#single see}}
-							<p class="form-control-static">{{linkto this}}</p>
-						{{else}}
-							<ul class="form-control-static">
-								{{#each see}}
-									<li>{{linkto this}}</li>
-								{{/each}}
-							</ul>
-						{{/single}}
+					<div class="col-xs-9 form-control-static">
+						{{#each see}}
+							{{linkto this}}<br>
+						{{/each}}
 					</div>
 				</div>
 			{{/if}}
@@ -235,16 +199,10 @@
 				<!-- todo -->
 				<div class="form-group">
 					<label class="col-xs-3 form-control-static control-label">To Do</label>
-					<div class="col-xs-9">
-						{{#single todo}}
-							<p class="form-control-static">{{this}}</p>
-						{{else}}
-							<ul class="form-control-static">
-								{{#each todo}}
-									<li>{{this}}</li>
-								{{/each}}
-							</ul>
-						{{/single}}
+					<div class="col-xs-9 form-control-static">
+						{{#each todo}}
+							{{linkto this}}<br>
+						{{/each}}
 					</div>
 				</div>
 			{{/if}}
