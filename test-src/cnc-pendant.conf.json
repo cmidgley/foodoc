@@ -1,0 +1,67 @@
+{
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc","closure"]
+    },
+    "source": {
+        "include": ["../cnc-pendant/src"],
+        "includePattern": ".+\\.js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "opts": {
+        "destination": "../cnc-pendant/docs/js",
+        "recurse": true,
+        "readme": "../cnc-pendant/docs/front-page.md",
+        "access": "all",
+        "private": true
+    },
+    "templates": {
+        "cleverLinks": true,
+        "includeDate": true,
+        "dateFormat": "Do MMM YYYY",
+        "includeClass": false,
+        "includeGeneratedBy": false,
+        "removeInheritedStubs": true,
+        "removeInheritedPrivate": true,
+        "systemName": "CNC Pendant",
+        "systemSummary": "Advanced CNC control ... made easy",
+        "systemLogo": "",
+        "pageLogo": "../cnc-pendant/docs/images/cnc-pendant-on-white.png",
+        "systemColor": "",
+        "copyright": "Copyright © 2020 Chris Midgley",
+        "linenums": true,
+        "collapseSymbols": true,
+        "inverseNav": true,
+        "inlineNav": false,
+        "outputSourceFiles": true,
+        "outputSourcePath": false,
+        "methodHeadingReturns": true,
+        "showTableOfContents": true,
+        "showAccessFilter": true,
+        "includeMermaid": true,
+        "includeClassDiagrams": true,
+        "sort": "",
+        "search": true,
+        "analytics": {"ua": "", "domain": ""},
+        "favicon": "../cnc-pendant/docs/images/favicon-32x32.png",
+        "stylesheets": [],
+        "scripts": [],
+        "navMembers": [
+            {"kind": "tutorial", "title": "Architecture", "summary": "An introduction to the architecture of CNC Pendant"},
+            {"kind": "class", "title": "Classes", "summary": "CNC Pendant classes"},
+            {"kind": "external", "title": "Externals", "summary": "All documented external members."},
+            {"kind": "global", "title": "Globals", "summary": "All documented globals."},
+            {"kind": "mixin", "title": "Mixins", "summary": "All documented mixins."},
+            {"kind": "interface", "title": "Interfaces", "summary": "All documented interfaces."},
+            {"kind": "module", "title": "Modules", "summary": "All documented modules."},
+            {"kind": "namespace", "title": "Namespaces", "summary": "All documented namespaces."}
+        ]
+    },
+    "markdown": {
+        "parser": "gfm",
+        "hardwrap": false
+    }
+}

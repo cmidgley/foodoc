@@ -25,6 +25,19 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Generate CNC-Pendant doc",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\node_modules\\jsdoc\\jsdoc.js",
+            "args": [ 
+                "--template", "./template",
+                "--configure", "./test-src/cnc-pendant.conf.json"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Generate sample doc (no template)",
             "skipFiles": [
                 "<node_internals>/**"

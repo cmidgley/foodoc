@@ -2,7 +2,15 @@
 {{#if hasDetails}}
 	{{#callout "Details" "callout-default"}}
 		<form class="form-horizontal details">
-
+			{{#if access}}
+				<!-- access -->
+				<div class="form-group">
+					<label class="col-xs-3 form-control-static control-label">Access</label>
+					<div class="col-xs-9">
+						<div class="form-control-static type-names">{{access}}</div>
+					</div>
+				</div>
+			{{/if}}
 			{{#if type}}
 				<!-- type -->
 				<div class="form-group">

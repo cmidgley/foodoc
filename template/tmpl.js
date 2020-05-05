@@ -569,212 +569,219 @@ Handlebars.registerPartial("tag/details", this["tmpl"]["tag/details"] = Handleba
 },"2":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "		<form class=\"form-horizontal details\">\r\n\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.type : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+  return "		<form class=\"form-horizontal details\">\r\n"
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.access : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.type : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.defaultvalue : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.defaultvalue : depth0),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.augments : depth0),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.augments : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.version : depth0),{"name":"if","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.version : depth0),{"name":"if","hash":{},"fn":container.program(12, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.since : depth0),{"name":"if","hash":{},"fn":container.program(12, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.since : depth0),{"name":"if","hash":{},"fn":container.program(14, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.inherits : depth0),{"name":"if","hash":{},"fn":container.program(14, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.inherits : depth0),{"name":"if","hash":{},"fn":container.program(16, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.overrides : depth0),{"name":"if","hash":{},"fn":container.program(16, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.overrides : depth0),{"name":"if","hash":{},"fn":container.program(18, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.implementations : depth0),{"name":"if","hash":{},"fn":container.program(18, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.implementations : depth0),{"name":"if","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0["implements"] : depth0),{"name":"if","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0["implements"] : depth0),{"name":"if","hash":{},"fn":container.program(26, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.mixes : depth0),{"name":"if","hash":{},"fn":container.program(27, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.mixes : depth0),{"name":"if","hash":{},"fn":container.program(29, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.deprecated : depth0),{"name":"if","hash":{},"fn":container.program(30, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.deprecated : depth0),{"name":"if","hash":{},"fn":container.program(32, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.author : depth0),{"name":"if","hash":{},"fn":container.program(32, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.author : depth0),{"name":"if","hash":{},"fn":container.program(34, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.copyright : depth0),{"name":"if","hash":{},"fn":container.program(35, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.copyright : depth0),{"name":"if","hash":{},"fn":container.program(37, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.license : depth0),{"name":"if","hash":{},"fn":container.program(37, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.license : depth0),{"name":"if","hash":{},"fn":container.program(39, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.hasSource : depth0),{"name":"if","hash":{},"fn":container.program(39, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.hasSource : depth0),{"name":"if","hash":{},"fn":container.program(41, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.tutorials : depth0),{"name":"if","hash":{},"fn":container.program(44, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.tutorials : depth0),{"name":"if","hash":{},"fn":container.program(46, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.see : depth0),{"name":"if","hash":{},"fn":container.program(47, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.see : depth0),{"name":"if","hash":{},"fn":container.program(49, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.todo : depth0),{"name":"if","hash":{},"fn":container.program(50, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.todo : depth0),{"name":"if","hash":{},"fn":container.program(52, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\r\n		</form>\r\n";
 },"3":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "				<!-- access -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">Access</label>\r\n					<div class=\"col-xs-9\">\r\n						<div class=\"form-control-static type-names\">"
+    + container.escapeExpression(((helper = (helper = helpers.access || (depth0 != null ? depth0.access : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"access","hash":{},"data":data}) : helper)))
+    + "</div>\r\n					</div>\r\n				</div>\r\n";
+},"5":function(container,depth0,helpers,partials,data) {
     return "				<!-- type -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">Type</label>\r\n					<div class=\"col-xs-9\">\r\n						<div class=\"form-control-static type-names\">"
     + container.escapeExpression((helpers["type-names"] || (depth0 && depth0["type-names"]) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.type : depth0),{"name":"type-names","hash":{},"data":data}))
     + "</div>\r\n					</div>\r\n				</div>\r\n";
-},"5":function(container,depth0,helpers,partials,data) {
+},"7":function(container,depth0,helpers,partials,data) {
     var helper;
 
   return "				<!-- defaultvalue -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">Default Value</label>\r\n					<div class=\"col-xs-9\">\r\n						<p class=\"form-control-static\">"
     + container.escapeExpression(((helper = (helper = helpers.defaultvalue || (depth0 != null ? depth0.defaultvalue : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"defaultvalue","hash":{},"data":data}) : helper)))
     + "</p>\r\n					</div>\r\n				</div>\r\n";
-},"7":function(container,depth0,helpers,partials,data) {
+},"9":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "				<!-- augments -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">Inherits</label>\r\n					<div class=\"col-xs-9 form-control-static\">\r\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.augments : depth0),{"name":"each","hash":{},"fn":container.program(8, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.augments : depth0),{"name":"each","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "					</div>\r\n				</div>\r\n";
-},"8":function(container,depth0,helpers,partials,data) {
+},"10":function(container,depth0,helpers,partials,data) {
     return "							"
     + container.escapeExpression((helpers.linkto || (depth0 && depth0.linkto) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),depth0,{"name":"linkto","hash":{},"data":data}))
     + "<br>\r\n";
-},"10":function(container,depth0,helpers,partials,data) {
+},"12":function(container,depth0,helpers,partials,data) {
     var helper;
 
   return "				<!-- version -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">Version</label>\r\n					<div class=\"col-xs-9\">\r\n						<p class=\"form-control-static\">"
     + container.escapeExpression(((helper = (helper = helpers.version || (depth0 != null ? depth0.version : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"version","hash":{},"data":data}) : helper)))
     + "</p>\r\n					</div>\r\n				</div>\r\n";
-},"12":function(container,depth0,helpers,partials,data) {
+},"14":function(container,depth0,helpers,partials,data) {
     var helper;
 
   return "				<!-- since -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">Since</label>\r\n					<div class=\"col-xs-9\">\r\n						<p class=\"form-control-static\">"
     + container.escapeExpression(((helper = (helper = helpers.since || (depth0 != null ? depth0.since : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"since","hash":{},"data":data}) : helper)))
     + "</p>\r\n					</div>\r\n				</div>\r\n";
-},"14":function(container,depth0,helpers,partials,data) {
+},"16":function(container,depth0,helpers,partials,data) {
     return "				<!-- inherits -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">Inherits</label>\r\n					<div class=\"col-xs-9\">\r\n						<p class=\"form-control-static\">"
     + container.escapeExpression((helpers.linktoMember || (depth0 && depth0.linktoMember) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.inherits : depth0),{"name":"linktoMember","hash":{},"data":data}))
     + "</p>\r\n					</div>\r\n				</div>\r\n";
-},"16":function(container,depth0,helpers,partials,data) {
+},"18":function(container,depth0,helpers,partials,data) {
     return "				<!-- overrides -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">Overrides</label>\r\n					<div class=\"col-xs-9\">\r\n						<p class=\"form-control-static\">"
     + container.escapeExpression((helpers.linktoMember || (depth0 && depth0.linktoMember) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.overrides : depth0),{"name":"linktoMember","hash":{},"data":data}))
     + "</p>\r\n					</div>\r\n				</div>\r\n";
-},"18":function(container,depth0,helpers,partials,data) {
+},"20":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "				<!-- implementations -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">Implementations</label>\r\n					<div class=\"col-xs-9\">\r\n"
-    + ((stack1 = (helpers.single || (depth0 && depth0.single) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.implementations : depth0),{"name":"single","hash":{},"fn":container.program(19, data, 0),"inverse":container.program(21, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = (helpers.single || (depth0 && depth0.single) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.implementations : depth0),{"name":"single","hash":{},"fn":container.program(21, data, 0),"inverse":container.program(23, data, 0),"data":data})) != null ? stack1 : "")
     + "					</div>\r\n				</div>\r\n";
-},"19":function(container,depth0,helpers,partials,data) {
+},"21":function(container,depth0,helpers,partials,data) {
     return "							<p class=\"form-control-static\">"
     + container.escapeExpression((helpers.linkto || (depth0 && depth0.linkto) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),depth0,{"name":"linkto","hash":{},"data":data}))
     + "</p>\r\n";
-},"21":function(container,depth0,helpers,partials,data) {
+},"23":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "							<ul class=\"form-control-static\">\r\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.implementations : depth0),{"name":"each","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.implementations : depth0),{"name":"each","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "							</ul>\r\n";
-},"22":function(container,depth0,helpers,partials,data) {
+},"24":function(container,depth0,helpers,partials,data) {
     return "									<li>"
     + container.escapeExpression((helpers.linkto || (depth0 && depth0.linkto) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),depth0,{"name":"linkto","hash":{},"data":data}))
     + "</li>\r\n";
-},"24":function(container,depth0,helpers,partials,data) {
+},"26":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "				<!-- implements -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">Implements</label>\r\n					<div class=\"col-xs-9\">\r\n"
-    + ((stack1 = (helpers.single || (depth0 && depth0.single) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0["implements"] : depth0),{"name":"single","hash":{},"fn":container.program(19, data, 0),"inverse":container.program(25, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = (helpers.single || (depth0 && depth0.single) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0["implements"] : depth0),{"name":"single","hash":{},"fn":container.program(21, data, 0),"inverse":container.program(27, data, 0),"data":data})) != null ? stack1 : "")
     + "					</div>\r\n				</div>\r\n";
-},"25":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "							<ul class=\"form-control-static\">\r\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0["implements"] : depth0),{"name":"each","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "							</ul>\r\n";
 },"27":function(container,depth0,helpers,partials,data) {
     var stack1;
 
+  return "							<ul class=\"form-control-static\">\r\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0["implements"] : depth0),{"name":"each","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "							</ul>\r\n";
+},"29":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
   return "				<!-- mixes -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">Mixes In</label>\r\n					<div class=\"col-xs-9\">\r\n"
-    + ((stack1 = (helpers.single || (depth0 && depth0.single) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.mixes : depth0),{"name":"single","hash":{},"fn":container.program(19, data, 0),"inverse":container.program(28, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = (helpers.single || (depth0 && depth0.single) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.mixes : depth0),{"name":"single","hash":{},"fn":container.program(21, data, 0),"inverse":container.program(30, data, 0),"data":data})) != null ? stack1 : "")
     + "					</div>\r\n				</div>\r\n";
-},"28":function(container,depth0,helpers,partials,data) {
+},"30":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "							<ul class=\"form-control-static\">\r\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.mixes : depth0),{"name":"each","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.mixes : depth0),{"name":"each","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "							</ul>\r\n";
-},"30":function(container,depth0,helpers,partials,data) {
+},"32":function(container,depth0,helpers,partials,data) {
     var helper;
 
   return "				<!-- deprecated -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">Deprecated</label>\r\n					<div class=\"col-xs-9\">\r\n						<p class=\"form-control-static\">"
     + container.escapeExpression(((helper = (helper = helpers.deprecated || (depth0 != null ? depth0.deprecated : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"deprecated","hash":{},"data":data}) : helper)))
     + "</p>\r\n					</div>\r\n				</div>\r\n";
-},"32":function(container,depth0,helpers,partials,data) {
+},"34":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "				<!-- author -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">Author</label>\r\n					<div class=\"col-xs-9\">\r\n"
-    + ((stack1 = (helpers.single || (depth0 && depth0.single) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.author : depth0),{"name":"single","hash":{},"fn":container.program(19, data, 0),"inverse":container.program(33, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = (helpers.single || (depth0 && depth0.single) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.author : depth0),{"name":"single","hash":{},"fn":container.program(21, data, 0),"inverse":container.program(35, data, 0),"data":data})) != null ? stack1 : "")
     + "					</div>\r\n				</div>\r\n";
-},"33":function(container,depth0,helpers,partials,data) {
+},"35":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "							<ul class=\"form-control-static\">\r\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.author : depth0),{"name":"each","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.author : depth0),{"name":"each","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "							</ul>\r\n";
-},"35":function(container,depth0,helpers,partials,data) {
+},"37":function(container,depth0,helpers,partials,data) {
     var helper;
 
   return "				<!-- copyright -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">Copyright</label>\r\n					<div class=\"col-xs-9\">\r\n						<p class=\"form-control-static\">"
     + container.escapeExpression(((helper = (helper = helpers.copyright || (depth0 != null ? depth0.copyright : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"copyright","hash":{},"data":data}) : helper)))
     + "</p>\r\n					</div>\r\n				</div>\r\n";
-},"37":function(container,depth0,helpers,partials,data) {
+},"39":function(container,depth0,helpers,partials,data) {
     var helper;
 
   return "				<!-- license -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">License</label>\r\n					<div class=\"col-xs-9\">\r\n						<p class=\"form-control-static\">"
     + container.escapeExpression(((helper = (helper = helpers.license || (depth0 != null ? depth0.license : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"license","hash":{},"data":data}) : helper)))
     + "</p>\r\n					</div>\r\n				</div>\r\n";
-},"39":function(container,depth0,helpers,partials,data) {
+},"41":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "				<!-- source -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">Source</label>\r\n					<div class=\"col-xs-9\">\r\n						<p class=\"form-control-static\">"
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.outputSourceFiles : stack1),{"name":"if","hash":{},"fn":container.program(40, data, 0),"inverse":container.program(42, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0.options : depth0)) != null ? stack1.outputSourceFiles : stack1),{"name":"if","hash":{},"fn":container.program(42, data, 0),"inverse":container.program(44, data, 0),"data":data})) != null ? stack1 : "")
     + "</p>\r\n					</div>\r\n				</div>\r\n";
-},"40":function(container,depth0,helpers,partials,data) {
+},"42":function(container,depth0,helpers,partials,data) {
     var stack1, helper;
 
   return ((stack1 = ((helper = (helper = helpers.sourcelink || (depth0 != null ? depth0.sourcelink : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"sourcelink","hash":{},"data":data}) : helper))) != null ? stack1 : "");
-},"42":function(container,depth0,helpers,partials,data) {
+},"44":function(container,depth0,helpers,partials,data) {
     var helper;
 
   return container.escapeExpression(((helper = (helper = helpers.source || (depth0 != null ? depth0.source : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"source","hash":{},"data":data}) : helper)));
-},"44":function(container,depth0,helpers,partials,data) {
+},"46":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "				<!-- tutorials -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">Tutorials</label>\r\n					<div class=\"col-xs-9\">\r\n"
-    + ((stack1 = (helpers.single || (depth0 && depth0.single) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.tutorials : depth0),{"name":"single","hash":{},"fn":container.program(19, data, 0),"inverse":container.program(45, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = (helpers.single || (depth0 && depth0.single) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.tutorials : depth0),{"name":"single","hash":{},"fn":container.program(21, data, 0),"inverse":container.program(47, data, 0),"data":data})) != null ? stack1 : "")
     + "					</div>\r\n				</div>\r\n";
-},"45":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "							<ul class=\"form-control-static\">\r\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.tutorials : depth0),{"name":"each","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "							</ul>\r\n";
 },"47":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "				<!-- see -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">See</label>\r\n					<div class=\"col-xs-9\">\r\n"
-    + ((stack1 = (helpers.single || (depth0 && depth0.single) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.see : depth0),{"name":"single","hash":{},"fn":container.program(19, data, 0),"inverse":container.program(48, data, 0),"data":data})) != null ? stack1 : "")
-    + "					</div>\r\n				</div>\r\n";
-},"48":function(container,depth0,helpers,partials,data) {
+  return "							<ul class=\"form-control-static\">\r\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.tutorials : depth0),{"name":"each","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "							</ul>\r\n";
+},"49":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "							<ul class=\"form-control-static\">\r\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.see : depth0),{"name":"each","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "							</ul>\r\n";
+  return "				<!-- see -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">See</label>\r\n					<div class=\"col-xs-9\">\r\n"
+    + ((stack1 = (helpers.single || (depth0 && depth0.single) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.see : depth0),{"name":"single","hash":{},"fn":container.program(21, data, 0),"inverse":container.program(50, data, 0),"data":data})) != null ? stack1 : "")
+    + "					</div>\r\n				</div>\r\n";
 },"50":function(container,depth0,helpers,partials,data) {
     var stack1;
 
+  return "							<ul class=\"form-control-static\">\r\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.see : depth0),{"name":"each","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "							</ul>\r\n";
+},"52":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
   return "				<!-- todo -->\r\n				<div class=\"form-group\">\r\n					<label class=\"col-xs-3 form-control-static control-label\">To Do</label>\r\n					<div class=\"col-xs-9\">\r\n"
-    + ((stack1 = (helpers.single || (depth0 && depth0.single) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.todo : depth0),{"name":"single","hash":{},"fn":container.program(51, data, 0),"inverse":container.program(53, data, 0),"data":data})) != null ? stack1 : "")
+    + ((stack1 = (helpers.single || (depth0 && depth0.single) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.todo : depth0),{"name":"single","hash":{},"fn":container.program(53, data, 0),"inverse":container.program(55, data, 0),"data":data})) != null ? stack1 : "")
     + "					</div>\r\n				</div>\r\n";
-},"51":function(container,depth0,helpers,partials,data) {
+},"53":function(container,depth0,helpers,partials,data) {
     return "							<p class=\"form-control-static\">"
     + container.escapeExpression(container.lambda(depth0, depth0))
     + "</p>\r\n";
-},"53":function(container,depth0,helpers,partials,data) {
+},"55":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "							<ul class=\"form-control-static\">\r\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.todo : depth0),{"name":"each","hash":{},"fn":container.program(54, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.todo : depth0),{"name":"each","hash":{},"fn":container.program(56, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "							</ul>\r\n";
-},"54":function(container,depth0,helpers,partials,data) {
+},"56":function(container,depth0,helpers,partials,data) {
     return "									<li>"
     + container.escapeExpression(container.lambda(depth0, depth0))
     + "</li>\r\n";
@@ -835,7 +842,7 @@ Handlebars.registerPartial("tag/exceptions", this["tmpl"]["tag/exceptions"] = Ha
 },"3":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing;
 
-  return "				<div class=\"form-group\">\r\n					<label class=\"col-sm-3 control-label exceptions-type\">"
+  return "				<div class=\"form-group\">\r\n					<label class=\"col-sm-3 form-control-static control-label exceptions-type\">"
     + container.escapeExpression((helpers["type-names"] || (depth0 && depth0["type-names"]) || alias2).call(alias1,(depth0 != null ? depth0.type : depth0),{"name":"type-names","hash":{},"data":data}))
     + "</label>\r\n					<div class=\"col-sm-9\">\r\n						<div class=\"form-control-static exceptions-description\">"
     + ((stack1 = ((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"description","hash":{},"data":data}) : helper))) != null ? stack1 : "")
@@ -859,7 +866,7 @@ Handlebars.registerPartial("tag/fires", this["tmpl"]["tag/fires"] = Handlebars.t
 },"3":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function";
 
-  return "				<div class=\"form-group\">\r\n					<label class=\"col-sm-3 control-label fires-event\">"
+  return "				<div class=\"form-group\">\r\n					<label class=\"col-sm-3 form-control-static control-label fires-event\">"
     + ((stack1 = ((helper = (helper = helpers.link || (depth0 != null ? depth0.link : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"link","hash":{},"data":data}) : helper))) != null ? stack1 : "")
     + "</label>\r\n					<div class=\"col-sm-9\">\r\n						<div class=\"form-control-static fires-summary\">"
     + ((stack1 = ((helper = (helper = helpers.summary || (depth0 != null ? depth0.summary : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"summary","hash":{},"data":data}) : helper))) != null ? stack1 : "")
@@ -1035,7 +1042,7 @@ Handlebars.registerPartial("tag/requires", this["tmpl"]["tag/requires"] = Handle
 },"3":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function";
 
-  return "				<div class=\"form-group\">\r\n					<label class=\"col-sm-3 control-label requires-type\">"
+  return "				<div class=\"form-group\">\r\n					<label class=\"col-sm-3 form-control-static control-label requires-type\">"
     + ((stack1 = ((helper = (helper = helpers.link || (depth0 != null ? depth0.link : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"link","hash":{},"data":data}) : helper))) != null ? stack1 : "")
     + "</label>\r\n					<div class=\"col-sm-9\">\r\n						<div class=\"form-control-static requires-summary\">"
     + ((stack1 = ((helper = (helper = helpers.summary || (depth0 != null ? depth0.summary : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"summary","hash":{},"data":data}) : helper))) != null ? stack1 : "")
@@ -1059,7 +1066,7 @@ Handlebars.registerPartial("tag/returns", this["tmpl"]["tag/returns"] = Handleba
 },"3":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing;
 
-  return "				<div class=\"form-group\">\r\n					<label class=\"col-sm-3 control-label returns-type\">"
+  return "				<div class=\"form-group\">\r\n					<label class=\"col-sm-3 form-control-static control-label returns-type\">"
     + container.escapeExpression((helpers["type-names"] || (depth0 && depth0["type-names"]) || alias2).call(alias1,(depth0 != null ? depth0.type : depth0),{"name":"type-names","hash":{},"data":data}))
     + "</label>\r\n					<div class=\"col-sm-9\">\r\n						<div class=\"form-control-static returns-description\">"
     + ((stack1 = ((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"description","hash":{},"data":data}) : helper))) != null ? stack1 : "")

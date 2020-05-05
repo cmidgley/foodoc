@@ -5,7 +5,7 @@
   "main": "./template/publish.js",
   "scripts": {
     "build": "grunt",
-    "built-template": "grunt template",
+    "build-template": "grunt template",
     "build-all": "grunt all",
     "clean": "grunt clean",
     "test": "echo \"Error: no test specified\" && exit 1"
