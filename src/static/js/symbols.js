@@ -57,7 +57,8 @@
 
 		// if we have a anchor tag on the url, such as `#membername`, mark it as expanded.  Some IDs need escaping to
 		//correctly so the regex does that.
-		$('#' + window.location.hash.substr(1).replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "\\$&")).parent().click();
+		if (window.location.hash)
+			$('#' + window.location.hash.substr(1).replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "\\$&")).parent().click();
 	});
 
 })(window.TEMPLATE_OPTIONS, jQuery);
