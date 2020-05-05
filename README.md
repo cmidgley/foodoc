@@ -414,6 +414,8 @@ All releases prior to 1.0.0 are considered pre-release, i.e. I'm not finished ch
 * Adds support for automatically generating class diagrams based on classes and members when `includeClassDiagrams: true` is used.
 * Adds settings for how the access filter should default, using new options defaultFilterInherited, defaultFilterPublic,
   defaultFilterProtected, and defaultFilterPrivate.  Default is protected and private unchecked.
+* Auto-expands hidden sections (when collapseSymbols is enabled) when page loads and anchor tag references a hidden
+  section
 
 ### 0.0.9
 

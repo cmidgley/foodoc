@@ -9,7 +9,7 @@
 				// create a jq object of the current element and figure out if it's expanded or collapsed
 				var $title = $(dt), expanded = $title.hasClass("expanded"),
 				// create the toggle with the correct icon
-					$toggle = $("<span/>", {"class": "pull-right toggle-icon glyphicon glyphicon-chevron-" + (expanded ? "up" : "down")});
+				$toggle = $("<span/>", {"class": "pull-right toggle-icon glyphicon glyphicon-chevron-" + (expanded ? "up" : "down")});
 				// all collapsible symbols have only a single H# element displaying the name, add the toggle to that
 				$title.find("h1,h2,h3,h4,h5").first().append($toggle);
 			})
@@ -54,6 +54,10 @@
 				$this.css('max-height', 9999);
 			}
 		});
+
+		// if we have a anchor tag on the url, such as `#membername`, mark it as expanded.  Some IDs need escaping to
+		//correctly so the regex does that.
+		$('#' + window.location.hash.substr(1).replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "\\$&")).parent().click();
 	});
 
 })(window.TEMPLATE_OPTIONS, jQuery);
