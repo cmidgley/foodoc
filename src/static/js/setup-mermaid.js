@@ -69,6 +69,9 @@ function setupMermaid() {
                     filterRules.push({ codeClass: codeClass, codeMember: codeMember, cssClass: cssClass });
                 return '';
             });
+            // remove unwanted blank lines
+            text = text.replace(/^\s*\n/gm, '');
+
             if (styleRules.length || filterRules.length) 
                 mermaid._customRules.push({ elem: $(this).parent(), styleRules: styleRules, filterRules: filterRules });
             // adjust the code to have our desired class and ID, as well as our purified (no style/filter) Mermaid markdown (in code and hidden div)
@@ -99,7 +102,8 @@ function setupMermaid() {
                             remove = section.elem.closest('.' + rule.cssClass).length;
                         if (remove) {
                             // match the member, that is encapsulated within class <rule.codeClass> { ... <rule.codeMember> ... }
-                            var filter = "(class\\s+" + rule.codeClass + "\\s+{.*?)(" + rule.codeMember + "(?:\\(\\))?)(.*?})";
+                            var filter = "(class\\s+" + rule.codeClass + "\\s+{.*?)\\s(" + rule.codeMember + "(?:\\(\\))?)\\s(.*?})";
+                            console.log("Filter is", filter);
                             markdown = markdown.replace(new RegExp(filter, 'gs'), '$1$3');
                         }
                     });
@@ -107,6 +111,7 @@ function setupMermaid() {
             }); 
             // remove unwanted blank lines
             markdown = markdown.replace(/^\s*\n/gm, '');
+            console.log(markdown);
             // render with mermaid
             $(this).html(mermaid.render('rend-' + $(this).attr('id'), markdown));
         });
