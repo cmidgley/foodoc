@@ -94,6 +94,10 @@
 		float: right;
 	}
 }
+.callout-class-diagram .language-mermaid {
+	z-index: 1000;
+	background-color: white;
+}
 .callout-class-diagram svg {
 	margin: auto;
 }
