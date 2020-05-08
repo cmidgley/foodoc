@@ -92,6 +92,7 @@
 @media(min-width: 576px) {
 	.callout-class-diagram {
 		float: right;
+		max-width: 60%;
 	}
 }
 .callout-class-diagram .language-mermaid {
