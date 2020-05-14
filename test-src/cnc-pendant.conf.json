@@ -51,6 +51,7 @@
         "sort": "",
         "search": true,
         "analytics": {"ua": "", "domain": ""},
+        "noRobots": true,
         "favicon": "../cnc-pendant/docs/images/favicon-32x32.png",
         "stylesheets": [],
         "scripts": [],

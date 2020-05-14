@@ -41,6 +41,7 @@
     "sort": "linenum, longname, version, since",
     "search": true,
     "analytics": {"ua": "", "domain": ""},
+    "noRobots": false,
     "favicon": "",
     "stylesheets": [],
     "scripts": []

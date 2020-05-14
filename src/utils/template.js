@@ -48,6 +48,7 @@ var options = exports.options = extend({
 	includeMermaid: false,
 	includeClassDiagrams: false,
 	analytics: null,
+	noRobots: false,
 	methodHeadingReturns: true,
 	sort: "linenum, longname, version, since",
 	search: true,

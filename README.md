@@ -73,23 +73,23 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
 
 ```javascript
 "templates": {
-	"systemName"            : "{string}",
-	"systemSummary"         : "{string}",
-	"systemLogo"            : "{string}",
-	"pageLogo"              : "{string}",
-	"systemColor"           : "{string}",
-	"footer"                : "{string}",
-	"copyright"             : "{string}",
-	"includeDate"           : "{boolean}",
-	"includeClass"          : "{boolean}",
-	"includeGeneratedBy"    : "{boolean}",
+    "systemName"            : "{string}",
+    "systemSummary"         : "{string}",
+    "systemLogo"            : "{string}",
+    "pageLogo"              : "{string}",
+    "systemColor"           : "{string}",
+    "footer"                : "{string}",
+    "copyright"             : "{string}",
+    "includeDate"           : "{boolean}",
+    "includeClass"          : "{boolean}",
+    "includeGeneratedBy"    : "{boolean}",
     "removeInheritedStubs"  : "{boolean}",
     "removeInheritedPrivate": "{boolean}",
-	"dateFormat"            : "{string}",
-	"inlineNav"             : "{boolean}",
-	"inverseNav"            : "{boolean}",
-	"navMembers"            : "{array.<object>}",
-	"linenums"              : "{boolean}",
+    "dateFormat"            : "{string}",
+    "inlineNav"             : "{boolean}",
+    "inverseNav"            : "{boolean}",
+    "navMembers"            : "{array.<object>}",
+    "linenums"              : "{boolean}",
     "showTableOfContents"   : "{boolean}",
     "expandTableOfContents" : "{boolean}",
     "showAccessFilter"      : "{boolean}",
@@ -97,18 +97,19 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
     "defaultFilterPublic"   : "{boolean}",
     "defaultFilterProtected": "{boolean}",
     "defaultFilterPrivate"  : "{boolean}",
-	"includeMermaid"        : "{boolean}",
-	"includeClassDiagrams"  : "{boolean}",
-	"analytics"             : "{object}",
-	"collapseSymbols"       : "{boolean}",
-	"methodHeadingReturns"  : "{boolean}",
-	"outputSourceFiles"     : "{boolean}",
-	"outputSourcePath"      : "{boolean}",
-	"sort"                  : "{boolean|string}",
-	"search"                : "{boolean}",
-	"favicon"               : "{string}",
-	"stylesheets"           : "{array.<string>}",
-	"scripts"               : "{array.<string>}"
+    "includeMermaid"        : "{boolean}",
+    "includeClassDiagrams"  : "{boolean}",
+    "analytics"             : "{object}",
+    "noRobots"              : "{boolean}",
+    "collapseSymbols"       : "{boolean}",
+    "methodHeadingReturns"  : "{boolean}",
+    "outputSourceFiles"     : "{boolean}",
+    "outputSourcePath"      : "{boolean}",
+    "sort"                  : "{boolean|string}",
+    "search"                : "{boolean}",
+    "favicon"               : "{string}",
+    "stylesheets"           : "{array.<string>}",
+    "scripts"               : "{array.<string>}"
 }
 ```
 
@@ -193,7 +194,8 @@ FooDoc ships with a `conf.json` file in the template/ directory. It is just a re
     _e.g._ `"analytics":{"ua":"UA-XXXXX-XXX", "domain":"XXXX"}`
     * __ua__ The google agent (see Google Analytics help for details)
     * __domain__ The domain being served. (see Google Analytics help for details)
-
+*   __noRobots - `false`__
+    When `true` adds metatag to all page headers to disable robots (google, etc) from indexing the content.
 *   __collapseSymbols - `true`__
     When `true`, symbols in generated pages (methods, members, type definitions, etc.) are collapsed so only there title and summary are visible. You can then click on them to reveal more detailed information.
 *   __methodHeadingReturns - `true`__
@@ -348,7 +350,7 @@ var index = lunr(function(){
     this.field('longname', {boost: 1000});
     this.field('name', {boost: 500});
     this.field('tags', {boost: 300});
-	this.field('kind', {boost: 110});
+    this.field('kind', {boost: 110});
     this.field('title', {boost: 100});
     this.field('summary', {boost: 70});
     this.field('description', {boost: 50});
